@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>C PROGRAMMING FOR PROBLEM SOLVING LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q13(a). Write a C program to count the number of times a character occurs in a text file. The file name and the character are supplied as command-line arguments.</b></p>
+        <p><b>Aim:</b>  To implement a C program to count the number of times a character occurs in a text file. The file name and the character are supplied as command-line arguments.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with GCC compiler installed in it.</p>
+        
+        <p align="justify"><b>Description:</b><br> In computer science, the process of counting the number of occurrences of a specific character in a text file can be performed using various algorithms. The simplest method is to read the text file character 
+            by character and increment a counter each time the specified character is found.<br>
+            To implement this in C programming, we can use file handling functions provided by the C standard library, such as fopen(), fgetc(), and fclose(). The fopen() function is used to open the specified text file, while the fgetc() function 
+            is used to read individual characters from the file. The fclose() function is used to close the file after processing is complete.<br>
+            In addition to file handling functions, we also need to use command-line arguments to supply the file name and character to the program. Command-line arguments are supplied to the main function of the program and can be accessed through 
+            the argv[] array.<br>
+            In summary, the experimental theory for the C program to count the number of occurrences of a character in a text file involves using file handling functions, command-line arguments, and a loop to read the text file character by character 
+            and increment a counter each time the specified character is found. The final result will be the number of times the character appears in the file, which can be displayed to the user.<br>
+            <br>
+            
+            </p>
+
+        <style>
+            .imagecenter {
+                width: 500px;
+                height: 200px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+            }                
+        </style>        
+        <img src="/images/countfile.jpg" alt="Not Found" class="imagecenter"><br><br>
+        <b>Examples:</b><br>
+        For Example: Consider the following text file named "sample.txt" with the following contents:<br>
+        hello world<br>
+        If we want to count the number of occurrences of the letter 'l' in the file, the program would perform the following steps:<br>
+        Open the file using the fopen() function:<br>
+        FILE *fp;<br>
+        fp = fopen("sample.txt", "r");<br>
+        Read the file character by character using the fgetc() function and increment a counter each time the character 'l' is found:<br>
+        int count = 0;<br>
+        char ch;<br>
+        while((ch = fgetc(fp)) != EOF) {<br>
+        if (ch == 'l') {<br>
+        count++;<br>
+        }<br>
+        }<br>
+        Close the file using the fclose() function:<br>
+        fclose(fp);<br>
+        The final result, which is the number of occurrences of the letter 'l', can be displayed to the user:<br>
+        perl<br>
+        printf("The letter 'l' occurs %d times in the file.\n", count);<br>
+        So, in this example, the letter 'l' occurs 3 times in the file "sample.txt".<br>
+        </p>
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <b>Code Editor***</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <style>
+                            .cnsl {
+
+                                text-decoration: none;
+                                display: inline-block;
+                                background-color: rgba(29, 96, 184, 0.902);
+                                padding: 8px;
+                                border-radius: 6px;
+                                border: 1px solid #d5d9d9;
+                                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                box-sizing: border-box;
+                                line-height: 20px;  
+                                color: #edf0f3;
+                            }
+
+                        </style>
+                        <a href="https://onecompiler.com/c" target="_blank" class="cnsl">Try on
+                                Code
+                                Editor</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        #include&lt;stdio.h&gt;<br>
+                        #include&lt;string.h&gt;<br>
+                            
+                            
+                            int main(int argc, char *argv[]) {<br>
+                               if (argc != 3) {<br>
+                                  printf("Usage: %s <filename> <character>\n", argv[0]);<br>
+                                  return 1;<br>
+                               }<br>
+                            
+                               FILE *fp;<br>
+                               fp = fopen(argv[1], "r");<br>
+                               if (fp == NULL) {<br>
+                                  printf("Error opening file %s\n", argv[1]);<br>
+                                  return 1;<br>
+                               }<br>
+                            
+                               char contents[100];<br>
+                               fgets(contents, 100, fp);<br>
+                            
+                               int count = 0;<br>
+                               char *p = contents;<br>
+                               while (p = strchr(p, *argv[2])) {<br>
+                                  count++;<br>
+                                  p++;<br>
+                               }<br>
+                            
+                               fclose(fp);<br>
+                            
+                               printf("The character '%c' occurs %d times in the file %s.\n", *argv[2], count, argv[1]);<br>
+                            
+                               return 0;<br>
+                            }<br>
+                            
+                        
+                            
+                        
+                            
+                                
+                        
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        #include&lt;stdio.h&gt;<br>
+                        #include&lt;stdlib.h&gt;<br>
+                            
+                            void main()<br> 
+                            {<br>
+                                FILE *fptr;<br> 
+                                char ch;<br> 
+                                int wrd=1,charctr=1;<br>
+                                char fname[20];<br>
+                                printf("\n\n Count the number of words and characters in a file :\n");<br>
+                                printf("---------------------------------------------------------\n");<br> 
+                                printf(" Input the filename to be opened : ");<br>
+                                scanf("%s",fname);<br>    
+                            
+                                fptr=fopen(fname,"r");<br> 
+                                if(fptr==NULL)<br> 
+                                 {<br> 
+                                     printf(" File does not exist or can not be opened.");<br> 
+                                  }<br> 
+                                else<br> 
+                                    {<br> 
+                                      ch=fgetc(fptr);<br> 
+                                      printf(" The content of the file %s are : ",fname);<br> 
+                                      while(ch!=EOF)<br> 
+                                        {<br> 
+                                            printf("%c",ch);<br> 
+                                            if(ch==' '||ch=='\n')<br>
+                                                {<br> 
+                                                    wrd++;<br> 
+                                                }<br>
+                                                else<br>
+                                                {<br>
+                                                    charctr++;<br> 
+                                                }<br>
+                                            ch=fgetc(fptr);<br> 
+                                        }<br>
+                                    printf("\n The number of words in the  file %s are : %d\n",fname,wrd-2);<br> 
+                                    printf(" The number of characters in the  file %s are : %d\n\n",fname,charctr-1);<br>         
+                                    }<br> 
+                                fclose(fptr);<br> 
+                            }<br>
+                          
+                        
+                        
+                        
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<a href="Q12(b)CProg.html" class="previous"> &lt; Previous</a>
+<a href="Q13(b)CProg.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

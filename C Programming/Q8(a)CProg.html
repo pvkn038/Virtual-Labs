@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>C PROGRAMMING FOR PROBLEM SOLVING LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q8(a). Write a C program that implements the Bubble sort method to sort a given list of integers in ascending order.</b></p>
+        <p><b>Aim:</b> To implement the Bubble sort method in C to sort a list of integers in ascending order.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with GCC compiler installed in it.</p>
+        
+        <p align="justify"><b>Description:</b><br> Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The 
+            algorithm repeats this process until the list is sorted in ascending order.<br>
+            In this experiment, a C program will be written to implement the Bubble sort algorithm to sort a given list of integers. The program will read a list of integers from the user, perform the 
+            bubble sort algorithm, and display the sorted list. The time taken by the algorithm to sort the list will be recorded and used to evaluate the efficiency of the bubble sort algorithm.<br>
+            Let's consider a real-world example where we want to sort a list of 10 randomly generated integers. In this experiment, a C program will be written to implement the Bubble sort algorithm to 
+            sort this list of integers. The program will read the list of 10 integers from the user, perform the bubble sort algorithm, and display the sorted list. The time taken by the algorithm to sort 
+            the list will be recorded and used to evaluate the efficiency of the bubble sort algorithm.<br>
+            Consider the list [9, 7, 5, 8, 3, 1, 2, 4, 6, 10]. After the bubble sort algorithm is applied, the list will be sorted in ascending order as [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]. The time taken to 
+            sort the list will be recorded and used to evaluate the efficiency of the bubble sort algorithm.<br>
+            It is expected that the program will correctly sort the list of integers in ascending order and the efficiency of the algorithm will be determined by the time taken for sorting. The results 
+            of the experiment will be used to compare the efficiency of the bubble sort algorithm with other sorting algorithms and determine its suitability for use in different applications.<br><br>
+            
+
+        <style>
+            .imagecenter {
+                width: 400px;
+                height: 250px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+            }                
+        </style>        
+        <img src="/images/bubble sort.jpg" alt="Not Found" class="imagecenter"><br><br>
+        <b>Examples:</b><br>
+        For Example:  
+        Consider the list [100, 50, 70, 30, 90, 20, 60, 10, 80, 40]. After the bubble sort algorithm is applied, the list will be sorted in ascending order as [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]. The 
+        time taken to sort the list will be recorded and used to evaluate the efficiency of the bubble sort algorithm.<br>
+        It is expected that the program will correctly sort the list of product prices in ascending order and the efficiency of the algorithm will be determined by the time taken for sorting. The results of 
+        the experiment will be used to compare the efficiency of the bubble sort algorithm with other sorting algorithms and determine its suitability for use in different applications.<br>
+        </p>
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>
+                        Code Editor***</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <style>
+                            .cnsl {
+
+                                text-decoration: none;
+                                display: inline-block;
+                                background-color: rgba(29, 96, 184, 0.902);
+                                padding: 8px;
+                                border-radius: 6px;
+                                border: 1px solid #d5d9d9;
+                                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                box-sizing: border-box;
+                                line-height: 20px;  
+                                color: #edf0f3;
+                            }
+
+                        </style>
+                        <a href="https://onecompiler.com/c" target="_blank" class="cnsl">Try on
+                                Code
+                                Editor</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        #include&lt;stdio.h&gt;<br>
+                        void bubbleSort(int arr[], int n)<br>
+                        {<br>
+                            int i, j, temp;<br>
+                            for (i = 0; i &lt; n-1; i++)<br>
+                            {<br>
+                                for (j = 0; j &lt; n-i-1; j++)<br>
+                                {<br>
+                                    if (arr[j] > arr[j+1])<br>
+                                    {<br>
+                                        temp = arr[j];<br>
+                                        arr[j] = arr[j+1];<br>
+                                        arr[j+1] = temp;<br>
+                                    }<br>
+                                }<br>
+                            }<br>
+                        }<br>
+                        
+                        void printArray(int arr[], int size)<br>
+                        {<br>
+                            int i;<br>
+                            for (i=0; i &lt; size; i++)<br>
+                                printf("%d ", arr[i]);<br>
+                            printf("\n");<br>
+                        }<br>
+                        
+                        int main()<br>
+                        {<br>
+                            int arr[10];<br>
+                            int n = 10;<br>
+                            printf("Enter 10 elements: ");<br>
+                            for(int i=0; i &lt; n; i++)<br>
+                            {<br>
+                                scanf("%d", &arr[i]);<br>
+                            }<br>
+                            bubbleSort(arr, n);<br>
+                            printf("Sorted array: \n");<br>
+                            printArray(arr, n);<br>
+                            return 0;<br>
+                        }<br>
+                        
+                        
+                            
+                                
+                        
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        #include&lt;stdio.h&gt;<br>
+                        void bubbleSort(int arr[], int n)<br>
+                            {<br>
+                                int i, j, temp;<br>
+                                for (i = 0; i &lt; n-1; i++)<br>
+                                {<br>
+                                    for (j = 0; j &lt; n-i-1; j++)<br>
+                                    {<br>
+                                        if (arr[j] > arr[j+1])<br>
+                                        {<br>
+                                            temp = arr[j];<br>
+                                            arr[j] = arr[j+1];<br>
+                                            arr[j+1] = temp;<br>
+                                        }<br>
+                                    }<br>
+                                }<br>
+                            }<br>
+                            
+                            void printArray(int arr[], int size)<br>
+                            {<br>
+                                int i;<br>
+                                for (i=0; i &lt; size; i++)<br>
+                                    printf("%d ", arr[i]);<br>
+                                printf("\n");<br>
+                            }<br>
+                            
+                            int main()<br>
+                            {<br>
+                                int arr[] = {100, 50, 70, 30, 90, 20, 60, 10, 80, 40};<br>
+                                int n = sizeof(arr)/sizeof(arr[0]);<br>
+                                bubbleSort(arr, n);<br>
+                                printf("Sorted array: \n");<br>
+                                printArray(arr, n);<br>
+                                return 0;<br>
+                            }<br>
+                        
+                        
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<a href="Q7(b)CProg.html" class="previous"> &lt; Previous</a>
+<a href="Q8(b)CProg.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>C PROGRAMMING FOR PROBLEM SOLVING LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q14(a). Write a C program to change the nth character (byte) in a text file. Use fseek function.</b></p>
+        <p><b>Aim:</b> To implement a C program to change the nth character (byte) in a text file. Use fseek function.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with GCC compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b><br> 
+            The experimental theory behind changing the nth character (byte) in a text file using the fseek function is based on the concept of file pointers in C programming. In C, a 
+            file pointer is a variable that holds the memory address of the first byte of a file. When we open a file using the fopen function, it returns a pointer to the first byte of 
+            the file. This pointer can be used to access and manipulate the contents of the file.<br>
+            The fseek function is used to move the file pointer to a specific position in the file. It takes three arguments: the file pointer, the number of bytes to move the file pointer, 
+            and the direction in which to move the file pointer. By using the fseek function, we can move the file pointer to the nth character (byte) in the text file and change its value.<br>
+            To change the nth character (byte), we first need to open the text file in "read/write" mode using the fopen function. Then, we use the fseek function to move the file pointer 
+            to the nth character (byte). Finally, we use the fwrite function to write a new character at the current position of the file pointer.<br>
+            After making the changes, we can validate the changes by reading and printing the contents of the text file using the fread function. The contents of the text file should show 
+            that the nth character (byte) has been successfully changed.<br><br>
+        <style>
+            .imagecenter {
+                width: 400px;
+                height: 350px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+            }                
+        </style>        
+        <img src="/images/fseek.jpg" alt="Not Found" class="imagecenter"><br><br>
+        <b>Examples:</b><br>
+
+        For Example: Consider a text file with the following contents:<br>
+        Hello World<br>
+        Let's say we want to change the 6th character (byte) from 'W' to 'X'.<br>
+        In mathematical terms, we can represent the contents of the text file as a string s of length n:<br>
+        s = "Hello World"<br>
+        n = 11<br>
+        The file pointer is initially pointing to the first character (byte) of the string, i.e. s[0].<br>
+        Using the fseek function, we can move the file pointer to the 6th character (byte) of the string, i.e. s[5]:<br>
+        fseek(file_pointer, 5, SEEK_SET)
+        Here, file_pointer is the file pointer obtained from the fopen function, 5 is the number of bytes to move the file pointer, and SEEK_SET is the direction to move the file pointer
+        (in this case, from the beginning of the file).<br>
+        Next, we use the fwrite function to write a new character at the current position of the file pointer:<br>
+        fwrite("X", 1, 1, file_pointer)<br>
+        Here, "X" is the new character to write, 1 is the size of each element to write, and 1 is the number of elements to write.<br>
+        After making these changes, the contents of the text file will be:<br>
+        Hello Xorld<br>
+        We can validate the changes by reading and printing the contents of the text file using the fread function. The output should be Hello Xorld, showing that the 6th character 
+        (byte) has been successfully changed from 'W' to 'X'.<br>
+        </p>
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <b>Code Editor***</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <style>
+                            .cnsl {
+
+                                text-decoration: none;
+                                display: inline-block;
+                                background-color: rgba(29, 96, 184, 0.902);
+                                padding: 8px;
+                                border-radius: 6px;
+                                border: 1px solid #d5d9d9;
+                                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                box-sizing: border-box;
+                                line-height: 20px;  
+                                color: #edf0f3;
+                            }
+
+                        </style>
+                        <a href="https://onecompiler.com/c" target="_blank" class="cnsl">Try on
+                                Code
+                                Editor</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        #include&lt;stdio.h&gt;<br>
+
+                            int main() {<br>
+                                FILE *file_pointer;<br>
+                                char old_string[] = "Hello World";<br>
+                                int n = 11; // length of the string<br>
+                                int position = 5; // position of the character to change<br>
+                            
+                                // Open the text file in "read/write" mode<br>
+                                file_pointer = fopen("file.txt", "r+");<br>
+                                if (file_pointer == NULL) {<br>
+                                    printf("Error opening file!\n");<br>
+                                    return 1;<br>
+                                }<br>
+                            
+                                // Write the original string to the text file<br>
+                                fwrite(old_string, 1, n, file_pointer);<br>
+                            
+                                // Move the file pointer to the nth character (byte)<br>
+                                fseek(file_pointer, position, SEEK_SET);<br>
+                            
+                                // Replace the nth character (byte) with a new character<br>
+                                fwrite("X", 1, 1, file_pointer);<br>
+                            
+                                // Close the text file<br>
+                                fclose(file_pointer);<br>
+                            
+                                printf("Successfully changed the %dth character in the text file.\n", position + 1);<br>
+                                return 0;<br>
+                            }<br>
+
+                        
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        #include&lt;stdio.h&gt;<br>
+                        #include&lt;string.h&gt;<br>
+                            
+                            int main() {<br>
+                                FILE *file_pointer;<br>
+                                char old_string[] = "Hello World";<br>
+                                int n = 11; // length of the string<br>
+                                int position = 5; // position of the character to change<br>
+                                char new_char = 'X';<br>
+                            
+                                // Open the text file in "write" mode<br>
+                                file_pointer = fopen("file.txt", "w");<br>
+                                if (file_pointer == NULL) {<br>
+                                    printf("Error opening file!\n");<br>
+                                    return 1;<br>
+                                }<br>
+                            
+                                // Write the original string to the text file<br>
+                                fwrite(old_string, 1, n, file_pointer);<br>
+                            
+                                // Close the text file<br>
+                                fclose(file_pointer);<br>
+                            
+                                // Open the text file in "read/write" mode<br>
+                                file_pointer = fopen("file.txt", "r+");<br>
+                                if (file_pointer == NULL) {<br>
+                                    printf("Error opening file!\n");<br>
+                                    return 1;<br>
+                                }<br>
+                            
+                                // Move the file pointer to the nth character (byte)<br>
+                                fseek(file_pointer, position, SEEK_SET);<br>
+                            
+                                // Replace the nth character (byte) with a new character<br>
+                                fwrite(&new_char, 1, 1, file_pointer);<br>
+                            
+                                // Close the text file<br>
+                                fclose(file_pointer);<br>
+                            
+                                printf("Successfully changed the %dth character in the text file.\n", position + 1);<br>
+                                return 0;<br>
+                            }<br>
+
+    
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+        
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+                
+
+    
+        </style>
+                <a href="Q13(b)CProg.html" class="previous"> &lt; Previous</a>
+                <a href="Q14(b)CProg.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/vlab.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+
+                
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="Description">
+        <h4>DESIGN AND ANALYSIS OF ALGORITHMS LAB<hr>
+        </h4>
+        <p style="color:red;"><b>Q7. Check whether a given graph is connected or not using DFS method.</b></p>
+        <p><b>Aim:</b> Check whether a given graph is connected or not using DFS method.</p>
+        <p><b>System and Software Requirements:</b>
+            A Computer with any Operating system with GCC compiler installed in it.</p>
+        <b>DESCRIPTION:</b><br>
+          <b>Depth First Search:</b>
+          <p>Depth-first search starts visiting vertices of a graph at an arbitrary vertex by marking it as having been visited. On each iteration, the algorithm proceeds to an unvisited vertex that is adjacent to the one it is currently in. This process continues until a vertex with no adjacent unvisited vertices is encountered. At a dead end, the algorithm backs up one edge to the vertex it came from and tries to continue visiting unvisited vertices from there. The algorithm eventually halts after backing up to the starting vertex, with the latter being a dead end.</p>
+          <p><span style="font-size: 12pt;"><strong>Complexity:</strong> For the adjacency matrix representation, the traversal time efficiency is in Θ(|V|2) and for the adjacency linked list representation, it is in Θ(|V|+|E|), where |V| and |E| are the number of graph‟s vertices and edges respectively.</span><br></p>
+          <strong>input</strong>
+                            <br><img src="https://media.geeksforgeeks.org/wp-content/uploads/20190414112215/g117-300x205.png" alt="">
+                       <br> <strong>output:</strong> Yes
+                       <br> 
+        <strong>input:</strong><br>
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190414112322/g118-300x223.png" alt=""><br>
+        <strong>output:</strong> No <br>
+        <strong>Approach:</strong><br>
+        <ol><li>Take two bool arrays <strong>vis1</strong> and <strong>vis2</strong> of size <strong>N</strong> (number of nodes of a graph) and keep false in all indexes.</li><li>Start at a random vertex <strong>v</strong> of the graph G, and run a DFS(G, v).</li><li>Make all visited vertices <strong>v</strong> as <strong>vis1[v] = true</strong>.</li><li>Now reverse the direction of all the edges.</li><li>Start DFS at the vertex which was chosen at step 2.</li><li>Make all visited vertices <strong>v</strong> as <strong>vis2[v] = true</strong>.</li><li>If any vertex <strong>v</strong> has <strong>vis1[v] = false</strong> and <strong>vis2[v] = false</strong> then the graph is not connected.</li></ol>
+
+
+
+
+
+
+
+
+
+
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+                solution.</b><br><br>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Code Editor***
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <style>
+                                .cnsl {
+     
+                                         text-decoration: none;
+                                         display: inline-block;
+                                         background-color: rgba(29, 96, 184, 0.902);
+                                         padding: 8px;
+                                         border-radius: 6px;
+                                         border: 1px solid #d5d9d9;
+                                         box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                         box-sizing: border-box;
+                                         line-height: 20px;  
+                                         color: #edf0f3;
+                                     }
+     
+                             </style>
+                        <a href="https://onecompiler.com/cpp" target="_blank"
+                                class="cnsl">Try on Code Editor</a><br>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Solution 1
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="comments">// C++ implementation of the approach</code></div><div class="line number2 index1 alt1"><code class="preprocessor">#include &lt;bits/stdc++.h&gt;</code></div><div class="line number3 index2 alt2"><code class="keyword bold">using</code> <code class="keyword bold">namespace</code> <code class="plain">std;</code></div><div class="line number4 index3 alt1"><code class="preprocessor">#define N 100000</code></div><div class="line number5 index4 alt2">&nbsp;</div><div class="line number6 index5 alt1"><code class="comments">// To keep correct and reverse direction</code></div><div class="line number7 index6 alt2"><code class="plain">vector&lt;</code><code class="color1 bold">int</code><code class="plain">&gt; gr1[N], gr2[N];</code></div><div class="line number8 index7 alt1">&nbsp;</div><div class="line number9 index8 alt2"><code class="color1 bold">bool</code> <code class="plain">vis1[N], vis2[N];</code></div><div class="line number10 index9 alt1">&nbsp;</div><div class="line number11 index10 alt2"><code class="comments">// Function to add edges</code></div><div class="line number12 index11 alt1"><code class="keyword bold">void</code> <code class="plain">Add_edge(</code><code class="color1 bold">int</code> <code class="plain">u, </code><code class="color1 bold">int</code> <code class="plain">v)</code></div><div class="line number13 index12 alt2"><code class="plain">{</code></div><div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">gr1[u].push_back(v);</code></div><div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">gr2[v].push_back(u);</code></div><div class="line number16 index15 alt1"><code class="plain">}</code></div><div class="line number17 index16 alt2">&nbsp;</div><div class="line number18 index17 alt1"><code class="comments">// DFS function</code></div><div class="line number19 index18 alt2"><code class="keyword bold">void</code> <code class="plain">dfs1(</code><code class="color1 bold">int</code> <code class="plain">x)</code></div><div class="line number20 index19 alt1"><code class="plain">{</code></div><div class="line number21 index20 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">vis1[x] = </code><code class="keyword bold">true</code><code class="plain">;</code></div><div class="line number22 index21 alt1">&nbsp;</div><div class="line number23 index22 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">for</code> <code class="plain">(</code><code class="keyword bold">auto</code> <code class="plain">i : gr1[x])</code></div><div class="line number24 index23 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">if</code> <code class="plain">(!vis1[i])</code></div><div class="line number25 index24 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">dfs1(i);</code></div><div class="line number26 index25 alt1"><code class="plain">}</code></div><div class="line number27 index26 alt2">&nbsp;</div><div class="line number28 index27 alt1"><code class="comments">// DFS function</code></div><div class="line number29 index28 alt2"><code class="keyword bold">void</code> <code class="plain">dfs2(</code><code class="color1 bold">int</code> <code class="plain">x)</code></div><div class="line number30 index29 alt1"><code class="plain">{</code></div><div class="line number31 index30 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">vis2[x] = </code><code class="keyword bold">true</code><code class="plain">;</code></div><div class="line number32 index31 alt1">&nbsp;</div><div class="line number33 index32 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">for</code> <code class="plain">(</code><code class="keyword bold">auto</code> <code class="plain">i : gr2[x])</code></div><div class="line number34 index33 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">if</code> <code class="plain">(!vis2[i])</code></div><div class="line number35 index34 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">dfs2(i);</code></div><div class="line number36 index35 alt1"><code class="plain">}</code></div><div class="line number37 index36 alt2">&nbsp;</div><div class="line number38 index37 alt1"><code class="color1 bold">bool</code> <code class="plain">Is_Connected(</code><code class="color1 bold">int</code> <code class="plain">n)</code></div><div class="line number39 index38 alt2"><code class="plain">{</code></div><div class="line number40 index39 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Call for correct direction</code></div><div class="line number41 index40 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions bold">memset</code><code class="plain">(vis1, </code><code class="keyword bold">false</code><code class="plain">, </code><code class="keyword bold">sizeof</code> <code class="plain">vis1);</code></div><div class="line number42 index41 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">dfs1(1);</code></div><div class="line number43 index42 alt2">&nbsp;</div><div class="line number44 index43 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Call for reverse direction</code></div><div class="line number45 index44 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions bold">memset</code><code class="plain">(vis2, </code><code class="keyword bold">false</code><code class="plain">, </code><code class="keyword bold">sizeof</code> <code class="plain">vis2);</code></div><div class="line number46 index45 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">dfs2(1);</code></div><div class="line number47 index46 alt2">&nbsp;</div><div class="line number48 index47 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">for</code> <code class="plain">(</code><code class="color1 bold">int</code> <code class="plain">i = 1; i &lt;= n; i++) {</code></div><div class="line number49 index48 alt2">&nbsp;</div><div class="line number50 index49 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// If any vertex it not visited in any direction</code></div><div class="line number51 index50 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Then graph is not connected</code></div><div class="line number52 index51 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">if</code> <code class="plain">(!vis1[i] and !vis2[i])</code></div><div class="line number53 index52 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="keyword bold">false</code><code class="plain">;</code></div><div class="line number54 index53 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div><div class="line number55 index54 alt2">&nbsp;</div><div class="line number56 index55 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// If graph is connected</code></div><div class="line number57 index56 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="keyword bold">true</code><code class="plain">;</code></div><div class="line number58 index57 alt1"><code class="plain">}</code></div><div class="line number59 index58 alt2">&nbsp;</div><div class="line number60 index59 alt1"><code class="comments">// Driver code</code></div><div class="line number61 index60 alt2"><code class="color1 bold">int</code> <code class="plain">main()</code></div><div class="line number62 index61 alt1"><code class="plain">{</code></div><div class="line number63 index62 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1 bold">int</code> <code class="plain">n = 4;</code></div><div class="line number64 index63 alt1">&nbsp;</div><div class="line number65 index64 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Add edges</code></div><div class="line number66 index65 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Add_edge(1, 2);</code></div><div class="line number67 index66 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Add_edge(1, 3);</code></div><div class="line number68 index67 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Add_edge(2, 3);</code></div><div class="line number69 index68 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">Add_edge(3, 4);</code></div><div class="line number70 index69 alt1">&nbsp;</div><div class="line number71 index70 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Function call</code></div><div class="line number72 index71 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">if</code> <code class="plain">(Is_Connected(n))</code></div><div class="line number73 index72 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">cout &lt;&lt; </code><code class="string">"Yes"</code><code class="plain">;</code></div><div class="line number74 index73 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">else</code></div><div class="line number75 index74 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">cout &lt;&lt; </code><code class="string">"No"</code><code class="plain">;</code></div><div class="line number76 index75 alt1">&nbsp;</div><div class="line number77 index76 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">0;</code></div><div class="line number78 index77 alt1"><code class="plain">}</code></div></div></td></tr></tbody></table>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Solution 2
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<a href="daa_06.html" class="previous"> &lt; Previous</a>
+<a href="daa_08.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

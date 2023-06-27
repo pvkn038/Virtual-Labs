@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>C PROGRAMMING FOR PROBLEM SOLVING LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q10(a). Write a C program to replace a substring with another in a given line of text.</b></p>
+        <p><b>Aim:</b> To implement a C program to replace a substring with another in a given line of text.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with GCC compiler installed in it.</p>
+        
+        <p align="justify"><b>Description:</b><br> A substring can be replaced with another in a given line of text by first finding the position of the substring to be replaced, then 
+            creating a new string that includes the text before the substring, the replacement substring, and the text after the substring. For example: Consider the line of text "The cat is sleeping" and the substrings "cat" and "dog". To replace "cat" with "dog", the position of "cat" must first be found in the text.<br>
+            Find the position of "cat": "The cat is sleeping" starts at position 4.<br>
+            Create a new string by combining the text before "cat", the replacement substring "dog", and the text after "cat": "The dog is sleeping".<br>
+            In C program, this can be implemented using string manipulation functions such as strstr() to find the position of the substring to be replaced, strncpy() to copy the text before 
+            the substring, strcpy() to copy the replacement substring, and strcat() to concatenate the text after the substring to the new string. The program can loop through the line of 
+            text to find and replace all occurrences of the substring.<br><br>
+            
+            
+
+        <style>
+            .imagecenter {
+                width: 400px;
+                height: 300px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+            }                
+        </style>        
+        <img src="/images/replacestring.jpg" alt="Not Found" class="imagecenter"><br><br>
+        <b>Examples:</b><br>
+        For Example:  
+        Consider the line of text "I love to play soccer" and the substrings "love" and "hate". To replace "love" with "hate", the position of "love" must first be found in the text.<br>
+        Find the position of "love": "I love to play soccer" starts at position 2.<br>
+        Create a new string by combining the text before "love", the replacement substring "hate", and the text after "love": "I hate to play soccer".<br>
+        In C program, this process can be repeated for each occurrence of the substring to be replaced, updating the new string each time.<br>
+        </p>
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>
+                        Code Editor***</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <style>
+                            .cnsl {
+
+                                text-decoration: none;
+                                display: inline-block;
+                                background-color: rgba(29, 96, 184, 0.902);
+                                padding: 8px;
+                                border-radius: 6px;
+                                border: 1px solid #d5d9d9;
+                                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                box-sizing: border-box;
+                                line-height: 20px;  
+                                color: #edf0f3;
+                            }
+
+                        </style>
+                        <a href="https://onecompiler.com/c" target="_blank" class="cnsl">Try on
+                                Code
+                                Editor</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        #include&lt;stdio.h&gt;<br>
+                        #include&lt;string.h&gt;<br>
+                        #include&lt;stdlib.h&gt;<br>
+                            
+                            char* replace_substring(const char* str, const char* sub, const char* replace) {<br>
+                              char *result;<br>
+                              int count = 0;<br>
+                              int length, sub_len, replace_len;<br>
+                              const char *temp;<br>
+                              
+                              length = strlen(str);<br>
+                              sub_len = strlen(sub);<br>
+                              replace_len = strlen(replace);<br>
+                              
+                              /* Count the number of times the substring occurs in the string */<br>
+                              temp = str;<br>
+                              while ((temp = strstr(temp, sub))) {<br>
+                                count++;<br>
+                                temp += sub_len;<br>
+                              }<br>
+                              
+                              /* Allocate memory for the new string */<br>
+                              result = malloc(length + (replace_len - sub_len) * count + 1);<br>
+                              if (!result) return NULL;<br>
+                              
+                              /* Replace the substring with the replacement in the new string */<br>
+                              temp = str;<br>
+                              char *ptr = result;<br>
+                              while ((temp = strstr(temp, sub))) {<br>
+                                length = temp - str;<br>
+                                strncpy(ptr, str, length);<br>
+                                ptr += length;<br>
+                                strcpy(ptr, replace);<br>
+                                ptr += replace_len;<br>
+                                temp += sub_len;<br>
+                                str = temp;<br>
+                              }<br>
+                              strcpy(ptr, str);<br>
+                              
+                              return result;<br>
+                            }<br>
+                            
+                            int main() {<br>
+                              char line[] = "The cat is sleeping";<br>
+                              char sub[] = "cat";<br>
+                              char replace[] = "dog";<br>
+                              
+                              char *new_line = replace_substring(line, sub, replace);<br>
+                              printf("Original: %s\n", line);<br>
+                              printf("Modified: %s\n", new_line);<br>
+                              
+                              free(new_line);<br>
+                              
+                              return 0;<br>
+                            }<br>
+                        
+                        
+                            
+                                
+                        
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        #include&lt;stdio.h&gt;<br>
+                        #include&lt;string.h&gt;<br>
+
+                       int main(){<br>
+                            char text[100], sub1[20], sub2[20];<br>
+                            int i, j, k, l, m, n, flag;<br>
+                            printf("Enter the text: ");<br>
+                            gets(text);<br>
+                            printf("Enter the substring to be replaced: ");<br>
+                            gets(sub1);<br>
+                            printf("Enter the new substring: ");<br>
+                            gets(sub2);<br>
+                            
+                            l = strlen(text);<br>
+                            m = strlen(sub1);<br>
+                            n = strlen(sub2);<br>
+                            
+                            for(i = 0; i &lt;= l - m; i++){<br>
+                                flag = 1;<br>
+                                for(j = 0; j &lt; m; j++){<br>
+                                    if(text[i + j] != sub1[j]){<br>
+                                        flag = 0;<br>
+                                        break;<br>
+                                    }<br>
+                                }<br>
+                                if(flag == 1){<br>
+                                    for(k = i + m; k &lt; l; k++){<br>
+                                        text[k + n - m] = text[k];<br>
+                                    }<br>
+                                    for(k = 0; k &lt; n; k++){<br>
+                                        text[i + k] = sub2[k];<br>
+                                    }<br>
+                                    l = l - m + n;<br>
+                                }<br>
+                            }<br>
+                            
+                            printf("The new text is: %s", text);<br>
+                            
+                            return 0;<br>
+                            }<br>
+                        
+                        
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<a href="Q9(b)CProg.html" class="previous"> &lt; Previous</a>
+<a href="Q10(b)CProg.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

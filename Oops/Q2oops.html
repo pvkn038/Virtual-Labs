@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+    
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>OBJECT ORIENTED PROGRAMMING THROUGH JAVA LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q2. Write a Java program that works as a simple calculator. Use a grid layout to arrange buttons for the digits and for the +, -,*, % operations. 
+            Add a text field to display the result. Handle any possible exceptions like divided by zero.</b></p>
+        <p><b>Aim:</b> To create a java program that works as a simple calculator. Use a grid layout to arrange buttons for the digits and for the +, -,*, % operations. Add a text 
+            field to display the result. Handle any possible exceptions like divided by zero.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with javac compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b><br> A Java program that works as a simple calculator can be designed using a grid layout to arrange buttons for the digits and for the +, -, *, 
+            and % operations, and a text field to display the result of calculations. The program should be able to handle any possible exceptions that may arise during calculations, 
+            such as attempts to divide by zero.<br>
+            To implement this program, the following theoretical explanation can be provided:<br>
+            1. GUI Design: The program should use a grid layout to arrange buttons for the digits 0-9 and for the +, -, *, and % operations. Additionally, a text field should be 
+            included to display the result of calculations. The GUI should be designed to be user-friendly and intuitive.<br>
+            2. User Input: The program should be designed to handle user inputs, such as button clicks, and perform calculations based on those inputs. When a user clicks a button, 
+            the program should detect which button was clicked and perform the corresponding arithmetic operation based on the current state of the calculator.<br>
+            3. Calculation Logic: The program should implement the necessary code to perform arithmetic operations (addition, subtraction, multiplication, and modulus) based on user 
+            inputs. The program should keep track of the current state of the calculator, such as the first and second operands, and update the text field with the result of each calculation.<br>
+            4. Error Handling: The program should be designed to handle any possible exceptions that may arise during use, such as attempts to divide by zero. In such cases, the program 
+            should display an appropriate error message to the user and reset the calculator to its default state.<br>
+            5. Testing: The program should be tested thoroughly to ensure that it functions correctly and handles exceptions appropriately. Testing should include edge cases and potential 
+            errors to ensure that the program is reliable and free of bugs.<br>
+            In summary, a Java program that works as a simple calculator can be designed using a grid layout to arrange buttons for the digits and arithmetic operators, and a text field to 
+            display the result of calculations. The program should be designed to handle any possible exceptions, such as attempts to divide by zero, and should be tested thoroughly to ensure 
+            reliability and accuracy.<br>
+            <style>
+                .imagecenter {
+                    width: 250px;
+                    height: 250px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }                
+            </style>
+            <img src="/images/Calculator.jpg" alt="Not Found" class="imagecenter"><br><br>
+            <b>Examples:</b><br>
+
+            Here is a theoretical example of how the Java program that works as a simple calculator can be designed:<br>
+            1. GUI Design: The program should use a grid layout to arrange buttons for the digits 0-9 and for the +, -, *, and % operations. Additionally, a text field should be included to display 
+            the result of calculations. The GUI should be designed to be user-friendly and intuitive.<br>
+            2. User Input: When the user clicks a button, the program should detect which button was clicked and perform the corresponding arithmetic operation based on the current state of the 
+            calculator. For example, if the user clicks the "2" button followed by the "+" button and then the "3" button, the program should perform the operation 2+3=5.<br>
+            3. Calculation Logic: The program should keep track of the current state of the calculator, such as the first and second operands, and update the text field with the result of each 
+            calculation. For example, if the user enters the calculation 2+3, the program should keep track of the operands (2 and 3) and the operator (+), perform the calculation, and display the 
+            result (5) in the text field.<br>
+            4. Error Handling: The program should be designed to handle any possible exceptions that may arise during use, such as attempts to divide by zero. In such cases, the program should display 
+            an appropriate error message to the user and reset the calculator to its default state.<br>
+            5. Testing: The program should be tested thoroughly to ensure that it functions correctly and handles exceptions appropriately. Testing should include edge cases and potential errors to 
+            ensure that the program is reliable and free of bugs. For example, the program should be tested with calculations that involve negative numbers, decimal points, and large numbers to ensure 
+            that the program can handle different types of inputs.<br>
+        </p>
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>
+                        Code Editor***</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                           .cnsl {
+
+                                    text-decoration: none;
+                                    display: inline-block;
+                                    background-color: rgba(29, 96, 184, 0.902);
+                                    padding: 8px;
+                                    border-radius: 6px;
+                                    border: 1px solid #d5d9d9;
+                                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                    box-sizing: border-box;
+                                    line-height: 20px;  
+                                    color: #edf0f3;
+                                }
+
+                        </style>
+                        <a href="https://onecompiler.com/" target="_blank" 
+                        class="cnsl">Try on CodeEditor</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        import javax.swing.*;<br>
+                        import java.awt.*;<br>
+                        import java.awt.event.*;<br>
+
+public class Calculator extends JFrame implements ActionListener {<br>
+    // Declare buttons and text field<br>
+    private JButton buttons[];<br>
+    private JTextField textField;<br>
+
+    // Declare variables for calculation<br>
+    private double firstOperand;<br>
+    private double secondOperand;<br>
+    private String operator;<br>
+
+    public Calculator() {<br>
+        // Set up the frame and layout<br>
+        super("Calculator");<br>
+        setSize(300, 300);<br>
+        setResizable(false);<br>
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);<br>
+        setLayout(new GridLayout(4, 4));<br>
+
+        // Initialize buttons<br>
+        buttons = new JButton[16];<br>
+        for (int i = 0; i &lt; 10; i++) {<br>
+            buttons[i] = new JButton(String.valueOf(i));<br>
+            buttons[i].addActionListener(this);<br>
+            add(buttons[i]);<br>
+        }<br>
+        buttons[10] = new JButton("+");<br>
+        buttons[11] = new JButton("-");<br>
+        buttons[12] = new JButton("*");<br>
+        buttons[13] = new JButton("/");<br>
+        buttons[14] = new JButton("%");<br>
+        buttons[15] = new JButton("=");<br>
+        for (int i = 10; i &lt; 16; i++) {<br>
+            buttons[i].addActionListener(this);<br>
+            add(buttons[i]);<br>
+        }<br>
+
+        // Initialize text field<br>
+        textField = new JTextField();<br>
+        textField.setEditable(false);<br>
+        add(textField);<br>
+
+        // Set initial state<br>
+        firstOperand = 0;<br>
+        secondOperand = 0;<br>
+        operator = "";<br>
+    }<br>
+
+    public void actionPerformed(ActionEvent e) {<br>
+        // Get the button text<br>
+        String button = e.getActionCommand();<br>
+
+        // If a digit is pressed<br>
+        if (button.matches("[0-9]")) {<br>
+            if (operator.equals("")) {<br>
+                firstOperand = firstOperand * 10 + Double.parseDouble(button);<br>
+                textField.setText(String.valueOf(firstOperand));<br>
+            } else {<br>
+                secondOperand = secondOperand * 10 + Double.parseDouble(button);<br>
+                textField.setText(String.valueOf(secondOperand));<br>
+            }<br>
+        }<br>
+        // If an operator is pressed<br>
+        else if (button.equals("+") || button.equals("-") || button.equals("*") || button.equals("/") || button.equals("%")) {<br>
+            operator = button;<br>
+        }<br>
+        // If equals is pressed<br>
+        else if (button.equals("=")) {<br>
+            double result = 0;<br>
+            try {<br>
+                switch (operator) {<br>
+                    case "+":<br>
+                        result = firstOperand + secondOperand;<br>
+                        break;<br>
+                    case "-":<br>
+                        result = firstOperand - secondOperand;<br>
+                        break;<br>
+                    case "*":<br>
+                        result = firstOperand * secondOperand;<br>
+                        break;<br>
+                    case "/":<br>
+                        if (secondOperand == 0) {<br>
+                            throw new ArithmeticException("Division by zero!");<br>
+                        }<br>
+                        result = firstOperand / secondOperand;<br>
+                        break;<br>
+                    case "%":<br>
+                        if (secondOperand == 0) {<br>
+                            throw new ArithmeticException("Modulo by zero!");<br>
+                        }<br>
+                        result = firstOperand % secondOperand;<br>
+                        break;<br>
+                }<br>
+                textField.setText(String.valueOf(result));<br>
+            } catch (ArithmeticException ex) {<br>
+                textField.setText(ex.getMessage());<br>
+            }<br>
+            firstOperand = result;<br>
+            secondOperand = 0;<br>
+            operator = "";<br>
+        }<br>
+    }<br>
+
+    public static void main(String[] args) {<br>
+        Calculator calculator = new Calculator();<br>
+        calculator.setVisible(true);<br>
+    }<br>
+}<br>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        import javax.swing.*;<br>
+                        import java.awt.*;<br>
+                        import java.awt.event.*;<br>
+
+public class Calculator extends JFrame implements ActionListener {<br>
+
+    private JTextField display;<br>
+    private double currentValue = 0.0;<br>
+    private String currentOperation = "";<br>
+    private boolean clearOnNextDigit = false;<br>
+
+    public Calculator() {<br>
+        super("Calculator");<br>
+
+        JPanel panel = new JPanel(new GridLayout(4, 4));<br>
+        display = new JTextField();<br>
+        display.setEditable(false);<br>
+
+        JButton[] buttons = new JButton[16];<br>
+        String[] buttonLabels = {"7", "8", "9", "/", "4", "5", "6", "*", "1", "2", "3", "-", "0", ".", "%", "+"};<br>
+
+        for (int i = 0; i &lt; 16; i++) {<br>
+            buttons[i] = new JButton(buttonLabels[i]);<br>
+            buttons[i].addActionListener(this);<br>
+            panel.add(buttons[i]);<br>
+        }<br>
+
+        setLayout(new BorderLayout());<br>
+        add(display, BorderLayout.NORTH);<br>
+        add(panel, BorderLayout.CENTER);<br>
+
+        setSize(300, 300);<br>
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);<br>
+        setResizable(false);<br>
+    }<br>
+
+    public void actionPerformed(ActionEvent e) {<br>
+        String command = e.getActionCommand();<br>
+
+        try {<br>
+            double value = Double.parseDouble(command);<br>
+
+            if (clearOnNextDigit) {<br>
+                currentValue = 0.0;<br>
+                clearOnNextDigit = false;<br>
+            }<br>
+
+            currentValue = currentValue * 10 + value;<br>
+            display.setText(Double.toString(currentValue));<br>
+        } catch (NumberFormatException ex) {<br>
+            if (command.equals(".")) {<br>
+                if (!display.getText().contains(".")) {<br>
+                    display.setText(display.getText() + ".");<br>
+                }<br>
+            } else if (command.equals("+") || command.equals("-") || command.equals("*") || command.equals("/") || command.equals("%")) {<br>
+                if (currentOperation.equals("")) {<br>
+                    currentValue = Double.parseDouble(display.getText());<br>
+                    clearOnNextDigit = true;<br>
+                } else {<br>
+                    performOperation();<br>
+                }<br>
+
+                currentOperation = command;<br>
+            } else if (command.equals("=")) {<br>
+                performOperation();<br>
+                currentOperation = "";<br>
+            }<br>
+        }<br>
+    }<br>
+
+    private void performOperation() {<br>
+        double newValue = Double.parseDouble(display.getText());<br>
+        double result = 0.0;<br>
+
+        try {<br>
+            switch (currentOperation) {<br>
+                case "+":<br>
+                    result = currentValue + newValue;<br>
+                    break;<br>
+                case "-":<br>
+                    result = currentValue - newValue;<br>
+                    break;<br>
+                case "*":<br>
+                    result = currentValue * newValue;<br>
+                    break;<br>
+                case "/":<br>
+                    if (newValue == 0) {<br>
+                        throw new ArithmeticException("Divide by zero");<br>
+                    }<br>
+                    result = currentValue / newValue;<br>
+                    break;<br>
+                case "%":<br>
+                    if (newValue == 0) {<br>
+                        throw new ArithmeticException("Modulo by zero");<br>
+                    }<br>
+                    result = currentValue % newValue;<br>
+                    break;<br>
+            }<br>
+
+            currentValue = result;<br>
+            display.setText(Double.toString(result));<br>
+            clearOnNextDigit = true;<br>
+        } catch (ArithmeticException ex) {<br>
+            display.setText(ex.getMessage());<br>
+            clearOnNextDigit = true;<br>
+        }<br>
+    }<br>
+
+    public static void main(String[] args) {<br>
+        Calculator calculator = new Calculator();<br>
+        calculator.setVisible(true);<br>
+    }<br>
+}<br>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<!--<a href="#" class="previous"> &lt; Previous</a>-->
+<a href="Q1oops.html" class="previous"> &lt; Previous</a>
+<a href="Q3oops.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

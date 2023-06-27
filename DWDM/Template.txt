@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/vlab.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/images/Capture.PNG" alt="Bootstrap" width="180" height="72">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/htmlfiles/aboutUs.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/htmlfiles/Syllabus.html">Syllabus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/htmlfiles/VLabs.html">VLabs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/htmlfiles/ContactUs.html">Contact Us</a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>Computer Programming Using C 
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q1. Write a C Program to find the factorial of a positive number</b></p>
+        <p><b>Aim:</b> To find the factorial of a positive Integer</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with GCC compiler installed in
+            it.</p>
+        <p><b>Description:</b></p>
+        <p align="justify"><b>Theory :</b> In Mathematics, factorial is an important function, which is used to find how
+            many ways things can
+            be arranged or the ordered set of numbers. The well known interpolating function of the factorial function
+            was discovered by Daniel Bernoulli. The factorial concept is used in many mathematical concepts such as
+            probability, permutations and combinations, sequences and series, etc. In short, a factorial is a function
+            that multiplies a number by every number below it till 1. For example, the factorial of 3 represents the
+            multiplication of numbers 3, 2, 1, i.e. 3! = 3 × 2 × 1 and is equal to 6.<br>
+            The factorial function (symbol: !)
+            says to multiply all whole numbers from our chosen number down to 1.<br>
+            <img src="/images/factorial.png" alt="Not Found"><br><br>
+            <b>Examples:</b><br>
+
+            4! = 4 × 3 × 2 × 1 = 24<br>
+            7! = 7 × 6 × 5 × 4 × 3 × 2 × 1 = 5040<br>
+            1! = 1<br>
+        </p>
+
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Code Editor***
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href="http://localhost/code_editor_project/User_Interface/ide.html" target="_blank"><b>Try on
+                                Code
+                                Editor</b></a><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        #include &lt;stdio.h&gt;<br>
+                        int main() {<br>
+                        int n, i;<br>
+                        unsigned long long fact = 1;<br>
+                        printf("Enter an integer: ");<br>
+                        scanf("%d", &n);<br>
+
+                        // shows error if the user enters a negative integer<br>
+                        if (n < 0)<br>
+                            printf("Error! Factorial of a negative number doesn't exist.");<br>
+                            else {<br>
+                            for (i = 1; i <= n; ++i) {<br>
+                                fact *= i;<br>
+                                }<br>
+                                printf("Factorial of %d = %llu", n, fact);<br>
+                                }<br>
+
+                                return 0;<br>
+                                }<br>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        #include &lt;stdio.h&gt;<br>
+                        long int multiplyNumbers(int n);<br>
+                        int main() {<br>
+                        int n;<br>
+                        printf("Enter a positive integer: ");<br>
+                        scanf("%d",&n);<br>
+                        printf("Factorial of %d = %ld", n, multiplyNumbers(n));<br>
+                        return 0;<br>
+                        }<br>
+                        <br>
+                        long int multiplyNumbers(int n) {<br>
+                        if (n>=1)<br>
+                        return n*multiplyNumbers(n-1);<br>
+                        else<br>
+                        return 1;<br>
+                        }<br>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

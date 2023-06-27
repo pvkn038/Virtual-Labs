@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+    
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>OBJECT ORIENTED PROGRAMMING THROUGH JAVA LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q4. Write a Java program that implements a multi-thread application that has three threads. First thread generates random integer every 1 second 
+            and if the value is even, second thread computes the square of the number and prints. If the value is odd, the third thread will print the value of cube of the number.</b></p>
+        <p><b>Aim:</b> To develop a Java program that implements a multi-threaded application consisting of three threads, where the first thread generates a random integer every second, 
+            and if the value is even, it communicates with the second thread to compute and print the square of the number, and if the value is odd, it communicates with the third thread 
+            to print the cube of the number. The program should demonstrate the use of multi-threading concepts in Java and handle thread communication efficiently.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with javac compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b><br> The Java program we are testing is a multi-threaded application that involves three threads. The first thread is responsible for generating 
+            random integers every second. The second thread checks if the number is even, calculates the square of the number and prints the result. The third thread checks if the 
+            number is odd, calculates the cube of the number and prints the result.<br>
+            The experiment aims to verify the correctness of the program and to measure its performance. We will create a test plan that involves running the program with different 
+            input values and measuring the output produced by each thread.<br>
+            Test Plan:<br>
+            1. Input Test: We will test the program with different input values to ensure that the program produces the correct output for each scenario. We will test with a range of 
+            integer values from -100 to 100 to test the program's ability to handle positive and negative values.<br>
+            2. Performance Test: We will measure the program's performance by measuring the time it takes to generate random numbers and perform the computations. We will use a timer 
+            to measure the elapsed time between the start and end of the program.<br>
+            3. Stress Test: We will test the program's ability to handle a large number of requests by generating a large number of random numbers and measuring the program's ability 
+            to handle the load.<br>
+            4. Error Handling Test: We will test the program's ability to handle errors by passing invalid inputs to the program, such as non-integer values, and measuring how the 
+            program responds.<br>
+            5. Concurrency Test: We will test the program's ability to handle concurrency by simulating multiple threads generating and processing numbers simultaneously.<br>
+            Expected Results:<br>
+            1. Input Test: The program should produce the correct output for each input value. For even numbers, the program should calculate the square of the number and print the 
+            result. For odd numbers, the program should calculate the cube of the number and print the result.<br>
+            2. Performance Test: The program should generate and process numbers within a reasonable time frame. The elapsed time should be within an acceptable range.<br>
+            3. Stress Test: The program should be able to handle a large number of requests without crashing or producing errors.<br>
+            4. Error Handling Test: The program should handle errors gracefully by producing an error message or terminating gracefully.<br>
+            5. Concurrency Test: The program should be able to handle multiple threads generating and processing numbers simultaneously without producing errors or unexpected results.<br><br>
+            <style>
+                .imagecenter {
+                    width: 550px;
+                    height: 400px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }                
+            </style>
+            <img src="/images/multi thread.jpg" alt="Not Found" class="imagecenter"><br><br>
+            <b>Examples:</b><br>
+            Suppose the first thread generates the following sequence of random integers:<br>
+            1, 4, 7, 10, 12, 16<br>
+            The second thread, which checks for even numbers, will calculate the square of 4, 10, and 12 and print the results:<br>
+            4 squared is 16<br>
+            10 squared is 100<br>
+            12 squared is 144<br>
+            The third thread, which checks for odd numbers, will calculate the cube of 1, 7, and 16 and print the results:<br>
+            1 cubed is 1<br>
+            7 cubed is 343<br>
+            16 cubed is 4096<br>
+            So the final output of the program would be:<br>
+            4 squared is 16<br>
+            1 cubed is 1<br>
+            10 squared is 100<br>
+            7 cubed is 343<br>
+            12 squared is 144<br>
+            16 cubed is 4096<br>
+            This is just a simple example, but it illustrates how the program would work in practice.<br>
+        </p>
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>
+                        Code Editor***</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                           .cnsl {
+
+                                    text-decoration: none;
+                                    display: inline-block;
+                                    background-color: rgba(29, 96, 184, 0.902);
+                                    padding: 8px;
+                                    border-radius: 6px;
+                                    border: 1px solid #d5d9d9;
+                                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                    box-sizing: border-box;
+                                    line-height: 20px;  
+                                    color: #edf0f3;
+                                }
+
+                        </style>
+                        <a href="https://onecompiler.com/" target="_blank" 
+                        class="cnsl">Try on CodeEditor</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        
+                        import java.util.Random;<br>
+
+                        class RandomNumberThread extends Thread {<br>
+                            public void run() {<br>
+                                Random random = new Random();<br>
+                                for (int i = 0; i &lt; 10; i++) {<br>
+                                    int randomInteger = random.nextInt(100);<br>
+                                    System.out.println("Random Integer generated : " + randomInteger);<br>
+                                    if((randomInteger%2) == 0) {<br>
+                                        SquareThread sThread = new SquareThread(randomInteger);<br>
+                                        sThread.start();<br>
+                                    }<br>
+                                    else {<br>
+                                        CubeThread cThread = new CubeThread(randomInteger);<br>
+                                        cThread.start();<br>
+                                    }<br>
+                                    try {<br>
+                                        Thread.sleep(1000);<br>
+                                    } <br>
+                                    catch (InterruptedException ex) {<br>
+                                        System.out.println(ex);<br>
+                                    }<br>
+                                }<br>
+                            }<br>
+                        }<br>
+                        
+                        class SquareThread extends Thread {<br>
+                            int number;<br>
+                        
+                            SquareThread(int randomNumbern) {<br>
+                                number = randomNumbern;<br>
+                            }<br>
+                        
+                            public void run() {<br>
+                                System.out.println("Square of " + number + " = " + (number * number));<br>
+                            }<br>
+                        }<br>
+                        
+                        class CubeThread extends Thread {<br>
+                            int number;<br>
+                        
+                            CubeThread(int randomNumber) {<br>
+                                number = randomNumber;<br>
+                            }<br>
+                        
+                            public void run() {<br>
+                                System.out.println("Cube of " + number + " = " + number * number * number);<br>
+                            }<br>
+                        }<br>
+                        
+                        public class MultiThreadingTest {<br>
+                            public static void main(String args[]) {<br>
+                                RandomNumberThread rnThread = new RandomNumberThread();<br>
+                                rnThread.start();<br>
+                            }<br>
+                        }<br>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        import java.util.LinkedList;<br>
+                        import java.util.Queue;<br>
+                        import java.util.Random;<br>
+
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        Queue<Integer> queue = new LinkedList&lt;&gt;();<br>
+        Random random = new Random();<br>
+
+        Thread t1 = new Thread(() -&gt; {<br>
+            while (true) {<br>
+                int num = random.nextInt(100);<br>
+                System.out.println("Generated number: " + num);<br>
+
+                synchronized (queue) {<br>
+                    queue.add(num);<br>
+                    queue.notifyAll();<br>
+                }<br>
+
+                try {<br>
+                    Thread.sleep(1000);<br>
+                } catch (InterruptedException e) {<br>
+                    e.printStackTrace();<br>
+                }<br>
+            }<br>
+        });<br>
+
+        Thread t2 = new Thread(() -&gt; {<br>
+            while (true) {<br>
+                synchronized (queue) {<br>
+                    while (queue.isEmpty() || queue.peek() % 2 != 0) {<br>
+                        try {<br>
+                            queue.wait();<br>
+                        } catch (InterruptedException e) {<br>
+                            e.printStackTrace();<br>
+                        }<br>
+                    }<br>
+
+                    int num = queue.remove();<br>
+                    int square = num * num;<br>
+                    System.out.println("Square of " + num + " is " + square);<br>
+                }<br>
+            }<br>
+        });<br>
+
+        Thread t3 = new Thread(() -&gt; {<br>
+            while (true) {<br>
+                synchronized (queue) {<br>
+                    while (queue.isEmpty() || queue.peek() % 2 == 0) {<br>
+                        try {<br>
+                            queue.wait();<br>
+                        } catch (InterruptedException e) {<br>
+                            e.printStackTrace();<br>
+                        }<br>
+                    }<br>
+
+                    int num = queue.remove();<br>
+                    int cube = num * num * num;<br>
+                    System.out.println("Cube of " + num + " is " + cube);<br>
+                }<br>
+            }<br>
+        });<br>
+
+        t1.start();<br>
+        t2.start();<br>
+        t3.start();<br>
+    }
+}<br>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<!--<a href="#" class="previous"> &lt; Previous</a>-->
+<a href="Q3oops.html" class="previous"> &lt; Previous</a>
+<a href="Q5oops.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

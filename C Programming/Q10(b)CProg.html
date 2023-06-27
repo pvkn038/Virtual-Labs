@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>C PROGRAMMING FOR PROBLEM SOLVING LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q10(b). Write a C program that reads 15 names each of up to 30 characters, stores them in an array, and uses an array of pointers to display them in ascending (ie. alphabetical) order.</b></p>
+        <p><b>Aim:</b> To implement a C program that reads 15 names each of up to 30 characters, stores them in an array, and uses an array of pointers to display them in ascending (ie. alphabetical) order.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with GCC compiler installed in it.</p>
+        
+        <p align="justify"><b>Description:</b><br> This C program demonstrates the use of arrays and pointers in organizing and displaying data. The program first prompts the user to input 15 names, each of up to 30 characters. These names are stored in a 
+            single-dimensional array, for example, let's say the array is named "names". The program then uses an array of pointers, with each element pointing to a name stored in the "names" array. This array of pointers is named "pointers", where 
+            "pointers[i]" points to "names[i]".<br>
+            To sort the names in ascending order, the program uses a sorting algorithm such as Bubble Sort. The algorithm compares the ASCII values of the names pointed to by consecutive elements in the "pointers" array. If the ASCII value of 
+            "pointers[i]" is greater than "pointers[i+1]", the two elements are swapped. This process continues until the "pointers" array is sorted in ascending order.<br>
+            Mathematically, let's say the "names" array has elements "A", "C", "B", and "pointers" array has elements "p1", "p2", "p3". Initially, "p1" points to "A", "p2" points to "C", and "p3" points to "B". After sorting, "p1" points to "A", "p2" 
+            points to "B", and "p3" points to "C".<br>
+            The sorted "pointers" array is then used to display the names in the desired order. This program highlights the use of pointers as a means of organizing and manipulating data, as well as the sorting algorithms used to arrange data in a 
+            specific order.<br><br>
+            
+            
+
+        <style>
+            .imagecenter {
+                width: 600px;
+                height: 300px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+            }                
+        </style>        
+        <img src="/images/readstring.jpg" alt="Not Found" class="imagecenter"><br><br>
+        <b>Examples:</b><br>
+        For Example:  
+        let's say the "names" array has elements "John", "Alice", "Bob", and the "pointers" array has elements "p1", "p2", "p3". Initially, "p1" points to "John", "p2" points to "Alice", and "p3" points to "Bob". After sorting, "p1" points to "Alice", 
+        "p2" points to "Bob", and "p3" points to "John".<br>
+        The sorted "pointers" array is then used to display the names in the desired order. This program highlights the use of pointers as a means of organizing and manipulating data, as well as the sorting algorithms used to arrange data in a specific 
+        order.<br>
+        </p>
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>
+                        Code Editor***</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <style>
+                            .cnsl {
+
+                                text-decoration: none;
+                                display: inline-block;
+                                background-color: rgba(29, 96, 184, 0.902);
+                                padding: 8px;
+                                border-radius: 6px;
+                                border: 1px solid #d5d9d9;
+                                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                box-sizing: border-box;
+                                line-height: 20px;  
+                                color: #edf0f3;
+                            }
+
+                        </style>
+                        <a href="https://onecompiler.com/c" target="_blank" class="cnsl">Try on
+                                Code
+                                Editor</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        #include&lt;stdio.h&gt;<br>
+                        #include&lt;string.h&gt;<br>
+                            
+                            #define MAX_NAMES 15<br>
+                            #define MAX_LENGTH 30<br>
+                            
+                            int main() {<br>
+                                char names[MAX_NAMES][MAX_LENGTH]; // array to store names<br>
+                                char *pointers[MAX_NAMES]; // array of pointers to store addresses of names<br>
+                            
+                                // Prompt user to input names<br>
+                                printf("Enter %d names, each up to %d characters:\n", MAX_NAMES, MAX_LENGTH - 1);<br>
+                                for (int i = 0; i &lt; MAX_NAMES; i++) {<br>
+                                    scanf("%s", names[i]);<br>
+                                    pointers[i] = names[i];<br>
+                                }<br>
+                            
+                                // Sort names in ascending order using pointers array<br>
+                                char *temp;<br>
+                                for (int i = 0; i &lt; MAX_NAMES - 1; i++) {<br>
+                                    for (int j = 0; j &lt; MAX_NAMES - i - 1; j++) {<br>
+                                        if (strcmp(pointers[j], pointers[j + 1]) > 0) {<br>
+                                            temp = pointers[j];<br>
+                                            pointers[j] = pointers[j + 1];<br>
+                                            pointers[j + 1] = temp;<br>
+                                        }<br>
+                                    }<br>
+                                }<br>
+                            
+                                // Display names in ascending order<br>
+                                printf("\nNames in ascending order:\n");<br>
+                                for (int i = 0; i &lt; MAX_NAMES; i++) {<br>
+                                    printf("%s\n", pointers[i]);<br>
+                                }<br>
+                                return 0;<br>
+                            }<br>
+                            
+                        
+                            
+                                
+                        
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        #include&lt;stdio.h&gt;<br>
+                        #include&lt;string.h&gt;<br>
+
+                            #define MAX_NAMES 15<br>
+                            #define MAX_LENGTH 30<br>
+                            
+                            int main() {<br>
+                                char names[MAX_NAMES][MAX_LENGTH] = {"John", "Alice", "Bob", "Charlie", "David", "Emily", "Frank", "Grace", "Henry", "Isabelle", "James", "Karen", "Luke", "Mia", "Nathan"};<br>
+                                char *pointers[MAX_NAMES]; // array of pointers to store addresses of names<br>
+                            
+                                // Store addresses of names in pointers array<br>
+                                for (int i = 0; i &lt; MAX_NAMES; i++) {<br>
+                                    pointers[i] = names[i];<br>
+                                }<br>
+                            
+                                // Sort names in ascending order using pointers array<br>
+                                char *temp;<br>
+                                for (int i = 0; i &lt; MAX_NAMES - 1; i++) {<br>
+                                    for (int j = 0; j &lt; MAX_NAMES - i - 1; j++) {<br>
+                                        if (strcmp(pointers[j], pointers[j + 1]) > 0) {<br>
+                                            temp = pointers[j];<br>
+                                            pointers[j] = pointers[j + 1];<br>
+                                            pointers[j + 1] = temp;<br>
+                                        }<br>
+                                    }<br>
+                                }<br>
+                            
+                                // Display names in ascending order<br>
+                                printf("Names in ascending order:\n");<br>
+                                for (int i = 0; i &lt; MAX_NAMES; i++) {<br>
+                                    printf("%s\n", pointers[i]);<br>
+                                }<br>
+                                return 0;<br>
+                            }<br>
+                        
+                        
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<a href="Q10(a)CProg.html" class="previous"> &lt; Previous</a>
+<a href="Q11(a)CProg.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

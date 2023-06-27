@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>C PROGRAMMING FOR PROBLEM SOLVING LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q9(a). Write a C program that uses functions to perform the following operations:<br>
+            i) To insert a sub-string into a given main string from a given position.<br>
+            ii) To delete n characters from a given position in a given string.</b></p>
+        <p><b>Aim:</b> To design a C program that utilizes functions to perform the operations of inserting a sub-string into a given main string from a specific position and to delete n characters from 
+            a given position in a given string. The program will demonstrate the ability to manipulate strings in C programming by implementing the aforementioned operations.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with GCC compiler installed in it.</p>
+        
+        <p align="justify"><b>Description:</b><br> To perform the operations described above, we will create two functions in C: one to insert a sub-string into a main string and one to delete characters from a 
+            string. These functions will take the following parameters:<br>
+            Insert function:
+            <ul style="list-style-type:square">
+            <li>A character array (string) to store the main string</li>
+            <li>An integer to represent the position where the sub-string should be inserted</li>
+            <li>A character array (sub-string) to be inserted into the main string.</li></ul>
+            Delete function:<br><br>
+            <ul style="list-style-type:square">
+            <li>A character array (string) to store the main string</li>
+            <li>An integer to represent the position from where characters should be deleted</li>
+            <li>An integer to represent the number of characters to be deleted.</li></ul>
+            The insert function will start by allocating enough memory to store the main string, the sub-string and the inserted string. This can be done using the malloc function. Next, the sub-string will 
+            be inserted into the main string by using a loop to copy the characters from the main string and the sub-string into the new string. The loop will start at the specified position and copy characters 
+            from the main string until the end of the string, then it will copy characters from the sub-string until the end of the sub-string. Finally, the new string will be returned as the result of the 
+            function.<br>
+            The delete function will start by allocating enough memory to store the main string and the modified string. This can be done using the malloc function. Next, the characters to be deleted will be 
+            skipped over by using a loop to copy the characters from the main string into the new string, starting at the specified position. The loop will continue until the end of the main string, and the 
+            new string will be returned as the result of the function.<br>
+            The experimental theory will be tested by running the functions with different inputs and verifying that the correct output is produced. For example, if the main string is "Hello, world!" and the 
+            sub-string is "there", the insert function should return "Hello, there world!" if the position is 7. If the main string is "Hello, world!" and the position is 7 and the number of characters to 
+            delete is 6, the delete function should return "Hello, world".<br>
+            Let's consider the main string "Hello", the sub-string "there" and the position 2. The program will insert the sub-string into the main string as shown below:<br>
+            "Hetherello"<br>
+            Delete n characters from a given position in a given string needs to create a function that takes three inputs, the main string, the position, and the number of characters to be deleted. The 
+            program then uses string manipulation functions to shift the characters in the main string after the given position, n spaces to the left, effectively deleting the characters.<br><br>
+            
+
+        <style>
+            .imagecenter {
+                width: 400px;
+                height: 280px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+            }                
+        </style>        
+        <img src="/images/insert substring.jpg" alt="Not Found" class="imagecenter"><br><br>
+        <img src="/images/delete n.jpg" alt="Not Found" class="imagecenter"><br><br>
+        <b>Examples:</b><br>
+        For Example:  
+        
+        Let's consider the main string "Hello", the position 2, and the number of characters to be deleted as 2. The program will delete the characters from the main string as shown below:<br>
+        "Heo"<br>
+        </p>
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>
+                        Code Editor***</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <style>
+                            .cnsl {
+
+                                text-decoration: none;
+                                display: inline-block;
+                                background-color: rgba(29, 96, 184, 0.902);
+                                padding: 8px;
+                                border-radius: 6px;
+                                border: 1px solid #d5d9d9;
+                                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                box-sizing: border-box;
+                                line-height: 20px;  
+                                color: #edf0f3;
+                            }
+
+                        </style>
+                        <a href="https://onecompiler.com/c" target="_blank" class="cnsl">Try on
+                                Code
+                                Editor</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <b>i) To insert a sub-string into a given main string from a given position.</b><br>
+                        #include&lt;stdio.h&gt;<br>
+                        #include&lt;string.h&gt;<br>
+                            
+                            void insert_substring(char main_string[], char substring[], int position) {<br>
+                              int main_string_length = strlen(main_string);<br>
+                              int substring_length = strlen(substring);<br>
+                            
+                              // Shift the characters in the main string to the right to make room for the substring<br>
+                              for (int i = main_string_length - 1; i >= position; i--) {<br>
+                                main_string[i + substring_length] = main_string[i];<br>
+                              }<br>
+                            
+                              // Insert the substring into the main string<br>
+                              for (int i = 0; i &lt; substring_length; i++) {<br>
+                                main_string[position + i] = substring[i];<br>
+                              }<br>
+                            }<br>
+                            
+                            int main() {<br>
+                              char main_string[100] = "Hello, World!";<br>
+                              char substring[100] = "beautiful ";<br>
+                              int position = 7;<br>
+                            
+                              printf("Original main string: %s\n", main_string);<br>
+                            
+                              insert_substring(main_string, substring, position);<br>
+                            
+                              printf("Modified main string: %s\n", main_string);<br>
+                            
+                              return 0;<br>
+                            }<br>
+                        
+                        
+                            
+                                
+                        
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <b>ii) To delete n characters from a given position in a given string.</b><br>
+                        #include&lt;stdio.h&gt;<br>
+                        #include&lt;string.h&gt;<br>
+                        #define MAX_LEN 100<br>
+                            
+                            void delete_characters(char str[], int position, int n) {<br>
+                            int len = strlen(str);<br>
+                            if (position + n > len) {<br>
+                            printf("Error: Cannot delete more characters than present in the string.\n");<br>
+                            return;<br>
+                            }<br>
+                            for (int i = position; i &lt;= len - n; i++) {<br>
+                            str[i] = str[i + n];<br>
+                            }<br>
+                            str[len - n] = '\0';<br>
+                            }<br>
+                            
+                            int main() {<br>
+                            char str[MAX_LEN];<br>
+                            int position, n;<br>
+                            
+                            printf("Enter a string: ");<br>
+                            scanf("%s", str);<br>
+                            printf("Enter the position from where characters are to be deleted: ");<br>
+                            scanf("%d", &position);<br>
+                            printf("Enter the number of characters to be deleted: ");<br>
+                            scanf("%d", &n);<br>
+                            
+                            delete_characters(str, position, n);<br>
+                            printf("The modified string is: %s\n", str);<br>
+                            
+                            return 0;<br>
+                            }<br>
+                        
+                        
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<a href="Q8(b)CProg.html" class="previous"> &lt; Previous</a>
+<a href="Q9(b)CProg.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

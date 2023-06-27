@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>C PROGRAMMING FOR PROBLEM SOLVING LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q2(b). A Fibonacci sequence is defined as follows: the first and second terms in the sequence are 0 and 1. Subsequent 
+            terms are found by adding the preceding two terms in the sequence. Write a C program to generate the first n terms of the sequence.</b></p>
+        <p><b>Aim:</b> Using fibonacci sequence program to generate the first n terms of the sequence.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with GCC compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b><br> The Fibonacci sequence is a series of numbers in which each number is the sum of the two preceding ones, usually 
+        starting with 0 and 1. The sequence goes as follows: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ... and so on. The Fibonacci sequence is named after 
+        the Italian mathematician Leonardo Fibonacci, who introduced the series to Western mathematics in his 1202 book Liber Abaci.<br>
+        The Fibonacci sequence has many interesting properties and is found in many natural phenomena, such as the branching of trees, the arrangement 
+        of leaves on a stem, the fruitlets of a pineapple, the flowering of an artichoke, and even in the family tree of honeybees.<br>
+        In mathematics, the Fibonacci sequence is an example of a recurrence relation, which is a way to define a sequence where each term depends 
+        on the previous terms. The Fibonacci sequence can be defined mathematically by the recurrence relation F(n) = F(n-1) + F(n-2) with seed 
+        values F(0) = 0, F(1) = 1. It also has a closed-form expression as a function of the golden ratio, which is a number that is approximately 
+        equal to 1.6180339887.<br>
+        The Fibonacci sequence has many applications in computer science, such as in the design of algorithms for computing the greatest common 
+        divisor of two integers and in the generation of pseudo-random numbers.<br>
+        For example, if we want to find the fifth term in the Fibonacci sequence (F(5)), we can use the recurrence relation F(n) = F(n-1) + F(n-2) as follows:<br>
+        F(5) = F(4) + F(3)<br>
+        To find F(4) and F(3), we can use the recurrence relation again:<br>
+        F(4) = F(3) + F(2) and F(3) = F(2) + F(1)<br>
+        Now we have to find F(2) and F(1), which are already given as seed values and equal to 1 and 0 respectively.So,<br>
+        F(5) = (F(3) + F(2)) + (F(2) + F(1)) = (1 + 1) + (1 + 0) = 2 + 1 = 3<br>
+        Thus, the fifth term in the Fibonacci sequence is 3.<br>
+        As you can see in the above example, the Fibonacci sequence is defined by a simple mathematical formula, but it leads to a series of 
+        numbers that exhibit a variety of interesting properties and patterns. There are many ways to generate Fibonacci sequence and this is one 
+        of the simple way.<br>
+
+
+        <style>
+            .imagecenter {
+                width: 280px;
+                height: 250px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+            }                
+        </style>  
+        <img src="/images/Fibonacci-Sequence.jpg" alt="Not Found" class="imagecenter"><br><br>
+        <b>Examples:</b><br>
+
+        For Example: to find the 7th number in the sequence, you would use the following steps:<br>
+        1. 0 + 1 = 1 (2nd number in the sequence)<br>
+        2. 1 + 1 = 2 (3rd number in the sequence)<br>
+        3. 1 + 2 = 3 (4th number in the sequence)<br>
+        4. 2 + 3 = 5 (5th number in the sequence)<br>
+        5. 3 + 5 = 8 (6th number in the sequence)<br>
+        6. 5 + 8 = 13 (7th number in the sequence)<br>
+        Therefore, the 7th number in the Fibonacci sequence is 13.<br>
+        </p>
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>
+                        Code Editor***</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <style>
+                            .cnsl {
+
+                                text-decoration: none;
+                                display: inline-block;
+                                background-color: rgba(29, 96, 184, 0.902);
+                                padding: 8px;
+                                border-radius: 6px;
+                                border: 1px solid #d5d9d9;
+                                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                box-sizing: border-box;
+                                line-height: 20px;  
+                                color: #edf0f3;
+                            }
+
+                        </style>
+                        <a href="https://onecompiler.com/c" target="_blank" class="cnsl">Try on
+                                Code
+                                Editor</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        #include&lt;stdio.h&gt;<br>
+
+                            int main() {<br>
+                                int n, first = 0, second = 1, next, c;<br>
+                            
+                                printf("Enter the number of terms: ");<br>
+                                scanf("%d", &n);<br>
+                            
+                                printf("First %d terms of the Fibonacci sequence: \n", n);<br>
+                            
+                                for (c = 0; c &lt; n; c++) {<br>
+                                    if (c &lt;= 1)<br>
+                                        next = c;<br>
+                                    else {<br>
+                                        next = first + second;<br>
+                                        first = second;<br>
+                                        second = next;<br>
+                                    }<br>
+                                    printf("%d, ", next);<br>
+                                }<br>
+                            
+                                return 0;<br>
+                            }<br>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        #include&lt;stdio.h&gt;<br>
+                        #include&lt;conio.h&gt;<br>
+                            void main()<br>
+                            {<br>
+                             int a = 0, b = 1, lengthOfSeries = 0, counter, sum = 0;<br>
+                             clrscr();<br>
+                             printf("Enter the length of series \n ");<br>
+                             scanf("%d", &lengthOfSeries);<br>
+                             printf("Fibonacci series\n");<br>
+                             printf("%d  %d", a, b);<br>
+                             for(counter = 2; counter &lt; lengthOfSeries; counter++)<br>
+                             {<br>
+                              sum = a + b;<br>
+                              printf("  %d",sum);<br>
+                              a = b;<br>
+                              b = sum;<br>
+                             }<br>
+                             getch();<br>
+                            }<br>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<a href="Q2(a)CProg.html" class="previous"> &lt; Previous</a>
+<a href="Q3(a)CProg.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/vlab.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="Description">
+        <h4> DESIGN AND ANALYSIS OF ALGORITHMS LAB
+            <hr>
+        </h4>
+    <p style="color:red;"><b>Q11. Implement All-Pairs Shortest Paths Problem using Floyd's algorithm. Parallelize this algorithm, implement it using Open MP and determine the speed-up achieved.
+        </b></p>
+    <p><b>Aim:</b> To implement All-Pairs Shortest Paths Problem using Floyd's algorithm. Parallelize this algorithm, implement it using OpenMP and determine the speed-up achieved.
+    </p>
+    <p><b>System and Software Requirements:</b>
+        A Computer with any Operating system with GCC compiler installed in it.</p>
+    <b>DESCRIPTION:</b>
+        <p>The Floyd's algorithm is a graph analysis algorithm for finding shortest paths in a weighted graph with positive or negative edge weights (but with no negative cycles, see below) and also for finding transitive closure of a relation R. A single execution of the algorithm will find the lengths (summed weights) of the shortest paths between all pairs of vertices, though it does not return details of the paths themselves.</p>
+        <b>Algorithm:</b><br><pre><code class="hljs oxygene"> let dist be a |V| x |V| <span class="hljs-keyword">array</span> <span class="hljs-keyword">of</span> minimum distances initialized <span class="hljs-keyword">to</span> infinity
+            <span class="hljs-keyword">for</span> <span class="hljs-keyword">each</span> vertex v
+               dist[v][v] &lt;- <span class="hljs-number">0</span>
+            <span class="hljs-keyword">for</span> <span class="hljs-keyword">each</span> edge (u,v)
+               dist[u][v] &lt;- w(u,v)  <span class="hljs-comment">// the weight of the edge (u,v)</span>
+            <span class="hljs-keyword">for</span> k <span class="hljs-keyword">from</span> <span class="hljs-number">1</span> <span class="hljs-keyword">to</span> |V|
+               <span class="hljs-keyword">for</span> i <span class="hljs-keyword">from</span> <span class="hljs-number">1</span> <span class="hljs-keyword">to</span> |V|
+                  <span class="hljs-keyword">for</span> j <span class="hljs-keyword">from</span> <span class="hljs-number">1</span> <span class="hljs-keyword">to</span> |V|
+                     <span class="hljs-keyword">if</span> dist[i][j] &gt; dist[i][k] + dist[k][j] 
+                        dist[i][j] &lt;- dist[i][k] + dist[k][j]
+                    <span class="hljs-keyword">end</span> <span class="hljs-keyword">if</span>
+           </code></pre>
+
+
+
+
+
+
+
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Code Editor***
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                            .cnsl {
+ 
+                                     text-decoration: none;
+                                     display: inline-block;
+                                     background-color: rgba(29, 96, 184, 0.902);
+                                     padding: 8px;
+                                     border-radius: 6px;
+                                     border: 1px solid #d5d9d9;
+                                     box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                     box-sizing: border-box;
+                                     line-height: 20px;  
+                                     color: #edf0f3;
+                                 }
+ 
+                         </style>
+                    <a href="https://onecompiler.com/c" target="_blank"
+                            class="cnsl">Try on Code Editor</a><br>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        #include&lt;stdio.h&gt;<br>
+
+                            const int MAX = 10;<br>
+                            void fnTopological(int a[MAX][MAX], int n);<br>
+                            int main(void)
+                            {<br>
+                                int a[MAX][MAX],n;<br>
+                                int i,j;<br>
+                            
+                                printf("Topological Sorting Algorithm -\n");<br>
+                                printf("\nEnter the number of vertices : ");<br>
+                                 scanf("%d",&n);<br>
+                            
+                                printf("Enter the adjacency matrix -\n");<br>
+                                for (i=0;i&lt;n;i++)<br>  
+                                    for (j=0;j&lt;n;j++)<br> 
+                                        scanf("%d",&a[i][j]);<br>
+                            
+                                fnTopological(a,n);<br>
+                                printf("\n");<br>
+                                return 0;<br>
+                            }<br>
+                            
+                            void fnTopological(int a[MAX][MAX], int n)<br>
+                            {<br>
+                                int in[MAX], out[MAX], stack[MAX], top=-1;<br>
+                                int i,j,k=0;<br>
+                            
+                                for (i=0;i&lt;n;i++)<br>
+                                {<br>
+                                    in[i] = 0;<br>
+                                    for (j=0;j&lt;n;j++)<br> 
+                                        if (a[j][i] == 1)<br>
+                                            in[i]++;<br>
+                                }<br>
+                            
+                                while(1)
+                                {<br>
+                                    for (i=0;i&lt;n;i++)<br>
+                                    {<br>
+                                        if (in[i] == 0)
+                                        {<br>
+                                            stack[++top] = i;<br>
+                                            in[i] = -1;<br>
+                                        }<br>
+                                    }<br>
+                            
+                                    if (top == -1)<br>
+                                        break;<br>
+                            
+                                    out[k] = stack[top--];<br>
+                            
+                                    for (i=0;i&lt;n;i++)<br>
+                                    {<br>
+                                        if (a[out[k]][i] == 1)<br>
+                                            in[i]--;<br>
+                                    }<br>
+                                    k++;<br>
+                                }<br>
+                            
+                                printf("Topological Sorting (JOB SEQUENCE) is:- \n");<br>
+                                for (i=0;i&lt;k;i++)<br>
+                                    printf("%d ",out[i] + 1);<br>
+                            }<br>
+                            
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                       
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<a href="daa_10.html" class="previous"> &lt; Previous</a>
+<a href="daa_12.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

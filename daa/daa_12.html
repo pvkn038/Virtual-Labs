@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/vlab.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="Description">
+        <h4> DESIGN AND ANALYSIS OF ALGORITHMS LAB 
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q12. Implement N Queen's problem using Back Tracking.</b></p>
+        <p><b>Aim:</b>. To implement N Queen's problem using Back Tracking.</p>
+        <p><b>System and Software Requirements:</b>
+            A Computer with any Operating system with GCC compiler installed in it.</p>
+        <b>DESCRIPTION:</b>
+       <br> <b>Backtracking:</b>
+        <p>
+            In backtracking, we start with one pos­si­ble move out of many avail­able moves. We then try to solve the prob­lem.
+
+If we are able to solve the prob­lem with the selected move then we will print the solu­tion. Else we will back­track and select some other move and try to solve it.
+
+If none of the moves works out we claim that there is no solu­tion for the problem.
+        </p>
+        <b>N-Queen's Algorithm</b>
+        <p>
+            In backtracking, we start with one pos­si­ble move out of many avail­able moves. We then try to solve the prob­lem.
+        </p>
+        <p>
+            If we are able to solve the prob­lem with the selected move then we will print the solu­tion. Else we will back­track and select some other move and try to solve it.
+
+        </p>
+        <p>
+            If none of the moves works out we claim that there is no solu­tion for the problem. 
+        </p>
+        <p>
+            This problem is commonly seen for N=4 and N=8.
+
+Let’s look at an example where N=4
+
+Before solving the problem, you need to know about the movement of the queen in chess.
+
+A queen can move any number of steps in any direction. The only constraint is that it can’t change its direction while it’s moving.
+
+One thing that is clear by looking at the queen’s movement is that no two queens can be in the same row or column.
+
+That allows us to place only one queen in each row and each column.
+
+When N=4, the solution looks like :
+        </p>
+       <b> Approach:</b>
+<p>
+    The way we try to solve this is by placing a queen at a position and trying to rule out the possibility of it being under attack. We place one queen in each row/column.
+
+    If we see that the queen is under attack at its chosen position, we try the next position.
+    
+    If a queen is under attack at all the positions in a row, we backtrack and change the position of the queen placed prior to the current position.
+    
+    We repeat this process of placing a queen and backtracking until all the N queens are placed successfully.   
+</p>
+<b>Illustrations:</b>
+<figure><img src="https://journaldev.nyc3.digitaloceanspaces.com/2020/08/queen-1.png" alt="Queen 1"><figcaption><b>Start</b></figcaption></figure>
+<p>The red cross marks the positions which are under attack from a queen. Whenever we reach a state where we have a queen to place but all the positions in the rows are under attack, we backtrack.
+
+    This is not the only possible solution to the problem. If you move each queen one step forward in a clockwise manner.</p>
+    <p><img src="https://journaldev.nyc3.digitaloceanspaces.com/2020/08/queen-8.png" alt="Queen 8"></p>
+    <p>
+
+    In this example we placed the queens according to rows, we can do the same thing column-wise also. In that case, each queen will belong to a column.   
+</p>
+
+
+
+
+
+
+
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Code Editor***
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                            .cnsl {
+ 
+                                     text-decoration: none;
+                                     display: inline-block;
+                                     background-color: rgba(29, 96, 184, 0.902);
+                                     padding: 8px;
+                                     border-radius: 6px;
+                                     border: 1px solid #d5d9d9;
+                                     box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                     box-sizing: border-box;
+                                     line-height: 20px;  
+                                     color: #edf0f3;
+                                 }
+ 
+                         </style>
+                    <a href="https://onecompiler.com/" target="_blank"
+                            class="cnsl">Try on Code Editor</a><br>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <pre class="language-java"><code><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span></span><span class="token class-name">JournalDev</span><span class="token punctuation">;</span>
+                            <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+                                <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">int</span> <span class="token class-name">N</span> <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+                            
+                               <span class="token comment">// print the final solution matrix </span>
+                                <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">printSolution</span><span class="token punctuation">(</span><span class="token keyword">int</span> board<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                                <span class="token punctuation">{</span>
+                                    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token class-name">N</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                                        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> <span class="token class-name">N</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span>
+                                            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">" "</span> <span class="token operator">+</span> board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span>
+                                                    <span class="token operator">+</span> <span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                                        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                                    <span class="token punctuation">}</span>
+                                <span class="token punctuation">}</span>
+                            
+                                <span class="token comment">// function to check whether the position is safe or not </span>
+                                <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">isSafe</span><span class="token punctuation">(</span><span class="token keyword">int</span> board<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">int</span> row<span class="token punctuation">,</span> <span class="token keyword">int</span> col<span class="token punctuation">)</span>
+                                <span class="token punctuation">{</span>
+                                    <span class="token keyword">int</span> i<span class="token punctuation">,</span> j<span class="token punctuation">;</span>
+                                    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> col<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+                                        <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>row<span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
+                                            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+                            
+                                   
+                                    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> row<span class="token punctuation">,</span> j <span class="token operator">=</span> col<span class="token punctuation">;</span> i <span class="token operator">&gt;=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> j <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">,</span> j<span class="token operator">--</span><span class="token punctuation">)</span>
+                                        <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
+                                            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+                                        
+                                    <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> row<span class="token punctuation">,</span> j <span class="token operator">=</span> col<span class="token punctuation">;</span> j <span class="token operator">&gt;=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> i <span class="token operator">&lt;</span> <span class="token class-name">N</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">,</span> j<span class="token operator">--</span><span class="token punctuation">)</span>
+                                        <span class="token keyword">if</span> <span class="token punctuation">(</span>board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
+                                            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+                            
+                                    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+                                <span class="token punctuation">}</span>
+                            
+                                <span class="token comment">// The function that solves the problem using backtracking </span>
+                                <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">solveNQueen</span><span class="token punctuation">(</span><span class="token keyword">int</span> board<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">int</span> col<span class="token punctuation">)</span>
+                                <span class="token punctuation">{</span>
+                                    <span class="token keyword">if</span> <span class="token punctuation">(</span>col <span class="token operator">&gt;=</span> <span class="token class-name">N</span><span class="token punctuation">)</span>
+                                        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+                            
+                                    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token class-name">N</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                                        <span class="token comment">//if it is safe to place the queen at position i,col -&gt; place it</span>
+                                        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isSafe</span><span class="token punctuation">(</span>board<span class="token punctuation">,</span> i<span class="token punctuation">,</span> col<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                                            board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>col<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+                            
+                                            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">solveNQueen</span><span class="token punctuation">(</span>board<span class="token punctuation">,</span> col <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+                                                <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+                            
+                                            <span class="token comment">//backtrack if the above condition is false</span>
+                                            board<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>col<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+                                        <span class="token punctuation">}</span>
+                                    <span class="token punctuation">}</span>
+                                    <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+                                <span class="token punctuation">}</span>
+                            
+                                <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span> args<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                                <span class="token punctuation">{</span>
+                                    <span class="token keyword">int</span> board<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token punctuation">{</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                                            <span class="token punctuation">{</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                                            <span class="token punctuation">{</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                                            <span class="token punctuation">{</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+                            
+                                    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">solveNQueen</span><span class="token punctuation">(</span>board<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                                        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Solution does not exist"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                                        <span class="token keyword">return</span><span class="token punctuation">;</span>
+                                    <span class="token punctuation">}</span>
+                            
+                                    <span class="token function">printSolution</span><span class="token punctuation">(</span>board<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                                   
+                                <span class="token punctuation">}</span>
+                            <span class="token punctuation">}</span> 
+                            
+                            </code></pre>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        
+
+                       
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<a href="daa_11.html" class="previous"> &lt; Previous</a>
+<!--<a href="#" style="float: right"  class="next">Next &gt;</a>-->
+
+</body>
+
+</html>

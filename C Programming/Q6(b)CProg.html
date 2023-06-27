@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>C PROGRAMMING FOR PROBLEM SOLVING LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q6(b). Write a C program that uses non recursive function to search for a Key value in a given list of integers. Use linear search method.</b></p>
+        <p><b>Aim:</b> To implement a C program using a non-recursive function to search for a key value in a given list of integers using the linear search method. </p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with GCC compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b><br> Linear search is a simple algorithm used to find the location of a key value within a list of integers. The linear search method works by iterating through the list of integers one 
+            by one, starting from the first element, until the key value is found or the end of the list is reached.<br>
+            In this implementation, the linearSearch function takes three parameters: an array of integers arr, the number of elements in the array n, and the key value to be searched for key. The function returns the index 
+            of the key value within the array if it is found, and returns -1 if the key value is not found.<br>
+            The main function initializes an array of integers arr, the number of elements in the array n, and the key value key. The linearSearch function is then called with the arr, n, and key as arguments, and the result 
+            is stored in a variable result. Finally, a message is printed to indicate whether the key value was found or not, and the index at which it was found if applicable.<br>
+            Example: For the list of integers [4, 3, 6, 2, 8] and key value 6, the output of the program would be "Key found at index 2".<br>
+            Note: The linear search algorithm has a time complexity of O(n) in the worst case, where n is the number of elements in the list. This means that the time taken by the algorithm increases linearly with the size 
+            of the list. For large lists, a more efficient search algorithm such as binary search should be used.<br>
+            
+
+        <style>
+            .imagecenter {
+                width: 350px;
+                height: 200px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+            }                
+        </style>        
+        <img src="/images/linear search algorithm.jpg" alt="Not Found" class="imagecenter"><br><br>
+        <b>Examples:</b><br>
+        For Example:  Given a list of numbers [3, 5, 2, 7, 9], we want to find the target value 7.<br>
+        Start at the first element in the list, 3.<br>
+        Check if 3 is equal to 7, if not move to the next element.<br>
+        Check if 5 is equal to 7, if not move to the next element.<br>
+        Check if 2 is equal to 7, if not move to the next element.<br>
+        Check if 7 is equal to 7, if so, the target value has been found.<br>
+        Stop the search.<br>
+        In this example, the target value 7 was found at index 3.<br>
+        </p>
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>
+                        Code Editor***</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <style>
+                            .cnsl {
+
+                                text-decoration: none;
+                                display: inline-block;
+                                background-color: rgba(29, 96, 184, 0.902);
+                                padding: 8px;
+                                border-radius: 6px;
+                                border: 1px solid #d5d9d9;
+                                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                box-sizing: border-box;
+                                line-height: 20px;  
+                                color: #edf0f3;
+                            }
+
+                        </style>
+                        <a href="https://onecompiler.com/c" target="_blank" class="cnsl">Try on
+                                Code
+                                Editor</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        #include&lt;stdio.h&gt;<br>
+                        int linear_search(int arr[], int n, int key) {<br>
+                            int i;<br>
+                            for (i = 0; i &lt; n; i++) {<br>
+                                if (arr[i] == key) {<br>
+                                    return i;<br>
+                                }<br>
+                            }<br>
+                            return -1;<br>
+                        }<br>
+                        
+                        int main() {<br>
+                            int n;<br>
+                            printf("Enter the number of elements in the array: ");<br>
+                            scanf("%d", &n);<br>
+                            int arr[n];<br>
+                            printf("Enter the elements of the array: \n");<br>
+                            for (int i = 0; i &lt; n; i++) {<br>
+                                scanf("%d", &arr[i]);<br>
+                            }<br>
+                            int key;<br>
+                            printf("Enter the key to be searched: ");<br>
+                            scanf("%d", &key);<br>
+                            int result = linear_search(arr, n, key);<br>
+                            if (result == -1) {<br>
+                                printf("Element is not present in the array\n");<br>
+                            } else {<br>
+                                printf("Element is present at index %d\n", result);<br>
+                            }<br>
+                            return 0;<br>
+                        }<br>
+                        
+                        
+                            
+                                
+                        
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        #include&lt;stdio.h&gt;<br>
+                        int linear_search(int arr[], int n, int key) {<br>
+                            int i;<br>
+                            for (i = 0; i &lt; n; i++) {<br>
+                                if (arr[i] == key) {<br>
+                                    return i;<br>
+                                }<br>
+                            }<br>
+                            return -1;<br>
+                        }<br>
+                        
+                        int main() {<br>
+                            int arr[] = {3, 5, 2, 7, 9};<br>
+                            int n = sizeof(arr) / sizeof(arr[0]);<br>
+                            int key = 7;<br>
+                            int result = linear_search(arr, n, key);<br>
+                            if (result == -1) {<br>
+                                printf("Element is not present in the array\n");<br>
+                            } else {<br>
+                                printf("Element is present at index %d\n", result);<br>
+                            }<br>
+                            return 0;<br>
+                        }<br>
+                        
+                        
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<a href="Q6(a)CProg.html" class="previous"> &lt; Previous</a>
+<a href="Q7(a)CProg.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

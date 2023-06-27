@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>DATA STRUCTURES LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q4. Write a C++ program to implement a double ended queue ADT using an array, using a
+                doubly
+                linked list.
+            </b></p>
+
+        <p><b>Aim:</b> A C++ program to implement a double ended queue ADT using an array, using a
+            doubly
+            linked list.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with G++ compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b>Double Ended Queue is also a Queue data structure in which the insertion and
+            deletion operations are performed at both the ends (front and rear). That means, 
+            we can insert at both front and rear positions and can delete from both front and rear positions. <br>
+        <b>Algorithm:</b><br>
+        
+            Declare a class dequeue to declare front f and rear r and following functions: <br>
+        Step-1: function insert_at_beg(int) to insert item at front:<br>
+        If queue is not completely filled up, insert element at the front and update front and rear.
+        Otherwise print overflow.<br>
+        Step-2: function insert_at_end(int) to insert item at rear:<br>
+        If queue is not completely filled up, insert element at the rear and update front and rear.<br>
+        Step-3: function delete_fr_beg() to delete item from front:<br>
+         If queue is empty, print underflow otherwise delete the front element and update front.<br>
+        Step-4: function delete_fr_end() to delete item from end:<br>
+         If queue is empty, print underflow otherwise delete the rear element and update rear.<br>
+         Step-5: End.<br>
+        
+
+        
+        <center><img src="/images/dsaimages4.jpg" alt="Not Found" width="500" height="500"></center><br>
+
+        
+
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Code Editor***
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                            .cnsl {
+ 
+                                     text-decoration: none;
+                                     display: inline-block;
+                                     background-color: rgba(29, 96, 184, 0.902);
+                                     padding: 8px;
+                                     border-radius: 6px;
+                                     border: 1px solid #d5d9d9;
+                                     box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                     box-sizing: border-box;
+                                     line-height: 20px;  
+                                     color: #edf0f3;
+                                 }
+ 
+                         </style>
+                         <a href="https://onecompiler.com/cpp" target="_blank" 
+                         class="cnsl">Try on CodeEditor</a><br>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+
+                        #include &ltiostream.h&gt <br>
+                        #include&ltstdio.h&gt <br>
+                        #include&ltconio.h&gt <br>
+                        #include&ltstdlib.h&gt <br>
+                        #define SIZE 10 <br>
+                        class dequeue { <br>
+                        int a[20],f,r; <br>
+                        public: <br>
+                        dequeue(); <br>
+                        void insert_at_beg(int); <br>
+                        void insert_at_end(int); <br>
+                        void delete_fr_front(); <br>
+                        void delete_fr_rear(); <br>
+                        void show();}; <br>
+                        dequeue::dequeue() { <br>
+                        f=-1; <br>
+                        r=-1;} <br>
+                        void dequeue::insert_at_end(int i) { <br>
+                        if(r>=SIZE-1) { <br>
+                        cout<<"\n insertion is not possible, overflow!!!!"; <br>
+                            } else { <br>
+                            if(f==-1) { <br>
+                            f++; <br>
+                            r++; <br>
+                            } else { <br>
+                            r=r+1; <br>
+                            } <br>
+                            a[r]=i; <br>
+                            cout<<"\nInserted item is"<<a[r]; }} <br>
+                                void dequeue::insert_at_beg(int i) { <br>
+                                if(f==-1) { <br>
+                                f=0; <br>
+                                a[++r]=i; <br>
+                                cout<<"\n inserted element is:"<<i; <br>
+                                    } else if(f!=0) { <br>
+                                    a[--f]=i; <br>
+                                    cout<<"\n inserted element is:"<<i; <br>
+                                        } else { <br>
+                                        cout<<"\n insertion is not possible, overflow!!!"; <br>
+                                            } <br>
+                                            } <br>
+                                            void dequeue::delete_fr_front() { <br>
+                                            if(f==-1) { <br>
+                                            cout<<"deletion is not possible::dequeue is empty"; <br>
+                                                return; <br>
+                                                } <br>
+                                                else { <br>
+                                                cout<<"the deleted element is:"<<a[f]; <br>
+                                                    if(f==r) { <br>
+                                                    f=r=-1; <br>
+                                                    return; <br>
+                                                    } else <br>
+                                                    f=f+1; } <br>
+                                                    } <br>
+                                                    void dequeue::delete_fr_rear() { <br>
+                                                    if(f==-1) { <br>
+                                                    cout<<"deletion is not possible::dequeue is empty"; <br>
+                                                        return; } <br>
+                                                        else { <br>
+                                                        cout<<"the deleted element is:"<<a[r]; <br>
+                                                            if(f==r) { <br>
+                                                            f=r=-1; <br>
+                                                            } else <br>
+                                                            r=r-1; } <br>
+                                                            } <br>
+                                                            void dequeue::show() { <br>
+                                                            if(f==-1) { <br>
+                                                            cout<<"Dequeue is empty"; <br>
+                                                                } else { <br>
+                                                                for(int i=f;i<=r;i++) { <br>
+                                                                    cout<<a[i]<<" ";    } } }                              <br>
+                               int main() {                              <br>
+                                  int c,i;                              <br>
+                                  dequeue d;                              <br>
+                                  Do//perform switch opeartion {                              <br>
+                                  cout<<" \n 1.insert at beginning"; <br>
+                                                                        cout<<"\n 2.insert at end"; <br>
+                                                                            cout<<"\n 3.show"; <br>
+                                                                                cout<<"\n 4.deletion from front"; <br>
+                                                                                    cout<<"\n 5.deletion from rear";
+                                                                                        <br>
+                                                                                        cout<<"\n 6.exit"; <br>
+                                                                                            cout<<"\n enter your
+                                                                                                choice:"; <br>
+                                                                                                cin>>c; <br>
+                                                                                                switch(c) { <br>
+                                                                                                case 1: <br>
+                                                                                                cout<<"enter the element
+                                                                                                    to be inserted";
+                                                                                                    <br>
+                                                                                                    cin>>i; <br>
+                                                                                                    d.insert_at_beg(i);
+                                                                                                    <br>
+                                                                                                    break; <br>
+                                                                                                    case 2: <br>
+                                                                                                    cout<<"enter the
+                                                                                                        element to be
+                                                                                                        inserted"; <br>
+                                                                                                        cin>>i; <br>
+                                                                                                        d.insert_at_end(i);
+                                                                                                        <br>
+                                                                                                        break; <br>
+                                                                                                        case 3: <br>
+                                                                                                        d.show(); <br>
+                                                                                                        break; <br>
+                                                                                                        case 4: <br>
+                                                                                                        d.delete_fr_front();
+                                                                                                        <br>
+                                                                                                        break; <br>
+                                                                                                        case 5: <br>
+                                                                                                        d.delete_fr_rear();
+                                                                                                        <br>
+                                                                                                        break; <br>
+                                                                                                        case 6: <br>
+                                                                                                        exit(1); <br>
+                                                                                                        break; <br>
+                                                                                                        default: <br>
+                                                                                                        cout<<"invalid
+                                                                                                            choice";
+                                                                                                            <br>
+                                                                                                            break; <br>
+                                                                                                            } <br>
+                                                                                                            }
+                                                                                                            while(c!=7);
+                                                                                                            <br>
+                                                                                                            } <br>
+                    </div>
+                </div>
+            </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Solution 2
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+
+                            // C++ implementation of Deque using <br>
+                            // doubly linked list <br>
+                            #include&ltbits/stdc++.h&gt <br>
+                            using namespace std; <br>
+                            // Node of a doubly linked list <br>
+                            struct Node { <br>
+                            int data; <br>
+                            Node *prev, *next; <br>
+                            // Function to get a new node <br>
+                            static Node* getnode(int data) <br>
+                            { <br>
+                            Node* newNode = (Node*)malloc(sizeof(Node)); <br>
+                            newNode->data = data; <br>
+                            newNode->prev = newNode->next = NULL; <br>
+                            return newNode; <br>
+                            } <br>
+                            }; <br>
+                            // A structure to represent a deque <br>
+                            class Deque { <br>
+                            Node* front; <br>
+                            Node* rear; <br>
+                            int Size; <br>
+                            public: <br>
+                            Deque() <br>
+                            { <br>
+                            front = rear = NULL; <br>
+                            Size = 0; <br>
+                            } <br>
+                            // Operations on Deque <br>
+                            void insertFront(int data); <br>
+                            void insertRear(int data); <br>
+                            void deleteFront(); <br>
+                            void deleteRear(); <br>
+                            int getFront(); <br>
+                            int getRear(); <br>
+                            int size(); <br>
+                            bool isEmpty(); <br>
+                            void erase(); <br>
+                            }; <br>
+                            // Function to check whether deque <br>
+                            // is empty or not <br>
+                            bool Deque::isEmpty() { return (front == NULL); } <br>
+                            // Function to return the number of <br>
+                            // elements in the deque <br>
+                            int Deque::size() { return Size; } <br>
+                            // Function to insert an element <br>
+                            // at the front end <br>
+                            void Deque::insertFront(int data) <br>
+                            { <br>
+                            Node* newNode = Node::getnode(data); <br>
+                            // If true then new element cannot be added <br>
+                            // and it is an 'Overflow' condition <br>
+                            if (newNode == NULL) <br>
+                            cout << "OverFlow\n" ; <br>
+                                else { <br>
+                                // If deque is empty <br>
+                                if (front == NULL) <br>
+                                rear = front = newNode; <br>
+                                <br>
+                                // Inserts node at the front end <br>
+                                else { <br>
+                                newNode->next = front; <br>
+                                front->prev = newNode; <br>
+                                front = newNode; <br>
+                                } <br>
+                                // Increments count of elements by 1 <br>
+                                Size++; <br>
+                                } <br>
+                                } <br>
+                                // Function to insert an element <br>
+                                // at the rear end <br>
+                                void Deque::insertRear(int data) <br>
+                                { <br>
+                                Node* newNode = Node::getnode(data); <br>
+                                // If true then new element cannot be added <br>
+                                // and it is an 'Overflow' condition <br>
+                                if (newNode == NULL) <br>
+                                cout << "OverFlow\n" ; <br>
+                                    else { <br>
+                                    // If deque is empty <br>
+                                    if (rear == NULL) <br>
+                                    front = rear = newNode; <br>
+                                    <br>
+                                    // Inserts node at the rear end <br>
+                                    else { <br>
+                                    newNode->prev = rear; <br>
+                                    rear->next = newNode; <br>
+                                    rear = newNode; <br>
+                                    } <br>
+                                    Size++; <br>
+                                    } <br>
+                                    } <br>
+                                    // Function to delete the element <br>
+                                    // from the front end <br>
+                                    void Deque::deleteFront() <br>
+                                    { <br>
+                                    // If deque is empty then <br>
+                                    // 'Underflow' condition <br>
+                                    if (isEmpty()) <br>
+                                    cout << "UnderFlow\n" ; <br>
+                                        // Deletes the node from the front end and makes <br>
+                                        // the adjustment in the links <br>
+                                        else { <br>
+                                        Node* temp = front; <br>
+                                        front = front->next; <br>
+                                        // If only one element was present <br>
+                                        if (front == NULL) <br>
+                                        rear = NULL; <br>
+                                        else <br>
+                                        front->prev = NULL; <br>
+                                        free(temp); <br>
+                                        // Decrements count of elements by 1 <br>
+                                        Size--; <br>
+                                        } <br>
+                                        } <br>
+                                        // Function to delete the element <br>
+                                        // from the rear end <br>
+                                        void Deque::deleteRear() <br>
+                                        { <br>
+                                        // If deque is empty then <br>
+                                        // 'Underflow' condition <br>
+                                        if (isEmpty()) <br>
+                                        cout << "UnderFlow\n" ; <br>
+                                            // Deletes the node from the rear end and makes <br>
+                                            // the adjustment in the links <br>
+                                            else { <br>
+                                            Node* temp = rear; <br>
+                                            rear = rear->prev; <br>
+                                            // If only one element was present <br>
+                                            if (rear == NULL) <br>
+                                            front = NULL; <br>
+                                            else <br>
+                                            rear->next = NULL; <br>
+                                            free(temp); <br>
+                                            // Decrements count of elements by 1 <br>
+                                            Size--; <br>
+                                            } <br>
+                                            } <br>
+                                            // Function to return the element <br>
+                                            // at the front end <br>
+                                            int Deque::getFront() <br>
+                                            { <br>
+                                            // If deque is empty, then returns <br>
+                                            // garbage value <br>
+                                            if (isEmpty()) <br>
+                                            return -1; <br>
+                                            return front->data; <br>
+                                            } <br>
+                                            // Function to return the element <br>
+                                            // at the rear end <br>
+                                            int Deque::getRear() <br>
+                                            { <br>
+                                            // If deque is empty, then returns <br>
+                                            // garbage value <br>
+                                            if (isEmpty()) <br>
+                                            return -1; <br>
+                                            return rear->data; <br>
+                                            } <br>
+                                            // Function to delete all the elements <br>
+                                            // from Deque <br>
+                                            void Deque::erase() <br>
+                                            { <br>
+                                            rear = NULL; <br>
+                                            while (front != NULL) { <br>
+                                            Node* temp = front; <br>
+                                            front = front->next; <br>
+                                            free(temp); <br>
+                                            } <br>
+                                            Size = 0; <br>
+                                            } <br>
+                                            // Driver program to test above <br>
+                                            int main() <br>
+                                            { <br>
+                                            Deque dq; <br>
+                                            cout << "Insert element '5' at rear end\n" ; <br>
+                                                dq.insertRear(5); <br>
+                                                cout << "Insert element '10' at rear end\n" ; <br>
+                                                    dq.insertRear(10); <br>
+                                                    cout << "Rear end element: " << dq.getRear() << endl; <br>
+                                                        dq.deleteRear(); <br>
+                                                        cout << "After deleting rear element new rear" <br>
+                                                            << " is: " << dq.getRear() << endl; <br>
+                                                                cout << "Inserting element '15' at front end \n" ; <br>
+                                                                    dq.insertFront(15); <br>
+                                                                    cout << "Front end element: " << dq.getFront() <<
+                                                                        endl; <br>
+                                                                        cout << "Number of elements in Deque: " <<
+                                                                            dq.size() <br>
+                                                                            << endl; <br>
+                                                                                dq.deleteFront(); <br>
+                                                                                cout << "After deleting front element new "
+                                                                                    <br>
+                                                                                    << "front is: " << dq.getFront() <<
+                                                                                        endl; <br>
+                                                                                        return 0; <br>
+                                                                                        }
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"></script>
+
+
+            <style>
+              
+                .previous {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    left: 50px;
+    
+                        }
+                    
+                .next {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    right: 50px;
+                        
+                    }
+        
+    </style>
+
+<a href="Qsn3DS.html" class="previous"> &lt; Previous</a>
+<a href="Qsn5aDS.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>DATA STRUCTURES LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>14. Write a C++ program that uses functions to perform the following:<br>
+                b) Traverse the Binary search tree non-recursively in ignored.
+                
+            </b></p>
+
+        <p><b>Aim:</b> Create a binary search tree of integers.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with G++ compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b><br>
+        <b>Algorithm:</b><br>
+        
+        Step-1 : Create an empty stack S. <br>
+        Step-2 : Initialize current node as root.<br>
+
+        Step-3: Push the current node to S and set current = current->left until current is NULL. <br>
+        Step-4: If current is NULL and stack is not empty then: <br>
+        a) Pop the top item from stack.<br>
+        b) Print the popped item, set current = popped_item->right. <br>
+        c) Go to step 3.<br>
+        Step-5: If current is NULL and stack is empty then we are done.<br>
+        <style>
+            .imagecenter {
+                width: 400px;
+                height: 300px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+            }                
+        </style>
+        <img src="/images/factorial.png" alt="Not Found" class="imagecenter"><br>
+        
+
+        
+
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Code Editor***
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                            .cnsl {
+ 
+                                     text-decoration: none;
+                                     display: inline-block;
+                                     background-color: rgba(29, 96, 184, 0.902);
+                                     padding: 8px;
+                                     border-radius: 6px;
+                                     border: 1px solid #d5d9d9;
+                                     box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                     box-sizing: border-box;
+                                     line-height: 20px;  
+                                     color: #edf0f3;
+                                 }
+ 
+                         </style>
+                         <a href="https://onecompiler.com/cpp" target="_blank" 
+                         class="cnsl">Try on CodeEditor</a><br>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+
+                        // C++ program for implementation of selection sort <br> <br>
+                        #include &ltiostream&gt<br>
+                        using namespace std; <br>
+                        /* A binary tree Node has data, pointer to left child <br>
+                        and a pointer to right child */ <br>
+                        struct Node <br>
+                        { <br>
+                        int data; <br>
+                        struct Node* left; <br>
+                        struct Node* right; <br>
+                        Node (int data) <br>
+                        { <br>
+                        this->data = data; <br>
+                        left = right = NULL; <br>
+                        } <br>
+                        }; <br>
+                        void inOrder(struct Node *root) <br>
+                        { <br>
+                        stack<Node *> s; <br>
+                            Node *curr = root; <br>
+                            while (curr != NULL || s.empty() == false) <br>
+                            { <br>
+                            while (curr != NULL) <br>
+                            { <br>
+                            s.push(curr); <br>
+                            curr = curr->left; <br>
+                            } <br>
+                            /* Current must be NULL at this point */ <br>
+                            curr = s.top(); <br>
+                            s.pop(); <br>
+                            cout << curr->data << " " ; <br>
+                                    /* we have visited the node and its <br>
+                                    left subtree. Now, it's right <br>
+                                    subtree's turn */ <br>
+                                    curr = curr->right; <br>
+                                    } /* end of while */ <br>
+                                    } <br>
+                                    /* Driver program to test above functions*/ <br>
+                                    int main() <br>
+                                    { <br>
+                                    struct Node *root = new Node(1); <br>
+                                    root->left = new Node(2); <br>
+                                    root->right = new Node(3); <br>
+                                    root->left->left = new Node(4); <br>
+                                    root->left->right = new Node(5); <br>
+                                    inOrder(root); <br>
+                                    return 0; <br>
+                                    } <br>
+
+                    </div>
+                </div>
+            </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Solution 2
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            // C++ Code to print postorder traversal <br>
+                            // using iteration <br>
+                            #include&ltbits /stdc++.h&gt<br>
+                            using namespace std; <br>
+                            struct Node { <br>
+                            int data; <br>
+                            struct Node *left, *right; <br>
+                            } <br>
+                            void postorder(struct Node* head) <br>
+                            { <br>
+                            struct Node* temp = head; <br>
+                            unordered_set<Node*> visited; <br>
+                                while (temp && visited.find(temp) == visited.end()) { <br>
+                                if (temp->left && <br>
+                                visited.find(temp->left) == visited.end()) <br>
+                                temp = temp->left; <br>
+                                // Visited right subtree <br>
+                                else if (temp->right && <br>
+                                visited.find(temp->right) == visited.end()) <br>
+                                temp = temp->right; <br>
+                                // Print node <br>
+                                else { <br>
+                                printf("%d ", temp->data); <br>
+                                visited.insert(temp); <br>
+                                temp = head; <br>
+                                } <br>
+                                } <br>
+                                } <br>
+                                struct Node* newNode(int data) <br>
+                                { <br>
+                                struct Node* node = new Node; <br>
+                                node->data = data; <br>
+                                node->left = NULL; <br>
+                                node->right = NULL; <br>
+                                return (node); <br>
+                                } <br>
+                                /* Driver program to test above functions*/ <br>
+                                int main() <br>
+                                { <br>
+                                struct Node* root = newNode(8); <br>
+                                root->left = newNode(3); <br>
+                                root->right = newNode(10); <br>
+                                root->left->left = newNode(1); <br>
+                                root->left->right = newNode(6); <br>
+                                root->left->right->left = newNode(4); <br>
+                                root->left->right->right = newNode(7); <br>
+                                root->right->right = newNode(14); <br>
+                                root->right->right->left = newNode(13); <br>
+                                postorder(root); <br>
+                                return 0; <br>
+                                } <br>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"></script>
+
+
+            <style>
+              
+                .previous {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    left: 50px;
+    
+                        }
+                    
+                .next {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    right: 50px;
+                        
+                    }
+        
+    </style>
+
+<a href="Qsn14aDS.html" class="previous"> &lt; Previous</a>
+<a href="Qsn15aDS.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

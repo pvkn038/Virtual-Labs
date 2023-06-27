@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+    
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>OBJECT ORIENTED PROGRAMMING THROUGH JAVA LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q13. Write a Java program that implements Quick sort algorithm for sorting a list of names in ascending order.</b></p>
+        <p><b>Aim:</b> To implement the Quick sort algorithm for sorting a list of names in ascending order. The program will take an unsorted list of names as input and use the Quick sort algorithm to sort the list in ascending 
+            order. The program will then output the sorted list of names.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with javac compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b><br> Quick sort is a popular divide-and-conquer sorting algorithm used to sort arrays or lists. It works by dividing an array or list into two sub-arrays or sub-lists and recursively sorting 
+            each sub-array or sub-list.<br>
+            To implement Quick sort algorithm for sorting a list of names in ascending order in Java, we can follow the following steps:<br>
+            1. Define a method that takes the list of names as input parameter.<br>
+            2. In the method, we first check if the list is empty or contains only one element. If it is, then the list is already sorted and we can return the list.<br>
+            3. If the list has more than one element, we choose a pivot element from the list. The pivot element can be chosen randomly or as the first, last, or middle element of the list.<br>
+            4. We partition the list into two sub-lists, such that all elements less than the pivot are in the left sub-list and all elements greater than the pivot are in the right sub-list. This is done by iterating through the 
+            list and swapping elements that are out of place.<br>
+            5. After partitioning, the pivot element is in its correct position in the list. We then recursively sort the left and right sub-lists using the same algorithm until the sub-lists contain only one element or are empty.<br>
+            6. Finally, we merge the sorted sub-lists to get the sorted list of names.<br>
+            The worst-case time complexity of Quick sort is O(n^2), but on average, it has a time complexity of O(n log n) and is widely used due to its efficiency in practice.<br><br>
+            <style>
+                .imagecenter {
+                    width: 550px;
+                    height: 400px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }                
+            </style>
+            <img src="/images/quick.jpg" alt="Not Found" class="imagecenter"><br><br>
+            <b>Examples:</b><br>
+            
+            For example, consider the following unsorted array of names:<br>
+            {"Emily", "Bob", "Alice", "David", "Catherine"}<br>
+            The algorithm would first select a pivot, for instance, "Emily", and then partition the array around the pivot, such that all the names less than "Emily" are moved to the left of the pivot, and all the names greater than 
+            "Emily" are moved to the right of the pivot.<br>
+            {"Bob", "Alice", "David", "Catherine", "Emily"}<br>
+            The algorithm would then recursively apply the same process to the subarrays on either side of the pivot until the entire array is sorted. For instance, the algorithm would select "Bob" as the pivot for the left subarray, 
+            and partition it around the pivot, resulting in the following:<br>
+            {"Alice", "Bob", "David", "Catherine", "Emily"}<br>
+            This process would then be repeated for the left subarray until it is sorted, resulting in the following sorted array:<br>
+            {"Alice", "Bob", "Catherine", "David", "Emily"}<br>
+            Quick sort is a widely used algorithm for sorting elements in an array, and its efficiency and effectiveness make it a popular choice for many programming applications.<br>
+        </p>
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>
+                        Code Editor***</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                           .cnsl {
+
+                                    text-decoration: none;
+                                    display: inline-block;
+                                    background-color: rgba(29, 96, 184, 0.902);
+                                    padding: 8px;
+                                    border-radius: 6px;
+                                    border: 1px solid #d5d9d9;
+                                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                    box-sizing: border-box;
+                                    line-height: 20px;  
+                                    color: #edf0f3;
+                                }
+
+                        </style>
+                        <a href="https://onecompiler.com/" target="_blank" 
+                        class="cnsl">Try on CodeEditor</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        
+                        
+                        public class QuickSortOnStrings {<br>
+
+                            String names[];<br>
+                            int length;<br>
+                        
+                            public static void main(String[] args) {<br>
+                                QuickSortOnStrings obj = new QuickSortOnStrings();<br>
+                                String stringsList[] = {"raja", "gouthu", "rani", "gouthami", "honey", "heyaansh", "hello"};<br>
+                                obj.sort(stringsList);<br>
+                        
+                                for (String i : stringsList) {<br>
+                                    System.out.print(i);<br>
+                                    System.out.print(" ");<br>
+                                }<br>
+                            }<br>
+                        
+                            void sort(String array[]) {<br>
+                                if (array == null || array.length == 0) {<br>
+                                    return;<br>
+                                }<br>
+                                this.names = array;<br>
+                                this.length = array.length;<br>
+                                quickSort(0, length - 1);<br>
+                            }<br>
+                        
+                            void quickSort(int lowerIndex, int higherIndex) {<br>
+                                int i = lowerIndex;<br>
+                                int j = higherIndex;<br>
+                                String pivot = this.names[lowerIndex + (higherIndex - lowerIndex) / 2];<br>
+                        
+                                while (i &lt;= j) {<br>
+                                    while (this.names[i].compareToIgnoreCase(pivot) &lt; 0) {<br>
+                                        i++;<br>
+                                    }<br>
+                        
+                                    while (this.names[j].compareToIgnoreCase(pivot) &gt; 0) {<br>
+                                        j--;<br>
+                                    }<br>
+                        
+                                    if (i &lt;= j) {<br>
+                                        exchangeNames(i, j);<br>
+                                        i++;<br>
+                                        j--;<br>
+                                    }<br>
+                                }<br>
+                                if (lowerIndex &lt; j) {<br>
+                                    quickSort(lowerIndex, j);<br>
+                                }<br>
+                                if (i &lt; higherIndex) {<br>
+                                    quickSort(i, higherIndex);<br>
+                                }<br>
+                            }<br>
+                        
+                            void exchangeNames(int i, int j) {<br>
+                                String temp = this.names[i];<br>
+                                this.names[i] = this.names[j];<br>
+                                this.names[j] = temp;<br>
+                            }<br>
+                        }<br>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        import java.util.Arrays;<br>
+
+public class QuickSortNames {<br>
+
+    public static void main(String[] args) {<br>
+        String[] names = {"Alice", "Bob", "Charlie", "Dave", "Eve", "Frank"};<br>
+        System.out.println("Original Names: " + Arrays.toString(names));<br>
+        quickSort(names, 0, names.length - 1);<br>
+        System.out.println("Sorted Names: " + Arrays.toString(names));<br>
+    }<br>
+
+    public static void quickSort(String[] arr, int low, int high) {<br>
+        if (low &lt; high) {<br>
+            int pivotIndex = partition(arr, low, high);<br>
+            quickSort(arr, low, pivotIndex - 1);<br>
+            quickSort(arr, pivotIndex + 1, high);<br>
+        }<br>
+    }<br>
+
+    public static int partition(String[] arr, int low, int high) {<br>
+        String pivot = arr[high];<br>
+        int i = low - 1;<br>
+        for (int j = low; j &lt;= high - 1; j++) {<br>
+            if (arr[j].compareToIgnoreCase(pivot) &lt; 0) {<br>
+                i++;<br>
+                String temp = arr[i];<br>
+                arr[i] = arr[j];<br>
+                arr[j] = temp;<br>
+            }<br>
+        }<br>
+        String temp = arr[i + 1];<br>
+        arr[i + 1] = arr[high];<br>
+        arr[high] = temp;<br>
+        return i + 1;<br>
+    }<br>
+}<br>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<!--<a href="#" class="previous"> &lt; Previous</a>-->
+<a href="Q12oops.html" class="previous"> &lt; Previous</a>
+<a href="Q14oops.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

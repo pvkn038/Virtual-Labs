@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>C PROGRAMMING FOR PROBLEM SOLVING LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q7(a). Write a menu-driven C program that allows a user to enter n numbers and then choose
+            between finding the smallest, largest, sum, or average. The menu and all the choices are to be functions. Use a switch statement to determine what action to take. Display an error message if an invalid choice is 
+            entered.</b></p>
+        <p><b>Aim:</b> To implement a menu-driven C program that allows a user to enter n numbers and then choose between finding the smallest, largest, sum, or average. The menu and all the choices are to be functions. Use 
+            a switch statement to determine what action to take. Display an error message if an invalid choice is entered.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with GCC compiler installed in it.</p>
+        
+        <p align="justify"><b>Description:</b><br> A menu-driven program is a type of user interface that presents a list of options for the user to choose from. In this specific case, the program allows a user to enter 'n' numbers 
+            and then select an option from the menu, which consists of finding the smallest number, largest number, sum of all numbers, or the average of all numbers.<br>
+            Each option from the menu is implemented as a separate function. When the user selects an option, the corresponding function is executed to perform the desired calculation. The implementation of this program uses 
+            a switch statement, which evaluates the user's choice and executes the corresponding function accordingly.<br>
+            For instance, if the user selects the option to find the smallest number, the program will call the function that performs this calculation. The function will then search through the list of 'n' numbers entered 
+            by the user and return the smallest number. The same process applies to the other options in the menu.<br>
+            If an invalid choice is entered, the program will display an error message to inform the user that the choice is not valid. This helps to ensure that the program behaves as expected and that the user is guided 
+            to make a valid selection.<br>
+            In summary, the menu-driven program allows the user to enter 'n' numbers and then perform various calculations such as finding the smallest number, largest number, sum of all numbers, or average of all numbers, 
+            by selecting an option from the menu and executing the corresponding function. The program uses a switch statement to determine the action to be taken and displays an error message if an invalid choice is 
+            entered.<br>
+            Let's consider an example where the user enters 5 numbers: 2, 4, 6, 8, and 10. The menu-driven program then presents the user with the following options:<br>
+            Find the smallest number<br>
+            Find the largest number<br>
+            Find the sum of all numbers<br>
+            Find the average of all numbers<br>
+            If the user selects option 1 (Find the smallest number), the program will call the function responsible for finding the smallest number. This function will loop through the list of 5 numbers and compare each 
+            number to find the smallest. In this case, the smallest number is 2. The function will then return 2 as the result.<br>
+            If the user selects option 2 (Find the largest number), the program will call the function responsible for finding the largest number. This function will loop through the list of 5 numbers and compare each 
+            number to find the largest. In this case, the largest number is 10. The function will then return 10 as the result.<br>
+            If the user selects option 3 (Find the sum of all numbers), the program will call the function responsible for finding the sum of all numbers. This function will loop through the list of 5 numbers and add 
+            them together. In this case, the sum of the numbers is 30. The function will then return 30 as the result.<br>
+            If the user selects option 4 (Find the average of all numbers), the program will call the function responsible for finding the average of all numbers. This function will first find the sum of all numbers 
+            and then divide it by the total number of elements (5 in this case). In this case, the average of the numbers is 6. The function will then return 6 as the result.<br>
+            If the user enters an invalid choice, the program will display an error message such as "Invalid Choice. Please try again." This message helps the user understand that their selection is not valid and 
+            guides them to make a valid selection.<br><br>
+            
+
+        <style>
+            .imagecenter {
+                width: 300px;
+                height: 400px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+            }                
+        </style>        
+        <img src="/images/menu driven flowchart.jpg" alt="Not Found" class="imagecenter"><br><br>
+        <b>Examples:</b><br>
+        For Example:  Let's consider another example where the user enters 4 numbers: 10, 20, 30, and 40. The menu-driven program then presents the user with the following options:<br>
+        Find the smallest number<br>
+        Find the largest number<br>
+        Find the sum of all numbers<br>
+        Find the average of all numbers<br>
+        If the user selects option 1 (Find the smallest number), the program will call the function responsible for finding the smallest number. This function will loop through the list of 4 numbers and compare each 
+        number to find the smallest. In this case, the smallest number is 10. The function will then return 10 as the result.<br>
+        If the user selects option 2 (Find the largest number), the program will call the function responsible for finding the largest number. This function will loop through the list of 4 numbers and compare each 
+        number to find the largest. In this case, the largest number is 40. The function will then return 40 as the result.<br>
+        If the user selects option 3 (Find the sum of all numbers), the program will call the function responsible for finding the sum of all numbers. This function will loop through the list of 4 numbers and add 
+        them together. In this case, the sum of the numbers is 100. The function will then return 100 as the result.<br>
+        If the user selects option 4 (Find the average of all numbers), the program will call the function responsible for finding the average of all numbers. This function will first find the sum of all numbers 
+        and then divide it by the total number of elements (4 in this case). In this case, the average of the numbers is 25. The function will then return 25 as the result.<br>
+        If the user enters an invalid choice, the program will display an error message such as "Invalid Choice. Please try again." This message helps the user understand that their selection is not valid and 
+        guides them to make a valid selection.<br>
+        </p>
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>
+                        Code Editor***</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <style>
+                            .cnsl {
+
+                                text-decoration: none;
+                                display: inline-block;
+                                background-color: rgba(29, 96, 184, 0.902);
+                                padding: 8px;
+                                border-radius: 6px;
+                                border: 1px solid #d5d9d9;
+                                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                box-sizing: border-box;
+                                line-height: 20px;  
+                                color: #edf0f3;
+                            }
+
+                        </style>
+                        <a href="https://onecompiler.com/c" target="_blank" class="cnsl">Try on
+                                Code
+                                Editor</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        #include&lt;stdio.h&gt;<br>
+                        // Function to find the smallest number<br>
+                        int findSmallest(int numbers[], int n) {<br>
+                            int smallest = numbers[0];<br>
+                            for (int i = 1; i &lt; n; i++) {<br>
+                                if (numbers[i] &lt; smallest) {<br>
+                                    smallest = numbers[i];<br>
+                                }<br>
+                            }<br>
+                            return smallest;<br>
+                        }<br>
+                        
+                        // Function to find the largest number<br>
+                        int findLargest(int numbers[], int n) {<br>
+                            int largest = numbers[0];<br>
+                            for (int i = 1; i &lt; n; i++) {<br>
+                                if (numbers[i] > largest) {<br>
+                                    largest = numbers[i];<br>
+                                }<br>
+                            }<br>
+                            return largest;<br>
+                        }<br>
+                        
+                        // Function to find the sum of all numbers<br>
+                        int findSum(int numbers[], int n) {<br>
+                            int sum = 0;<br>
+                            for (int i = 0; i &lt; n; i++) {<br>
+                                sum += numbers[i];<br>
+                            }<br>
+                            return sum;<br>
+                        }<br>
+                        
+                        // Function to find the average of all numbers<br>
+                        float findAverage(int numbers[], int n) {<br>
+                            int sum = findSum(numbers, n);<br>
+                            float average = (float) sum / n;<br>
+                            return average;<br>
+                        }<br>
+                        
+                        // Function to display the menu and return the user's choice<br>
+                        int displayMenu() {<br>
+                            int choice;<br>
+                            printf("\nEnter your choice:\n");<br>
+                            printf("1. Find the smallest number\n");<br>
+                            printf("2. Find the largest number\n");<br>
+                            printf("3. Find the sum of all numbers\n");<br>
+                            printf("4. Find the average of all numbers\n");<br>
+                            printf("5. Quit\n");<br>
+                            scanf("%d", &choice);<br>
+                            return choice;<br>
+                        }<br>
+                        
+                        int main() {<br>
+                            int n;<br>
+                            printf("Enter the number of elements: ");<br>
+                            scanf("%d", &n);<br>
+                        
+                            int numbers[n];<br>
+                            printf("Enter %d numbers:\n", n);<br>
+                            for (int i = 0; i &lt; n; i++) {<br>
+                                scanf("%d", &numbers[i]);<br>
+                            }<br>
+                        
+                            int choice = displayMenu();<br>
+                        
+                            while (choice != 5) {<br>
+                                switch (choice) {<br>
+                                    case 1:<br>
+                                        printf("The smallest number is: %d\n", findSmallest(numbers, n));<br>
+                                        break;
+                                    case 2:
+                                        printf("The largest number is: %d\n", findLargest(numbers, n));<br>
+                                        break;<br>
+                                    case 3:<br>
+                                        printf("The sum of all numbers is: %d\n", findSum(numbers, n));<br>
+                                        break;<br>
+                                    case 4:<br>
+                                        printf("The average of all numbers is: %.2f\n", findAverage(numbers, n));<br>
+                                        break;<br>
+                                    default:<br>
+                                        printf("Invalid choice. Please try again.\n");<br>
+                                }<br>
+                        
+                                choice = displayMenu();<br>
+                            }<br>
+                        
+                            return 0;<br>
+                        }<br>
+                        
+                        
+                            
+                                
+                        
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        #include&lt;stdio.h&gt;<br>
+                        #define DEFAULT_N 5<br>
+#define DEFAULT_NUMBERS {10, 20, 30, 40}<br>
+
+// Function to find the smallest number<br>
+int findSmallest(int numbers[], int n) {<br>
+    int smallest = numbers[0];<br>
+    for (int i = 1; i &lt; n; i++) {<br>
+        if (numbers[i] &lt; smallest) {<br>
+            smallest = numbers[i];<br>
+        }<br>
+    }<br>
+    return smallest;<br>
+}<br>
+
+// Function to find the largest number<br>
+int findLargest(int numbers[], int n) {<br>
+    int largest = numbers[0];<br>
+    for (int i = 1; i &lt; n; i++) {<br>
+        if (numbers[i] > largest) {<br>
+            largest = numbers[i];<br>
+        }<br>
+    }<br>
+    return largest;<br>
+}<br>
+
+// Function to find the sum of all numbers<br>
+int findSum(int numbers[], int n) {<br>
+    int sum = 0;<br>
+    for (int i = 0; i &lt; n; i++) {<br>
+        sum += numbers[i];<br>
+    }<br>
+    return sum;<br>
+}<br>
+
+// Function to find the average of all numbers<br>
+float findAverage(int numbers[], int n) {<br>
+    int sum = findSum(numbers, n);<br>
+    float average = (float) sum / n;<br>
+    return average;<br>
+}<br>
+
+// Function to display the menu and return the user's choice<br>
+int displayMenu() {<br>
+    int choice;<br>
+    printf("\nEnter your choice:\n");<br>
+    printf("1. Find the smallest number\n");<br>
+    printf("2. Find the largest number\n");<br>
+    printf("3. Find the sum of all numbers\n");<br>
+    printf("4. Find the average of all numbers\n");<br>
+    printf("5. Quit\n");<br>
+    scanf("%d", &choice);<br>
+    return choice;<br>
+}<br>
+int main() {<br>
+    int n = DEFAULT_N;<br>
+    int numbers[] = DEFAULT_NUMBERS;<br>
+
+    printf("Using default values: n = %d, numbers = {", n);<br>
+    for (int i = 0; i &lt; n; i++) {<br>
+        printf("%d", numbers[i]);<br>
+        if (i &lt; n - 1) {<br>
+            printf(", ");<br>
+        }<br>
+    }<br>
+    printf("}\n");<br>
+
+    int choice = displayMenu();<br>
+
+    while (choice != 5) {<br>
+        switch (choice) {<br>
+            case 1:<br>
+                printf("The smallest number is: %d\n", findSmallest(numbers, n));<br>
+                break;<br>
+            case 2:<br>
+                printf("The largest number is: %d\n", findLargest(numbers, n));<br>
+                break;<br>
+            case 3:
+                printf("The sum of all numbers is: %d\n", findSum(numbers, n));<br>
+                break;<br>
+            case 4:<br>
+                printf("The average of all numbers is: %.2f\n", findAverage(numbers, n));<br>
+                break;<br>
+            default:<br>
+                printf("Invalid choice. Please try again.\n");<br>
+        }<br>
+
+        choice = displayMenu();<br>
+    }<br>
+
+    return 0;<br>
+    
+}<br>
+                        
+                        
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<a href="Q6(b)CProg.html" class="previous"> &lt; Previous</a>
+<a href="Q7(b)CProg.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

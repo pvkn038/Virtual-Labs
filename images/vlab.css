@@ -1,0 +1,51 @@
+#setSem{
+    margin-left : 150px;
+    margin-top : 25px;
+    margin-bottom: 100px;
+}
+table,th,td{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+ol{
+    list-style: lower-roman;
+}
+#setContact
+{
+    margin-left : 100px;
+    margin-top : 25px;
+}
+#setSyllabus
+{
+    margin-left : 150px;
+    margin-top : 60px;
+}
+#setAbout
+{
+    margin-top : 70px;
+}
+.section
+{
+    margin-left : 70px;
+    display : flex;
+    justify-content: space-between;
+}
+.section h1
+{
+    margin-top : 100px;
+}
+.section p
+{
+    margin-top : 25px;
+}
+.Description
+{
+    margin-top : 35px;
+    margin-left : 50px;
+    margin-right : 50px;
+    margin-bottom : 35px;
+}
+
+
+
+

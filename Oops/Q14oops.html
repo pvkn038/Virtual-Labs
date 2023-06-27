@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+    
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>OBJECT ORIENTED PROGRAMMING THROUGH JAVA LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q14. Write a Java program that implements Bubble sort algorithm for sorting in descending order and also show the number of interchanges occurred for the given set of integers.</b></p>
+        <p><b>Aim:</b> To implements the Bubble sort algorithm for sorting a given set of integers in descending order and also displays the number of interchanges that occurred during the sorting process.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with javac compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b><br>
+            Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The algorithm gets its name from the way smaller elements "bubble" to the top of the list.<br>
+            To implement the Bubble sort algorithm in Java for sorting in descending order, we can modify the comparison condition to check if the current element is less than the next element. If so, we swap them. This will result in the larger elements "bubbling" to the top of the list.<br>
+            The basic algorithm for Bubble sort in descending order is as follows:<br>
+            1. Start at the first element of the list.<br>
+            2. Compare the current element with the next element.<br>
+            3. If the current element is less than the next element, swap them.<br>
+            4. Move to the next pair of adjacent elements and repeat steps 2 and 3 until the end of the list is reached.<br>
+            5. If any swaps were made in the previous pass, repeat steps 1-4 again.<br>
+            6. Stop when no swaps are made in a pass.<br>
+            To count the number of interchanges occurred during the sorting process, we can increment a counter each time we swap two elements.<br>
+            The number of interchanges for a set of n elements in the worst-case scenario for Bubble sort is (n-1) + (n-2) + ... + 1, which is equal to n*(n-1)/2. This means that the number of interchanges is proportional to the square of the number of elements being sorted.<br>
+            In summary, implementing Bubble sort in Java for descending order involves modifying the comparison condition and counting the number of interchanges that occur during the sorting process. The number of interchanges is proportional to the square of the number of elements being sorted.<br><br>
+            <style>
+                .imagecenter {
+                    width: 550px;
+                    height: 400px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }                
+            </style>
+            <img src="/images/bubble.jpg" alt="Not Found" class="imagecenter"><br><br>
+            <b>Examples:</b><br>
+            
+            Suppose we have the following set of integers that we want to sort in descending order using Bubble sort: [5, 2, 9, 1, 7]<br>
+            1. Start at the first element of the list, which is 5.<br>
+            2. Compare 5 with the next element, which is 2.<br>
+            3. 5 is greater than 2, so we don't swap them.<br>
+            4. Move to the next pair of adjacent elements, which are 5 and 9.<br>
+            5. 5 is less than 9, so we swap them. The list becomes [9, 2, 5, 1, 7] and we increment the interchange counter to 1.<br>
+            6. Move to the next pair of adjacent elements, which are 9 and 1.<br>
+            7. 9 is greater than 1, so we swap them. The list becomes [9, 2, 1, 5, 7] and we increment the interchange counter to 2.<br>
+            8. Move to the next pair of adjacent elements, which are 9 and 5.<br>
+            9. 9 is greater than 5, so we swap them. The list becomes [9, 5, 1, 2, 7] and we increment the interchange counter to 3.<br>
+            10. Move to the next pair of adjacent elements, which are 9 and 7.<br>
+            11. 9 is greater than 7, so we swap them. The list becomes [9, 7, 1, 2, 5] and we increment the interchange counter to 4.<br>
+            12. We've reached the end of the list, but we made swaps in the previous pass, so we repeat steps 1-11.<br>
+            13. Start at the first element of the list, which is 9.<br>
+            14. Compare 9 with the next element, which is 7.<br>
+            15. 9 is greater than 7, so we swap them. The list becomes [7, 9, 1, 2, 5] and we increment the interchange counter to 5.<br>
+            16. Move to the next pair of adjacent elements, which are 9 and 1.<br>
+            17. 9 is greater than 1, so we swap them. The list becomes [7, 9, 2, 1, 5] and we increment the interchange counter to 6.<br>
+            18. Move to the next pair of adjacent elements, which are 9 and 2.<br>
+            19. 9 is greater than 2, so we swap them. The list becomes [7, 9, 2, 1, 5] and we increment the interchange counter to 7.<br>
+            20. Move to the next pair of adjacent elements, which are 9 and 5.<br>
+            21. 9 is greater than 5, so we swap them. The list becomes [7, 9, 5, 1, 2] and we increment the interchange counter to 8.<br>
+            22. We've reached the end of the list and no swaps were made in the previous pass, so we stop.<br>
+            23. The sorted list is [7, 9, 5, 2, 1] and the number of interchanges is 8.<br>
+        </p>
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>
+                        Code Editor***</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                           .cnsl {
+
+                                    text-decoration: none;
+                                    display: inline-block;
+                                    background-color: rgba(29, 96, 184, 0.902);
+                                    padding: 8px;
+                                    border-radius: 6px;
+                                    border: 1px solid #d5d9d9;
+                                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                    box-sizing: border-box;
+                                    line-height: 20px;  
+                                    color: #edf0f3;
+                                }
+
+                        </style>
+                        <a href="https://onecompiler.com/" target="_blank" 
+                        class="cnsl">Try on CodeEditor</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        
+                        
+                        import java.util.Scanner;<br>
+public class BubbleSort {<br>
+
+	public static void main(String[] args) {<br>
+		Scanner read = new Scanner(System.in);<br>
+		int size, count = 0;<br>
+		//Reading size of the list<br>
+		System.out.print("Enter the list size: ");<br>
+		size = read.nextInt();<br>
+		
+		//Creating list with elements<br>
+		int list[] = new int[size];<br>
+		System.out.println("Enter any " + size + " integer numbers: ");<br>
+		for(int i = 0; i &lt; size; i++)<br>
+			list[i] = read.nextInt();<br>
+		
+		// Bubble sort logic<br>
+		int temp=0;<br>
+		for(int i=0;i&lt;size-1;i++) {<br>
+			for(int j=0;j&lt;size-i-1;j++) {<br>
+				if(list[j]&lt;list[j+1]) {<br>
+					temp=list[j];<br>
+					list[j]=list[j+1];<br>
+					list[j+1]=temp;<br>
+					count++;<br>
+				}<br>
+			}<br>
+		}<br>
+		
+		// Displaying sorted list<br>
+		System.out.println("List of sorted elements: ");<br>
+		for(int x:list) {<br>
+			System.out.print(x + "   ");<br>
+		}<br>
+		System.out.println("\nTotal number of Interchanges is " + count);<br>
+	}<br>
+}<br>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        import java.util.Scanner;<br>
+
+public class BubbleSortDescending {<br>
+    public static void main(String[] args) {<br>
+        Scanner input = new Scanner(System.in);<br>
+        
+        // Get the number of elements to sort<br>
+        System.out.print("Enter the number of elements: ");<br>
+        int n = input.nextInt();<br>
+        
+        // Create an array to hold the elements<br>
+        int[] arr = new int[n];<br>
+        
+        // Get the elements from the user<br>
+        System.out.print("Enter the elements: ");<br>
+        for (int i = 0; i &lt; n; i++) {<br>
+            arr[i] = input.nextInt();<br>
+        }<br>
+        
+        // Sort the elements in descending order using Bubble sort<br>
+        int numSwaps = 0;<br>
+        for (int i = 0; i &lt; n - 1; i++) {<br>
+            for (int j = 0; j &lt; n - i - 1; j++) {<br>
+                if (arr[j] &lt; arr[j+1]) {<br>
+                    // Swap the elements<br>
+                    int temp = arr[j];<br>
+                    arr[j] = arr[j+1];<br>
+                    arr[j+1] = temp;<br>
+                    numSwaps++;<br>
+                }<br>
+            }<br>
+        }<br>
+        
+        // Display the sorted elements and the number of swaps<br>
+        System.out.print("Sorted array in descending order: ");<br>
+        for (int i = 0; i &lt; n; i++) {<br>
+            System.out.print(arr[i] + " ");<br>
+        }<br>
+        System.out.println("\nNumber of swaps: " + numSwaps);<br>
+    }<br>
+}<br>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<a href="Q13oops.html" class="previous"> &lt; Previous</a>
+<!--<a href="#" style="float: right"  class="next">Next &gt;</a>-->
+
+</body>
+
+</html>

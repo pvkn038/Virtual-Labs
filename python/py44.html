@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>PYTHON PROGRAMMING LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q44. Draw a barchart with the following data using matplot lib Men_mean=[20,35,30,35,27] Women_mean=[25,32,34,20,25], Men_std=[2,3,4,1,2] Women_std=[3,5,2,3,3].
+
+            </b></p>
+
+
+        <p><b>Aim:</b> To draw a barchart with the following data using matplot lib Men_mean=[20,35,30,35,27] Women_mean=[25,32,34,20,25], Men_std=[2,3,4,1,2] Women_std=[3,5,2,3,3].
+
+</p>
+        <p><b>System and Software Requirements:</b> A Computer with an python interpreter.</p>
+        
+        <p align="justify"><b>Description:</b><br>
+            To draw a bar chart for the given data using Matplotlib without programming, you can follow the following steps:<br>
+            Start by defining the x-axis values as the categories that we have. In this case, the categories are not given, so we can use numbers as the categories. Let's define the categories as 0, 1, 2, 3, and 4.<br>
+            Next, we need to define the y-axis values for men and women. We have the mean values and standard deviation values for men and women. We can use the mean values as the y-axis values and the standard deviation values to add error bars to the bar chart.<br>
+            Now, we can create a bar chart with two bars for each category, one for men and one for women. The height of each bar will be the mean value, and the error bars will show the standard deviation.<br>
+            Finally, we can add labels for the x-axis, y-axis, and title to the chart to make it more informative.<br>
+            So, based on the above steps, we can draw a bar chart with the given data as follows:<br>
+            X-axis Categories: 0, 1, 2, 3, 4<br>
+            Y-axis Values for Men: [20, 35, 30, 35, 27]<br>
+            Y-axis Values for Women: [25, 32, 34, 20, 25]<br>
+            Error Bars for Men: [2, 3, 4, 1, 2]<br>
+            Error Bars for Women: [3, 5, 2, 3, 3].<br>
+
+            <style>
+                .imagecenter {
+                    width: 400px;
+                    height: 300px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }                
+            </style>
+            <img src="/images/pybarchart.jpg" alt="Not Found" class="imagecenter"><br>
+            
+
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Code Editor***
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                            .cnsl {
+ 
+                                     text-decoration: none;
+                                     display: inline-block;
+                                     background-color: rgba(29, 96, 184, 0.902);
+                                     padding: 8px;
+                                     border-radius: 6px;
+                                     border: 1px solid #d5d9d9;
+                                     box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                     box-sizing: border-box;
+                                     line-height: 20px;  
+                                     color: #edf0f3;
+                                 }
+ 
+                         </style>
+                         <a href="https://onecompiler.com/python" target="_blank" 
+                         class="cnsl">Try on CodeEditor</a><br>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                
+                        import matplotlib<br>
+                        import matplotlib.pyplot as plt<br>
+                        import numpy as np<br>
+                        
+                        
+                        men_means, men_std = (20, 35, 30, 35, 27), (2, 3, 4, 1, 2)<br>
+                        women_means, women_std = (25, 32, 34, 20, 25), (3, 5, 2, 3, 3)<br>
+                        
+                        ind = np.arange(len(men_means))  # the x locations for the groups<br>
+                        width = 0.35  # the width of the bars<br>
+                        
+                        fig, ax = plt.subplots()<br>
+                        rects1 = ax.bar(ind - width/2, men_means, width, yerr=men_std,
+                                        label='Men')<br>
+                        rects2 = ax.bar(ind + width/2, women_means, width, yerr=women_std,
+                                        label='Women')<br>
+                        
+                        # Add some text for labels, title and custom x-axis tick labels, etc.<br>
+                        ax.set_ylabel('Scores')<br>
+                        ax.set_title('Scores by group and gender')<br>
+                        ax.set_xticks(ind)<br>
+                        ax.set_xticklabels(('G1', 'G2', 'G3', 'G4', 'G5'))<br>
+                        ax.legend()<br>
+                        
+                        
+                        def autolabel(rects, xpos='center'):<br>
+                            """
+                            Attach a text label above each bar in *rects*, displaying its height.
+                        
+                            *xpos* indicates which side to place the text w.r.t. the center of
+                            the bar. It can be one of the following {'center', 'right', 'left'}.
+                            """<br>
+                        
+                            ha = {'center': 'center', 'right': 'left', 'left': 'right'}<br>
+                            offset = {'center': 0, 'right': 1, 'left': -1}<br>
+                        
+                            for rect in rects:<br>
+                                height = rect.get_height()<br>
+                                ax.annotate('{}'.format(height),<br>
+                                            xy=(rect.get_x() + rect.get_width() / 2, height),<br>
+                                            xytext=(offset[xpos]*3, 3),  # use 3 points offset<br>
+                                            textcoords="offset points",  # in both directions<br>
+                                            ha=ha[xpos], va='bottom')<br>
+                        
+                        
+                        autolabel(rects1, "left")<br>
+                        autolabel(rects2, "right")<br>
+                        
+                        fig.tight_layout()<br>
+                        
+                        plt.show()<br>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Solution 2
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+
+
+
+                            import numpy as np<br>
+                            import matplotlib.pyplot as plt<br>
+                            
+                            # Data<br>
+                            Men_mean = [20,35,30,35,27]<br>
+                            Women_mean = [25,32,34,20,25]<br>
+                            Men_std = [2,3,4,1,2]<br>
+                            Women_std = [3,5,2,3,3]<br>
+                            x_labels = ['A', 'B', 'C', 'D', 'E']<br>
+                            
+                            # Set the bar width<br>
+                            bar_width = 0.35<br>
+                            
+                            # Calculate the positions of the bars on the x-axis<br>
+                            r1 = np.arange(len(Men_mean))<br>
+                            r2 = [x + bar_width for x in r1]<br>
+                            
+                            # Plot the bars for Men and Women<br>
+                            plt.bar(r1, Men_mean, width=bar_width, yerr=Men_std, color='blue', edgecolor='black', capsize=7, label='Men')<br>
+                            plt.bar(r2, Women_mean, width=bar_width, yerr=Women_std, color='pink', edgecolor='black', capsize=7, label='Women')<br>
+                            
+                            # Add xticks on the middle of the group bars<br>
+                            plt.xlabel('Group', fontweight='bold')<br>
+                            plt.xticks([r + bar_width/2 for r in range(len(Men_mean))], x_labels)<br>
+                            
+                            # Add ylabel and title<br>
+                            plt.ylabel('Scores')<br>
+                            plt.title('Scores by group and gender')<br>
+                            
+                            # Add legend<br>
+                            plt.legend()<br>
+                            
+                            # Show the chart<br>
+                            plt.show()<br>
+
+   
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"></script>
+
+            <style>
+              
+                .previous {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    left: 50px;
+    
+                        }
+                    
+                .next {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    right: 50px;
+                        
+                    }
+        
+    </style>
+    
+    <a href="py43.html" class="previous"> &lt; Previous</a>
+    <a href="py45.html" style="float: right"  class="next">Next &gt;</a>
+</body>
+
+</html>

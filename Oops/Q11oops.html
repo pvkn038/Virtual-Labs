@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+    
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>OBJECT ORIENTED PROGRAMMING THROUGH JAVA LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q11. Write a Java program that correctly implements the producer-consumer problem using the concept of inter thread communication.</b></p>
+        <p><b>Aim:</b> To implement a Java program that correctly solves the producer-consumer problem using inter-thread communication.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with javac compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b><br> The Producer-Consumer problem is a classic synchronization problem in computer science where multiple threads are accessing a shared resource. In this problem, there 
+            are two types of threads: producers, which create data and put it into a shared buffer, and consumers, which remove data from the buffer.<br>
+            To implement this problem correctly in Java, we can use the concept of inter-thread communication using wait() and notify() methods. The following is an experimental theory on how to implement the 
+            Producer-Consumer problem using Java:<br>
+            1. Define a shared buffer: We need to define a shared buffer that can be accessed by both producers and consumers. This buffer can be an array, list or queue.<br>
+            2. Define a buffer size: We need to define the maximum size of the buffer. If the buffer is full, the producers should wait until there is space available in the buffer.<br>
+            3. Define a Producer class: The Producer class should implement the Runnable interface and should have a method that generates new data and puts it into the buffer. This method should use 
+            synchronized blocks to ensure that the buffer is accessed in a thread-safe manner. If the buffer is full, the producer should call the wait() method, which releases the lock on the buffer and waits 
+            for the consumer to remove some data from the buffer. Once the buffer has space available, the producer should call the notify() method to wake up the consumer thread.<br>
+            4. Define a Consumer class: The Consumer class should also implement the Runnable interface and should have a method that removes data from the buffer. This method should also use synchronized blocks 
+            to ensure that the buffer is accessed in a thread-safe manner. If the buffer is empty, the consumer should call the wait() method, which releases the lock on the buffer and waits for the producer to 
+            add some data to the buffer. Once the buffer has data available, the consumer should call the notify() method to wake up the producer thread.<br>
+            5. Create and start threads: We need to create and start threads for both producers and consumers. Each producer and consumer thread should be passed the shared buffer and the maximum buffer size.<br>
+            6. Testing and debugging: After implementing the program, we need to test and debug it to ensure that it works correctly. We can use print statements to check the buffer size and the data being added 
+            or removed from the buffer.<br>
+            Overall, the implementation of the Producer-Consumer problem using inter-thread communication in Java requires careful synchronization using synchronized blocks and wait() and notify() methods to ensure 
+            that the shared buffer is accessed in a thread-safe manner.<br><br>
+            <style>
+                .imagecenter {
+                    width: 300px;
+                    height: 300px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }                
+            </style>
+            <img src="/images/P-C.jpg" alt="Not Found" class="imagecenter"><br><br>
+            <b>Examples:</b><br>
+            
+            Suppose we have a buffer of size N, and two threads, a producer and a consumer. The producer produces new data and adds it to the buffer, and the consumer removes data from the buffer.<br>
+            To ensure that the buffer is accessed in a thread-safe manner, we use synchronized blocks and the wait() and notify() methods. When the buffer is full, the producer calls the wait() method, which releases 
+            the lock on the buffer and waits for the consumer to remove some data from the buffer. Similarly, when the buffer is empty, the consumer calls the wait() method, which releases the lock on the buffer and 
+            waits for the producer to add some data to the buffer. Once the buffer has space available or data is available, the producer or consumer calls the notify() method to wake up the other thread.<br>
+            Mathematically, we can represent the buffer as an array of size N, where the indices represent the position in the buffer and the values represent the data. Let B be the buffer array and let i be the index 
+            of the next empty position in the buffer. Initially, i = 0.<br>
+            When the producer produces new data, it adds it to the buffer at position i and increments i by 1. If i == N, the buffer is full, and the producer calls the wait() method. When the consumer removes data from 
+            the buffer, it removes the data at position i-1 and decrements i by 1. If i == 0, the buffer is empty, and the consumer calls the wait() method.<br>
+            Let p be the number of producer threads and c be the number of consumer threads. If p == c, then the buffer will be accessed in a balanced manner, and there will be no deadlock or starvation. However, if p > c, 
+            then the buffer may become full, and the producer threads will have to wait. Similarly, if c > p, then the buffer may become empty, and the consumer threads will have to wait.<br>
+            Overall, the Producer-Consumer problem using inter-thread communication requires careful synchronization to ensure that the shared buffer is accessed in a thread-safe manner. By using synchronized blocks and the 
+            wait() and notify() methods, we can ensure that the producer and consumer threads operate correctly and do not interfere with each other.<br>
+        </p>
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>
+                        Code Editor***</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                           .cnsl {
+
+                                    text-decoration: none;
+                                    display: inline-block;
+                                    background-color: rgba(29, 96, 184, 0.902);
+                                    padding: 8px;
+                                    border-radius: 6px;
+                                    border: 1px solid #d5d9d9;
+                                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                    box-sizing: border-box;
+                                    line-height: 20px;  
+                                    color: #edf0f3;
+                                }
+
+                        </style>
+                        <a href="https://onecompiler.com/" target="_blank" 
+                        class="cnsl">Try on CodeEditor</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        
+                        
+import java.io.*;<br>
+class Thread1<br>
+{<br>
+int n;<br>
+boolean valueset=false;<br>
+synchronized int get()<br>
+{<br>
+if (!valueset)<br>
+try<br>
+{<br>
+wait();<br>
+}<br>
+catch (Exception e)<br>
+{<br>
+System.out.println("Excepton occur at : "+e);<br>
+}<br>
+System.out.println("get" +n);<br>
+try<br>
+{<br>
+Thread.sleep(1000);<br>
+}<br>
+catch (Exception e)<br>
+{<br>
+System.out.println("Excepton occur at : "+e);<br>
+}<br>
+valueset=false;<br>
+notify();<br>
+return n;<br>
+}<br>
+synchronized int put(int n)<br>
+{<br>
+if (valueset)<br>
+try<br>
+{<br>
+wait();<br>
+}<br>
+catch (Exception e)<br>
+{<br>
+System.out.println("Excepton occur at : "+e);<br>
+}<br>
+this.n=n;<br>
+valueset=true;<br>
+System.out.println("put"+n);<br>
+try<br>
+{<br>
+Thread.sleep(1000);<br>
+}<br>
+catch (Exception e)<br>
+{<br>
+System.out.println("Excepton occur at : "+e);<br>
+}<br>
+notify();<br>
+return n;<br>
+}<br>
+}<br>
+class Producer implements Runnable<br>
+{<br>
+Thread1 t;<br>
+Producer(Thread1 t)<br>
+{<br>
+this.t=t;<br>
+new Thread(this,"Producer").start();<br>
+}<br>
+public void run()<br>
+{<br>
+int i=0;<br>
+while (true)<br>
+{<br>
+t.put(i++);<br>
+}<br>
+}<br>
+}<br>
+class Consumer implements Runnable<br>
+{<br>
+Thread1 t;<br>
+Consumer(Thread1 t)<br>
+{<br>
+this.t=t;<br>
+new Thread(this,"Consumer").start();<br>
+}<br>
+public void run()<br>
+{<br>
+int i=0;<br>
+while (true)<br>
+{<br>
+t.get();<br>
+}<br>
+}<br>
+}<br>
+class ProducerConsumer<br>
+{<br>
+public static void main(String[] args) throws IOException<br>
+{<br>
+Thread1 t=new Thread1();<br>
+new Producer(t);<br>
+new Consumer(t);<br>
+System.out.println("Press Control+c to exit");<br>
+}<br>
+}<br>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        import java.util.LinkedList;<br>
+
+public class ProducerConsumer {<br>
+    public static void main(String[] args) {<br>
+        LinkedList<Integer> buffer = new LinkedList&lt;&gt;();<br>
+        int bufferSize = 5;<br>
+
+        Thread producer = new Thread(new Producer(buffer, bufferSize));<br>
+        Thread consumer = new Thread(new Consumer(buffer));<br>
+
+        producer.start();<br>
+        consumer.start();<br>
+    }<br>
+}<br>
+
+class Producer implements Runnable {<br>
+    private LinkedList<Integer> buffer;<br>
+    private int bufferSize;<br>
+
+    public Producer(LinkedList<Integer> buffer, int bufferSize) {<br>
+        this.buffer = buffer;<br>
+        this.bufferSize = bufferSize;<br>
+    }<br>
+
+    public void run() {<br>
+        int i = 0;<br>
+        while (true) {<br>
+            synchronized (buffer) {<br>
+                while (buffer.size() == bufferSize) {<br>
+                    try {<br>
+                        buffer.wait();<br>
+                    } catch (InterruptedException e) {<br>
+                        e.printStackTrace();<br>
+                    }<br>
+                }<br>
+                buffer.add(i++);<br>
+                buffer.notifyAll();<br>
+            }<br>
+        }<br>
+    }<br>
+}<br>
+
+class Consumer implements Runnable {<br>
+    private LinkedList<Integer> buffer;<br>
+
+    public Consumer(LinkedList<Integer> buffer) {<br>
+        this.buffer = buffer;<br>
+    }<br>
+
+    public void run() {<br>
+        while (true) {<br>
+            synchronized (buffer) {<br>
+                while (buffer.isEmpty()) {<br>
+                    try {<br>
+                        buffer.wait();<br>
+                    } catch (InterruptedException e) {<br>
+                        e.printStackTrace();<br>
+                    }<br>
+                }<br>
+                int value = buffer.remove();<br>
+                System.out.println("Consumed: " + value);<br>
+                buffer.notifyAll();<br>
+            }<br>
+        }<br>
+    }<br>
+}<br>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<!--<a href="#" class="previous"> &lt; Previous</a>-->
+<a href="Q10oops.html" class="previous"> &lt; Previous</a>
+<a href="Q12oops.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

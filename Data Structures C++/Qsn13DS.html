@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+
+                
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>DATA STRUCTURES LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q13. Write a C++ program that implements Radix sort algorithm for sorting a list of
+                integers in
+                ascending order.
+
+            </b></p>
+
+        <p><b>Aim:</b> To arrange a list of integers in ascending order using Radix sort algorithm.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with G++ compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b><br> Radix Sort is a Sorting algorithm that can be only applied to numeric values.
+            <br>
+            This sorting technique that sorts the elements into a logical order by grouping the individual digits of
+            the same place value.
+            This sorting of individual digits of same place value is done with the help of counting sort. 
+            In this article we will learn more about radix sort in C++. 
+            You can learn more about counting sort by clicking the button below. <br>
+        <b>Algorithm:</b><br>
+        Step-1: Take unit place digit of each element.<br>
+        Step-2: Sort the element according to their unit place using counting sort. <br>
+        Step-3: Now look upon the ten’s place digit of each element.<br>
+        Step-4: Sort the element according to their ten’s place using counting sort.<br>
+        Step-5: Repeat the step for digit of each place value.<br>
+        
+        
+
+        
+        <center><img src="/images/dsimg13.png" alt="Not Found" width="400" height="500"></center><br><br>
+
+        
+
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Code Editor***
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                            .cnsl {
+ 
+                                     text-decoration: none;
+                                     display: inline-block;
+                                     background-color: rgba(29, 96, 184, 0.902);
+                                     padding: 8px;
+                                     border-radius: 6px;
+                                     border: 1px solid #d5d9d9;
+                                     box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                     box-sizing: border-box;
+                                     line-height: 20px;  
+                                     color: #edf0f3;
+                                 }
+ 
+                         </style>
+                         <a href="https://onecompiler.com/cpp" target="_blank" 
+                         class="cnsl">Try on CodeEditor</a><br>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+
+                        #include &ltiostream&gt <br>
+                        using namespace std; <br>
+                        // A utility function to get maximum value in arr[] <br>
+                        int getMax(int arr[], int n) <br>
+                        { <br>
+                        int mx = arr[0]; <br>
+                        for (int i = 1; i < n; i++) <br>
+                            if (arr[i] > mx) <br>
+                            mx = arr[i]; <br>
+                            return mx; <br>
+                            } <br>
+                            void countSort(int arr[], int n, int exp) <br>
+                            { <br>
+                            int output[n]; // output array <br>
+                            int i, count[10] = { 0 }; <br>
+                            // Store count of occurrences in count[] <br>
+                            for (i = 0; i < n; i++) <br>
+                                count[(arr[i] / exp) % 10]++; <br>
+                                for (i = 1; i < 10; i++) <br>
+                                    count[i] += count[i - 1]; <br>
+                                    for (i = n - 1; i >= 0; i--) { <br>
+                                    output[count[(arr[i] / exp) % 10] - 1] = arr[i]; <br>
+                                    count[(arr[i] / exp) % 10]--; <br>
+                                    } <br>
+                                    for (i = 0; i < n; i++) <br>
+                                        arr[i] = output[i]; <br>
+                                        } <br>
+                                        // The main function to that sorts arr[] of size n using <br>
+                                        // Radix Sort <br>
+                                        void radixsort(int arr[], int n) <br>
+                                        { <br>
+                                        // Find the maximum number to know number of digits <br>
+                                        int m = getMax(arr, n); <br>
+                                        // Do counting sort for every digit. Note that instead <br>
+                                        // of passing digit number, exp is passed. exp is 10^i <br>
+                                        // where i is current digit number <br>
+                                        for (int exp = 1; m / exp > 0; exp *= 10) <br>
+                                        countSort(arr, n, exp); <br>
+                                        } <br>
+                                        // A utility function to print an array <br>
+                                        void print(int arr[], int n) <br>
+                                        { <br>
+                                        for (int i = 0; i < n; i++) <br>
+                                            cout << arr[i] << " " ; <br>
+                                                } <br>
+                                                // Driver Code <br>
+                                                int main() <br>
+                                                { <br>
+                                                int arr[] = { 170, 45, 75, 90, 802, 24, 2, 66 }; <br>
+                                                int n = sizeof(arr) / sizeof(arr[0]); <br>
+                                                // Function Call <br>
+                                                radixsort(arr, n); <br>
+                                                print(arr, n); <br>
+                                                return 0; <br>
+                                                } <br>
+                    </div>
+                </div>
+            </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Solution 2
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+
+                            #include &ltiostream&gt <br>
+                            #include &ltvector&gt <br>
+                            #include &ltqueue&gt <br>
+                            using namespace std; <br>
+                            // Function to perform radix sort using vector of queues <br>
+                            void radixSort(vector&ltint&gt& arr) { <br>
+                            // Find the maximum number to know the number of digits <br>
+                            int max = *max_element(arr.begin(), arr.end()); <br>
+                            // Perform counting sort for every digit, starting from the least
+                            significant digit <br>
+                            for (int exp = 1; max / exp > 0; exp *= 10) { <br>
+                            vector&ltqueue&ltint&gt&gt buckets(10); <br>
+                            // Distribute the elements into buckets based on the current digit <br>
+                            for (int i = 0; i < arr.size(); i++) { <br>
+                                int digit = (arr[i] / exp) % 10; <br>
+                                buckets[digit].push(arr[i]); <br>
+                                } <br>
+                                // Collect the elements from the buckets <br>
+                                int index = 0; <br>
+                                for (int i = 0; i < 10; i++) { <br>
+                                    while (!buckets[i].empty()) { <br>
+                                    arr[index++] = buckets[i].front(); <br>
+                                    buckets[i].pop(); <br>
+                                    } <br>
+                                    } <br>
+                                    } <br>
+                                    } <br>
+                                    // Driver code to test the implementation <br>
+                                    int main() { <br>
+                                    vector<int> arr = { 170, 45, 75, 90, 802, 24, 2, 66 }; <br>
+                                        // Sort the array using radix sort <br>
+                                        radixSort(arr); <br>
+                                        // Print the sorted array <br>
+                                        for (int i = 0; i < arr.size(); i++) { <br>
+                                            cout << arr[i] << " " ; <br>
+                                                } <br>
+                                                cout << endl; <br>
+                                                    return 0; <br>
+                                                    } <br>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"></script>
+
+
+            <style>
+              
+                .previous {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    left: 50px;
+    
+                        }
+                    
+                .next {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    right: 50px;
+                        
+                    }
+        
+    </style>
+
+<a href="Qsn12DS.html" class="previous"> &lt; Previous</a>
+<a href="Qsn14aDS.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

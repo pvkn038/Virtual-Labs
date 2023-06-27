@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/vlab.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+
+                
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="Description">
+        <h4>DESIGN AND ANALYSIS OF ALGORITHMS LAB<hr>
+        </h4>
+        <p style="color:red;"><b>Q5. Find Minimum Cost Spanning Tree of a given undirected graph using Kruskal's algorithm.</b></p>
+        <p><b>Aim:</b> To find Minimum Cost Spanning Tree of a given undirected graph using Kruskal's algorithm.</p>
+        <p><b>System and Software Requirements:</b>
+            A Computer with any Operating system with GCC compiler installed in it.</p>
+        <b>DESCRIPTION:</b>
+        <p>A Spanning tree is a subset to a connected graph G, where all the edges are connected, i.e, one can traverse to any edge from a particular edge with or without intermediates. Also, a spanning tree must not have any cycle in it. Thus we can say that if there are N vertices in a connected graph then the no. of edges that a spanning tree may have is N-1.</p>
+        <p>Given a connected and undirected graph, a spanning tree of that graph is a subgraph that is a tree and connects all the vertices together. A single graph can have many different spanning trees. A minimum spanning tree (MST) or minimum weight spanning tree for a weighted, connected, undirected graph is a spanning tree with a weight less than or equal to the weight of every other spanning tree. The weight of a spanning tree is the sum of weights given to each edge of the spanning tree.</p>
+        <b>APProach:</b>
+        <ol><li>Sort all the edges in non-decreasing order of their weight.&nbsp;</li><li>Pick the smallest edge. Check if it forms a cycle with the spanning tree formed so far. If the cycle is not formed, include this edge. Else, discard it.&nbsp;</li><li>Repeat step#2 until there are (V-1) edges in the spanning tree.</li></ol>
+        <h2>Illustration:</h2>
+        <blockquote><p><strong>Input Graph:</strong><br>&nbsp;</p><p style="text-align:center"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210727035309/UntitledDiagram92.png" alt="Kruskal’s Minimum Spanning Tree Algorithm"></p><p>The graph contains 9 vertices and 14 edges. So, the minimum spanning tree formed will be having (9 – 1) = 8 edges.&nbsp;</p><pre>After sorting:
+            Weight   Src    Dest
+            1         7      6
+            2         8      2
+            2         6      5
+            4         0      1
+            4         2      5
+            6         8      6
+            7         2      3
+            7         7      8
+            8         0      7
+            8         1      2
+            9         3      4
+            10        5      4
+            11        1      7
+            14        3      5</pre><p>Now pick all edges one by one from the sorted list of edges&nbsp;<br><strong>Step 1:</strong> Pick edge 7-6: No cycle is formed, include it.&nbsp;<br>&nbsp;</p><p style="text-align:center"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210727035707/UntitledDiagram100.png" alt="Kruskal’s Minimum Spanning Tree Algorithm"></p><div style="text-align:center;margin:20px 0" id="GFG_AD_gfg_outstream_incontent" data-google-query-id="CMy3j_Wm2_0CFTBGnQkdA9wMsA"><div id="google_ads_iframe_/27823234/gfg_outstream_incontent_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div><p><strong>Step 2:</strong> &nbsp;<i>Pick edge 8-2:</i> No cycle is formed, include it.&nbsp;<br>&nbsp;</p><p style="text-align:center"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210727035650/UntitledDiagram99.png" alt="Kruskal’s Minimum Spanning Tree Algorithm"></p><p><strong>Step 3:</strong> <i>Pick edge 6-5:</i> No cycle is formed, include it.&nbsp;<br>&nbsp;</p><p style="text-align:center"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210727035627/UntitledDiagram98.png" alt="Kruskal’s Minimum Spanning Tree Algorithm"></p><p><strong>Step 4:</strong> <i>Pick edge 0-1:</i> No cycle is formed, include it.&nbsp;<br>&nbsp;</p><p style="text-align:center"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210727035604/UntitledDiagram97.png" alt="Kruskal’s Minimum Spanning Tree Algorithm"></p><p><strong>Step 5:</strong> <i>Pick edge 2-5:</i> No cycle is formed, include it.&nbsp;<br>&nbsp;</p><p style="text-align:center"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210727035542/UntitledDiagram96.png" alt="Kruskal’s Minimum Spanning Tree Algorithm"></p><p><i><strong>Step 6:</strong> Pick edge 8-6: </i>Since including this edge results in the cycle, discard it.<br><strong>Step 7:</strong> <i>Pick edge 2-3:</i> No cycle is formed, include it.&nbsp;<br>&nbsp;</p><p style="text-align:center"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210727035519/UntitledDiagram95.png" alt="Kruskal’s Minimum Spanning Tree Algorithm"></p><div style="text-align:center;margin:20px 0" id="GFG_AD_gfg_outstream_incontent"></div><p><strong>Step 8:</strong> <i>Pick edge 7-8:</i> Since including this edge results in the cycle, discard it.<br><strong>Step 9:</strong> <i>Pick edge 0-7:</i> No cycle is formed, include it.&nbsp;<br>&nbsp;</p><p style="text-align:center"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210727035450/UntitledDiagram94.png" alt="Kruskal’s Minimum Spanning Tree Algorithm"></p><p><strong>Step 10:</strong> <i>Pick edge 1-2: </i>Since including this edge results in the cycle, discard it.<br><strong>Step 11:</strong> <i>Pick edge 3-4:</i> No cycle is formed, include it.&nbsp;<br>&nbsp;</p><p style="text-align:center"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210727035418/UntitledDiagram93.png" alt="Kruskal’s Minimum Spanning Tree Algorithm"></p><p><strong>Note:</strong> Since the number of edges included in the MST equals to (V – 1), so the algorithm stops here.</p></blockquote>
+        
+
+
+
+
+
+
+
+
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+                solution</b><br><br>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Code Editor***
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <style>
+                                .cnsl {
+     
+                                         text-decoration: none;
+                                         display: inline-block;
+                                         background-color: rgba(29, 96, 184, 0.902);
+                                         padding: 8px;
+                                         border-radius: 6px;
+                                         border: 1px solid #d5d9d9;
+                                         box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                         box-sizing: border-box;
+                                         line-height: 20px;  
+                                         color: #edf0f3;
+                                     }
+     
+                             </style>
+                        <a href="https://onecompiler.com/c" target="_blank"
+                                class="cnsl">Try on Code Editor</a><br>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Solution 1
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+<table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="preprocessor">#include&lt;stdio.h&gt;</code></div><div class="line number2 index1 alt1"><code class="preprocessor">#include&lt;stdlib.h&gt;</code></div><div class="line number3 index2 alt2"><code class="undefined spaces">&nbsp;</code>&nbsp;</div><div class="line number4 index3 alt1"><code class="color1 bold">int</code> <code class="plain">comparator(</code><code class="keyword bold">const</code> <code class="keyword bold">void</code> <code class="plain">*p1,</code><code class="keyword bold">const</code> <code class="keyword bold">void</code> <code class="plain">*p2)</code><code class="comments">//used by qsort()</code></div><div class="line number5 index4 alt2"><code class="plain">{</code></div><div class="line number6 index5 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">const</code> <code class="color1 bold">int</code> <code class="plain">(*x)[3]=p1;</code></div><div class="line number7 index6 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">const</code> <code class="color1 bold">int</code> <code class="plain">(*y)[3]=p2;</code></div><div class="line number8 index7 alt1"><code class="undefined spaces">&nbsp;</code>&nbsp;</div><div class="line number9 index8 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">(*x)[2]-(*y)[2];</code></div><div class="line number10 index9 alt1"><code class="plain">}</code></div><div class="line number11 index10 alt2"><code class="undefined spaces">&nbsp;</code>&nbsp;</div><div class="line number12 index11 alt1"><code class="keyword bold">void</code> <code class="plain">makeSet(</code><code class="color1 bold">int</code> <code class="plain">parent[],</code><code class="color1 bold">int</code> <code class="plain">rank[],</code><code class="color1 bold">int</code> <code class="plain">n)</code></div><div class="line number13 index12 alt2"><code class="plain">{</code></div><div class="line number14 index13 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">for</code><code class="plain">(</code><code class="color1 bold">int</code> <code class="plain">i=0;i&lt;n;i++)</code></div><div class="line number15 index14 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div><div class="line number16 index15 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">parent[i]=i;</code></div><div class="line number17 index16 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">rank[i]=0;</code></div><div class="line number18 index17 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div><div class="line number19 index18 alt2"><code class="plain">}</code></div><div class="line number20 index19 alt1"><code class="undefined spaces">&nbsp;</code>&nbsp;</div><div class="line number21 index20 alt2"><code class="color1 bold">int</code> <code class="plain">findParent(</code><code class="color1 bold">int</code> <code class="plain">parent[],</code><code class="color1 bold">int</code> <code class="plain">component)</code></div><div class="line number22 index21 alt1"><code class="plain">{</code></div><div class="line number23 index22 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">if</code><code class="plain">(parent[component]==component)</code></div><div class="line number24 index23 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">component;</code></div><div class="line number25 index24 alt2"><code class="undefined spaces">&nbsp;</code>&nbsp;</div><div class="line number26 index25 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">parent[component]=findParent(parent,parent[component]);</code></div><div class="line number27 index26 alt2"><code class="plain">}</code></div><div class="line number28 index27 alt1"><code class="undefined spaces">&nbsp;</code>&nbsp;</div><div class="line number29 index28 alt2"><code class="keyword bold">void</code> <code class="plain">unionSet(</code><code class="color1 bold">int</code> <code class="plain">u,</code><code class="color1 bold">int</code> <code class="plain">v,</code><code class="color1 bold">int</code> <code class="plain">parent[],</code><code class="color1 bold">int</code> <code class="plain">rank[],</code><code class="color1 bold">int</code> <code class="plain">n)</code></div><div class="line number30 index29 alt1"><code class="plain">{</code></div><div class="line number31 index30 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//this function unions two set on the basis of rank</code></div><div class="line number32 index31 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//as shown below</code></div><div class="line number33 index32 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">u=findParent(parent,u);</code></div><div class="line number34 index33 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">v=findParent(parent,v);</code></div><div class="line number35 index34 alt2"><code class="undefined spaces">&nbsp;</code>&nbsp;</div><div class="line number36 index35 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">if</code><code class="plain">(rank[u]&lt;rank[v])</code></div><div class="line number37 index36 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div><div class="line number38 index37 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">parent[u]=v;</code></div><div class="line number39 index38 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div><div class="line number40 index39 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">else</code> <code class="keyword bold">if</code><code class="plain">(rank[u]&lt;rank[v])</code></div><div class="line number41 index40 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div><div class="line number42 index41 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">parent[v]=u;</code></div><div class="line number43 index42 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div><div class="line number44 index43 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">else</code></div><div class="line number45 index44 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div><div class="line number46 index45 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">parent[v]=u;</code></div><div class="line number47 index46 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">rank[u]++;</code><code class="comments">//since the rank increases if the ranks of two sets are same</code></div><div class="line number48 index47 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div><div class="line number49 index48 alt2"><code class="plain">}</code></div><div class="line number50 index49 alt1"><code class="undefined spaces">&nbsp;</code>&nbsp;</div><div class="line number51 index50 alt2"><code class="keyword bold">void</code> <code class="plain">kruskalAlgo(</code><code class="color1 bold">int</code> <code class="plain">n,</code><code class="color1 bold">int</code> <code class="plain">edge[n][3])</code></div><div class="line number52 index51 alt1"><code class="plain">{</code></div><div class="line number53 index52 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//First we sort the edge array in ascending order</code></div><div class="line number54 index53 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//so that we can access minimum distances/cost</code></div><div class="line number55 index54 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions bold">qsort</code><code class="plain">(edge,n,</code><code class="keyword bold">sizeof</code><code class="plain">(edge[0]),comparator);</code></div><div class="line number56 index55 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//inbuilt quick sort function comes with stdlib.h</code></div><div class="line number57 index56 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//go to <a href="https://www.geeksforgeeks.org/comparator-function-of-qsort-in-c/">https://www.geeksforgeeks.org/comparator-function-of-qsort-in-c/</a></code></div><div class="line number58 index57 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//if there is any doubt regarding the function</code></div><div class="line number59 index58 alt2"><code class="undefined spaces">&nbsp;</code>&nbsp;</div><div class="line number60 index59 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1 bold">int</code> <code class="plain">parent[n];</code></div><div class="line number61 index60 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1 bold">int</code> <code class="plain">rank[n];</code></div><div class="line number62 index61 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">makeSet(parent,rank,n);</code><code class="comments">//function to initialize parent[] and rank[]</code></div><div class="line number63 index62 alt2"><code class="undefined spaces">&nbsp;</code>&nbsp;</div><div class="line number64 index63 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1 bold">int</code> <code class="plain">minCost=0;</code><code class="comments">//to store the minimun cost</code></div><div class="line number65 index64 alt2"><code class="undefined spaces">&nbsp;</code>&nbsp;</div><div class="line number66 index65 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions bold">printf</code><code class="plain">(</code><code class="string">"Following are the edges in the constructed MST\n"</code><code class="plain">);</code></div><div class="line number67 index66 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">for</code><code class="plain">(</code><code class="color1 bold">int</code> <code class="plain">i=0;i&lt;n;i++)</code></div><div class="line number68 index67 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div><div class="line number69 index68 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1 bold">int</code> <code class="plain">v1=findParent(parent,edge[i][0]);</code></div><div class="line number70 index69 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1 bold">int</code> <code class="plain">v2=findParent(parent,edge[i][1]);</code></div><div class="line number71 index70 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1 bold">int</code> <code class="plain">wt=edge[i][2];</code></div><div class="line number72 index71 alt1"><code class="undefined spaces">&nbsp;</code>&nbsp;</div><div class="line number73 index72 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">if</code><code class="plain">(v1!=v2)</code><code class="comments">//if the parents are different that means they are in</code></div><div class="line number74 index73 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//different sets so union them</code></div><div class="line number75 index74 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div><div class="line number76 index75 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">unionSet(v1,v2,parent,rank,n);</code></div><div class="line number77 index76 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">minCost+=wt;</code></div><div class="line number78 index77 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions bold">printf</code><code class="plain">(</code><code class="string">"%d -- %d == %d\n"</code><code class="plain">,edge[i][0],edge[i][1],wt);</code></div><div class="line number79 index78 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div><div class="line number80 index79 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div><div class="line number81 index80 alt2"><code class="undefined spaces">&nbsp;</code>&nbsp;</div><div class="line number82 index81 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions bold">printf</code><code class="plain">(</code><code class="string">"Minimum Cost Spanning Tree: %d\n"</code><code class="plain">,minCost);</code></div><div class="line number83 index82 alt2"><code class="plain">}</code></div><div class="line number84 index83 alt1"><code class="undefined spaces">&nbsp;</code>&nbsp;</div><div class="line number85 index84 alt2"><code class="color1 bold">int</code> <code class="plain">main()</code></div><div class="line number86 index85 alt1"><code class="plain">{</code></div><div class="line number87 index86 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;</code>&nbsp;</div><div class="line number88 index87 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">/* Let us create following weighted graph</code></div><div class="line number89 index88 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">10</code></div><div class="line number90 index89 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">0--------1</code></div><div class="line number91 index90 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">|&nbsp; \&nbsp;&nbsp;&nbsp;&nbsp; |</code></div><div class="line number92 index91 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">6|&nbsp;&nbsp; 5\&nbsp;&nbsp; |15</code></div><div class="line number93 index92 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \ |</code></div><div class="line number94 index93 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">2--------3</code></div><div class="line number95 index94 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */</code></div><div class="line number96 index95 alt1"><code class="undefined spaces">&nbsp;</code>&nbsp;</div><div class="line number97 index96 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//Here 5 is the number of edges, can be asked from the user</code></div><div class="line number98 index97 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//when making the graph through user input</code></div><div class="line number99 index98 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//3 represents the no of index positions for storing u --&gt; v(adjacent vertices)&nbsp;</code></div><div class="line number100 index99 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">//and its cost/distance;</code></div><div class="line number101 index100 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1 bold">int</code> <code class="plain">edge[5][3]={{0,1,10},</code></div><div class="line number102 index101 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{0,2,6},</code></div><div class="line number103 index102 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{0,3,5},</code></div><div class="line number104 index103 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{1,3,15},</code></div><div class="line number105 index104 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{2,3,4}};</code></div><div class="line number106 index105 alt1"><code class="undefined spaces">&nbsp;</code>&nbsp;</div><div class="line number107 index106 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">kruskalAlgo(5,edge);</code></div><div class="line number108 index107 alt1"><code class="plain">}</code></div></div></td></tr></tbody></table>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Solution 2
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<a href="daa_04.html" class="previous"> &lt; Previous</a>
+<a href="daa_06.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

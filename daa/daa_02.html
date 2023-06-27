@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/vlab.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                        .image {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                        }
+                    </style>
+                    <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="Description">
+        <h4>DESIGN AND ANALYSIS OF ALGORITHMS LAB 
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q2. Compute the transitive closure of a given directed graph using Warshall's algorithm.</b></p>
+        <p><b>Aim:</b> To compute the transitive closure of a given directed graph using Warshall's algorithm.</p>
+        <p><b>System and Software Requirements:</b>
+            A Computer with any Operating system with GCC compiler installed in it.</p>
+        <b>DESCRIPTION:</b>
+        <p>
+            Given a directed graph, find out if a vertex j is reachable from another vertex i for all vertex pairs (i, j) in the given graph. Here reachable mean that there is a path from vertex i to j. The reach-ability matrix is called the transitive closure of a graph.<br>
+            <style>
+                .imagecenter {
+                    width: 400px;
+                    height: 300px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }                
+            </style><br>
+           <img src="https://media.geeksforgeeks.org/wp-content/uploads/transitiveclosure.png" alt="transitiveclosure" class="imagecenter">
+           <pre>Transitive closure of above graphs is <br>
+            1 1 1 1 
+            1 1 1 1 
+            1 1 1 1 
+            0 0 0 1</pre>
+            <br>The graph is given in the form of adjacency matrix say ‘graph[V][V]’ where graph[i][j] is 1 if there is an edge from vertex i to vertex j or i is equal to j, otherwise graph[i][j] is 0.
+            Floyd Warshall Algorithm can be used, we can calculate the distance matrix dist[V][V] using Floyd Warshall, if dist[i][j] is infinite, then j is not reachable from i. Otherwise, j is reachable and the value of dist[i][j] will be less than V. 
+        </p>
+        <b>ALGORITHM</b>
+        <p>
+            <ol>
+                <li>Create a matrix <code>A<sup>0</sup></code> of dimension <code>n*n</code> where n is the number of vertices. The row and the column are indexed as <var>i</var> and <var>j</var> respectively. <var>i</var> and <var>j</var> are the vertices of the graph.<br>
+                    <br>
+                    Each cell <var>A[i][j]</var> is filled with the distance from the <code>i<sup>th</sup></code> vertex to the <code>j<sup>th</sup></code> vertex. If there is no path from <code>i<sup>th</sup></code> vertex to <code>j<sup>th</sup></code> vertex, the cell is left as infinity.
+            
+                    <figure><img alt="matrix floyd warshall algorithm" height="186" src="//cdn.programiz.com/sites/tutorial2program/files/fw-Matrix-1.png" title="matrix" width="250">
+                        <figcaption>Fill each cell with the distance between ith and jth vertex</figcaption>
+                    </figure>
+                </li>
+                <li>Now, create a matrix <code>A<sup>1</sup></code> using matrix <code>A<sup>0</sup></code>. The elements in the first column and the first row are left as they are. The remaining cells are filled in the following way.<br>
+                    <br>
+                    Let <var>k</var> be the intermediate vertex in the shortest path from source to destination. In this step, <var>k</var> is the first vertex. <code>A[i][j]</code> is filled with <code>(A[i][k] + A[k][j]) if (A[i][j] &gt; A[i][k] + A[k][j])</code>.<br>
+                    <br>
+                    That is, if the direct distance from the source to the destination is greater than the path through the vertex <var>k</var>, then the cell is filled with <code>A[i][k] + A[k][j]</code>.<br>
+                    <br>
+                    In this step, k is vertex 1. We calculate the distance from source vertex to destination vertex through this vertex k.
+                    <figure><img alt="matrix floyd warshall algorithm" height="197" src="//cdn.programiz.com/sites/tutorial2program/files/fw-Matrix-2.png" title="matrix A1" width="500">
+                        <figcaption>Calculate the distance from the source vertex to destination vertex through this vertex k</figcaption>
+                    </figure>
+                    <br>
+                    For example: For <code>A<sup>1</sup>[2, 4]</code>, the direct distance from vertex 2 to 4 is 4 and the sum of the distance from vertex 2 to 4 through vertex (ie. from vertex 2 to 1 and from vertex 1 to 4) is 7. Since <code>4 &lt; 7</code>, <code>A<sup>0</sup>[2, 4]</code> is filled with 4.</li>
+                <li>Similarly, <code>A<sup>2</sup></code> is created using <code>A<sup>1</sup></code>. The elements in the second column and the second row are left as they are.<br>
+                    <br>
+                    In this step, <var>k</var> is the second vertex (i.e. vertex 2). The remaining steps are the same as in <strong>step 2</strong>.
+                    <figure><img alt="matrix floyd warshall algorithm" height="197" src="//cdn.programiz.com/sites/tutorial2program/files/fw-Matrix-3.png" title="matrix A2" width="500">
+                        <figcaption>Calculate the distance from the source vertex to destination vertex through this vertex 2</figcaption>
+                    </figure>
+                </li>
+                <li>Similarly, <code>A<sup>3</sup></code> and <code>A<sup>4</sup></code> is also created.
+                    <figure><img alt="matrix floyd warshall algorithm" height="197" src="//cdn.programiz.com/sites/tutorial2program/files/fw-Matrix-4.png" title="matrix A3" width="500">
+                        <figcaption>Calculate the distance from the source vertex to destination vertex through this vertex 3</figcaption>
+                    </figure>
+                    &nbsp;
+            
+                    <figure><img alt="matrix floyd warshall algorithm" height="197" src="//cdn.programiz.com/sites/tutorial2program/files/fw-Matrix-5.png" title="matrix A4" width="500">
+                        <figcaption>Calculate the distance from the source vertex to destination vertex through this vertex 4</figcaption>
+                    </figure>
+                </li>
+                <li><code>A<sup>4</sup></code> gives the shortest path between each pair of vertices.</li>
+            </ol>
+        </p>
+
+
+
+
+
+
+
+
+
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Code Editor***
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                                .cnsl {
+     
+                                         text-decoration: none;
+                                         display: inline-block;
+                                         background-color: rgba(29, 96, 184, 0.902);
+                                         padding: 8px;
+                                         border-radius: 6px;
+                                         border: 1px solid #d5d9d9;
+                                         box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                         box-sizing: border-box;
+                                         line-height: 20px;  
+                                         color: #edf0f3;
+                                     }
+     
+                             </style>
+                        <a href="https://onecompiler.com/" target="_blank"
+                                class="cnsl">Try on Code Editor</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td class="code">
+                                        <div class="container">
+                                            <div class="line number1 index0 alt2"><code
+                                                    class="comments">// Program for transitive closure</code></div>
+                                            <div class="line number2 index1 alt1"><code
+                                                    class="comments">// using Floyd Warshall Algorithm</code></div>
+                                            <div class="line number3 index2 alt2"><code class="keyword">import</code> <code
+                                                    class="plain">java.util.*;</code></div>
+                                            <div class="line number4 index3 alt1"><code class="keyword">import</code> <code
+                                                    class="plain">java.lang.*;</code></div>
+                                            <div class="line number5 index4 alt2"><code class="keyword">import</code> <code
+                                                    class="plain">java.io.*;</code></div>
+                                            <div class="line number6 index5 alt1">&nbsp;</div>
+                                            <div class="line number7 index6 alt2"><code class="keyword">class</code> <code
+                                                    class="plain">GraphClosure</code></div>
+                                            <div class="line number8 index7 alt1"><code class="plain">{</code></div>
+                                            <div class="line number9 index8 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">final</code>
+                                                <code class="keyword">static</code> <code class="keyword">int</code> <code
+                                                    class="plain">V = </code><code class="value">4</code><code class="plain">; </code><code
+                                                    class="comments">//Number of vertices in a graph</code></div>
+                                            <div class="line number10 index9 alt1">&nbsp;</div>
+                                            <div class="line number11 index10 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">// Prints transitive closure of graph[][] using Floyd</code></div>
+                                            <div class="line number12 index11 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">// Warshall algorithm</code></div>
+                                            <div class="line number13 index12 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">void</code>
+                                                <code class="plain">transitiveClosure(</code><code class="keyword">int</code> <code
+                                                    class="plain">graph[][])</code></div>
+                                            <div class="line number14 index13 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div>
+                                            <div class="line number15 index14 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">/* reach[][] will be the output matrix that will finally</code></div>
+                                            <div class="line number16 index15 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">have the shortest&nbsp; distances between every pair of</code></div>
+                                            <div class="line number17 index16 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">vertices */</code></div>
+                                            <div class="line number18 index17 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="keyword">int</code> <code class="plain">reach[][] = </code><code
+                                                    class="keyword">new</code> <code class="keyword">int</code><code
+                                                    class="plain">[V][V];</code></div>
+                                            <div class="line number19 index18 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="keyword">int</code>&nbsp; <code class="plain">i, j, k;</code></div>
+                                            <div class="line number20 index19 alt1">&nbsp;</div>
+                                            <div class="line number21 index20 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">/* Initialize the solution matrix same as input graph</code></div>
+                                            <div class="line number22 index21 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">matrix. Or&nbsp; we can say the initial values of shortest</code></div>
+                                            <div class="line number23 index22 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">distances are based&nbsp; on shortest paths considering</code></div>
+                                            <div class="line number24 index23 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">no intermediate vertex. */</code></div>
+                                            <div class="line number25 index24 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="keyword">for</code> <code class="plain">(i = </code><code class="value">0</code><code
+                                                    class="plain">; i &lt; V; i++)</code></div>
+                                            <div class="line number26 index25 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="keyword">for</code> <code class="plain">(j = </code><code class="value">0</code><code
+                                                    class="plain">; j &lt; V; j++)</code></div>
+                                            <div class="line number27 index26 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">reach[i][j] = graph[i][j];</code></div>
+                                            <div class="line number28 index27 alt1">&nbsp;</div>
+                                            <div class="line number29 index28 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">/* Add all vertices one by one to the set of intermediate</code></div>
+                                            <div class="line number30 index29 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">vertices.</code></div>
+                                            <div class="line number31 index30 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">---&gt; Before start of a iteration, we have reachability</code></div>
+                                            <div class="line number32 index31 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">values for all&nbsp; pairs of vertices such that the</code></div>
+                                            <div class="line number33 index32 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">reachability values consider only the vertices in</code></div>
+                                            <div class="line number34 index33 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">set {0, 1, 2, .. k-1} as intermediate vertices.</code></div>
+                                            <div class="line number35 index34 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">----&gt; After the end of a iteration, vertex no. k is</code></div>
+                                            <div class="line number36 index35 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">added to the set of intermediate vertices and the</code></div>
+                                            <div class="line number37 index36 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">set becomes {0, 1, 2, .. k} */</code></div>
+                                            <div class="line number38 index37 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="keyword">for</code> <code class="plain">(k = </code><code class="value">0</code><code
+                                                    class="plain">; k &lt; V; k++)</code></div>
+                                            <div class="line number39 index38 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">{</code></div>
+                                            <div class="line number40 index39 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">// Pick all vertices as source one by one</code></div>
+                                            <div class="line number41 index40 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="keyword">for</code> <code class="plain">(i = </code><code class="value">0</code><code
+                                                    class="plain">; i &lt; V; i++)</code></div>
+                                            <div class="line number42 index41 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">{</code></div>
+                                            <div class="line number43 index42 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">// Pick all vertices as destination for the</code></div>
+                                            <div class="line number44 index43 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">// above picked source</code></div>
+                                            <div class="line number45 index44 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="keyword">for</code> <code class="plain">(j = </code><code class="value">0</code><code
+                                                    class="plain">; j &lt; V; j++)</code></div>
+                                            <div class="line number46 index45 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">{</code></div>
+                                            <div class="line number47 index46 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">// If vertex k is on a path from i to j,</code></div>
+                                            <div class="line number48 index47 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">// then make sure that the value of reach[i][j] is 1</code></div>
+                                            <div class="line number49 index48 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">reach[i][j] = (reach[i][j]!=</code><code class="value">0</code><code
+                                                    class="plain">) ||</code></div>
+                                            <div class="line number50 index49 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">((reach[i][k]!=</code><code class="value">0</code><code
+                                                    class="plain">) &amp;&amp; (reach[k][j]!=</code><code class="value">0</code><code
+                                                    class="plain">))?</code><code class="value">1</code><code class="plain">:</code><code
+                                                    class="value">0</code><code class="plain">;</code></div>
+                                            <div class="line number51 index50 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">}</code></div>
+                                            <div class="line number52 index51 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">}</code></div>
+                                            <div class="line number53 index52 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">}</code></div>
+                                            <div class="line number54 index53 alt1">&nbsp;</div>
+                                            <div class="line number55 index54 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">// Print the shortest distance matrix</code></div>
+                                            <div class="line number56 index55 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">printSolution(reach);</code></div>
+                                            <div class="line number57 index56 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+                                            <div class="line number58 index57 alt1">&nbsp;</div>
+                                            <div class="line number59 index58 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">/* A utility function to print solution */</code></div>
+                                            <div class="line number60 index59 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">void</code>
+                                                <code class="plain">printSolution(</code><code class="keyword">int</code> <code
+                                                    class="plain">reach[][])</code></div>
+                                            <div class="line number61 index60 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div>
+                                            <div class="line number62 index61 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">System.out.println(</code><code
+                                                    class="string">"Following matrix is transitive closure"</code><code class="plain">+</code>
+                                            </div>
+                                            <div class="line number63 index62 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="string">" of the given graph"</code><code class="plain">);</code></div>
+                                            <div class="line number64 index63 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="keyword">for</code> <code class="plain">(</code><code class="keyword">int</code>
+                                                <code class="plain">i = </code><code class="value">0</code><code
+                                                    class="plain">; i &lt; V; i++)</code></div>
+                                            <div class="line number65 index64 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">{</code></div>
+                                            <div class="line number66 index65 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="keyword">for</code> <code class="plain">(</code><code class="keyword">int</code>
+                                                <code class="plain">j = </code><code class="value">0</code><code
+                                                    class="plain">; j &lt; V; j++) {</code></div>
+                                            <div class="line number67 index66 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="keyword">if</code> <code class="plain">( i == j)</code></div>
+                                            <div class="line number68 index67 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">System.out.print(</code><code class="string">"1 "</code><code
+                                                    class="plain">);</code></div>
+                                            <div class="line number69 index68 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="keyword">else</code></div>
+                                            <div class="line number70 index69 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">System.out.print(reach[i][j]+</code><code class="string">" "</code><code
+                                                    class="plain">);</code></div>
+                                            <div class="line number71 index70 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">}</code></div>
+                                            <div class="line number72 index71 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">System.out.println();</code></div>
+                                            <div class="line number73 index72 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">}</code></div>
+                                            <div class="line number74 index73 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+                                            <div class="line number75 index74 alt2">&nbsp;</div>
+                                            <div class="line number76 index75 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">// Driver Code</code></div>
+                                            <div class="line number77 index76 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword">public</code>
+                                                <code class="keyword">static</code> <code class="keyword">void</code> <code
+                                                    class="plain">main (String[] args)</code></div>
+                                            <div class="line number78 index77 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{</code></div>
+                                            <div class="line number79 index78 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">/* Let us create the following weighted graph</code></div>
+                                            <div class="line number80 index79 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">10</code></div>
+                                            <div class="line number81 index80 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">(0)-------&gt;(3)</code></div>
+                                            <div class="line number82 index81 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /|\</code></div>
+                                            <div class="line number83 index82 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">5 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</code></div>
+                                            <div class="line number84 index83 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 1</code></div>
+                                            <div class="line number85 index84 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">\|/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</code></div>
+                                            <div class="line number86 index85 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">(1)-------&gt;(2)</code></div>
+                                            <div class="line number87 index86 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */</code>
+                                            </div>
+                                            <div class="line number88 index87 alt1">&nbsp;</div>
+                                            <div class="line number89 index88 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">/* Let us create the following weighted graph</code></div>
+                                            <div class="line number90 index89 alt1">&nbsp;</div>
+                                            <div class="line number91 index90 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">10</code></div>
+                                            <div class="line number92 index91 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">(0)-------&gt;(3)</code></div>
+                                            <div class="line number93 index92 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /|\</code></div>
+                                            <div class="line number94 index93 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">5 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</code></div>
+                                            <div class="line number95 index94 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 1</code></div>
+                                            <div class="line number96 index95 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">\|/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</code></div>
+                                            <div class="line number97 index96 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">(1)-------&gt;(2)</code></div>
+                                            <div class="line number98 index97 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */</code>
+                                            </div>
+                                            <div class="line number99 index98 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="keyword">int</code> <code class="plain">graph[][] = </code><code
+                                                    class="keyword">new</code> <code class="keyword">int</code><code
+                                                    class="plain">[][]{ {</code><code class="value">1</code><code class="plain">, </code><code
+                                                    class="value">1</code><code class="plain">, </code><code class="value">0</code><code
+                                                    class="plain">, </code><code class="value">1</code><code class="plain">},</code></div>
+                                            <div class="line number100 index99 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">{</code><code class="value">0</code><code class="plain">, </code><code
+                                                    class="value">1</code><code class="plain">, </code><code class="value">1</code><code
+                                                    class="plain">, </code><code class="value">0</code><code class="plain">},</code></div>
+                                            <div class="line number101 index100 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">{</code><code class="value">0</code><code class="plain">, </code><code
+                                                    class="value">0</code><code class="plain">, </code><code class="value">1</code><code
+                                                    class="plain">, </code><code class="value">1</code><code class="plain">},</code></div>
+                                            <div class="line number102 index101 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">{</code><code class="value">0</code><code class="plain">, </code><code
+                                                    class="value">0</code><code class="plain">, </code><code class="value">0</code><code
+                                                    class="plain">, </code><code class="value">1</code><code class="plain">}</code></div>
+                                            <div class="line number103 index102 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">};</code></div>
+                                            <div class="line number104 index103 alt1">&nbsp;</div>
+                                            <div class="line number105 index104 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="comments">// Print the solution</code></div>
+                                            <div class="line number106 index105 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">GraphClosure g = </code><code class="keyword">new</code> <code
+                                                    class="plain">GraphClosure();</code></div>
+                                            <div class="line number107 index106 alt2"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code
+                                                    class="plain">g.transitiveClosure(graph);</code></div>
+                                            <div class="line number108 index107 alt1"><code
+                                                    class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div>
+                                            <div class="line number109 index108 alt2"><code class="plain">}</code></div>
+                                            <div class="line number110 index109 alt1"><code
+                                                    class="comments"> </code></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                       
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+                .previous {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    left: 50px;
+    
+                        }
+                    
+                .next {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    right: 50px;
+                        
+                    }
+        
+    </style>
+    
+    <a href="daa_01.html" class="previous"> &lt; Previous</a>
+    <a href="daa_03.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

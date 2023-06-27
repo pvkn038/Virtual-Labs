@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>C PROGRAMMING FOR PROBLEM SOLVING LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q7(b). Write a C program that uses non recursive function to search for a Key value in a given sorted list of integers. Use binary search method.</b></p>
+        <p><b>Aim:</b> To implement a non-recursive binary search function in C to efficiently search for a key value in a sorted list of integers.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with GCC compiler installed in it.</p>
+        
+        <p align="justify"><b>Description:</b><br> 
+            Binary search is a well-known algorithm for searching a specific key value in a sorted list of elements. The idea behind binary search is to divide the list into two halves at each iteration and eliminate half of the list 
+            as a possibility for the key value based on the comparison between the key value and the middle element of the current list.<br>
+            In a non-recursive binary search, the algorithm uses a loop to perform the same division and comparison process until the key value is found or it can be concluded that the key value is not in the list. To implement a 
+            non-recursive binary search function in C, we need to keep track of the starting and ending indices of the current list being considered. At each iteration, we calculate the middle index and compare the middle element 
+            with the key value. If the middle element is equal to the key value, we return the middle index. If the middle element is less than the key value, we update the starting index to be one position after the middle index. If 
+            the middle element is greater than the key value, we update the ending index to be one position before the middle index. This process continues until the key value is found or the starting index becomes greater than the 
+            ending index, in which case the key value is not in the list.<br>
+            In summary, the non-recursive binary search algorithm in C uses a loop to repeatedly divide the list into two halves, compare the middle element with the key value, and update the starting and ending indices until the 
+            key value is found or it can be concluded that it is not in the list.<br>
+            For example, Consider a sorted list of integers A = [1, 3, 4, 6, 7, 8, 10] and a key value k = 6. The aim is to find the index of k in the list A.<br>
+            1.Initialize the starting index start to 0 and the ending index end to length of A - 1<br>
+            start = 0;<br>
+            end = 6;<br>
+            2.While start &lt;= end:<br>
+            a. Calculate the middle index mid as (start + end) / 2<br>
+            mid = (0 + 6) / 2 = 3<br>
+            b. Compare A[mid] with k. If they are equal, return mid as the index of k in the list A<br>
+            A[mid] = 6<br>
+            6 == 6<br>
+            return mid = 3<br>
+            c. If A[mid] &lt; k, update start to mid + 1<br>
+            A[mid] = 6 &lt; k = 6<br>
+            start = mid + 1 = 4<br>
+            d. If A[mid] &gt; k, update end to mid - 1<br>
+            3.If start &gt; end, the key value k is not in the list A.<br>
+            In this example, the binary search function returns mid = 3 as the index of k = 6 in the list A.<br><br>
+            
+
+        <style>
+            .imagecenter {
+                width: 300px;
+                height: 250px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+            }                
+        </style>        
+        <img src="/images/binary search.jpg" alt="Not Found" class="imagecenter"><br><br>
+        <b>Examples:</b><br>
+        For Example:  Consider a sorted list of integers A = [2, 4, 6, 8, 10, 12, 14, 16] and a key value k = 10. The aim is to find the index of k in the list A.<br>
+        1.Initialize the starting index start to 0 and the ending index end to length of A - 1<br>
+        start = 0;<br>
+        end = 7;<br>
+        2.While start &lt;= end:<br>
+        a. Calculate the middle index mid as (start + end) / 2<br>
+        mid = (0 + 7) / 2 = 3<br>
+        b. Compare A[mid] with k. If they are equal, return mid as the index of k in the list A<br>
+        A[mid] = 8<br>
+        8 != 10<br>
+        c. If A[mid] &lt; k, update start to mid + 1<br>
+        A[mid] = 8 &lt; k = 10<br>
+        start = mid + 1 = 4<br>
+        d. If A[mid] &gt; k, update end to mid - 1<br>
+        A[mid] = 8 &gt; k = 10<br>
+        end = mid - 1 = 2<br>
+        2.Repeat step 2 until start &lt;= end<br>
+        a. Calculate the middle index mid as (start + end) / 2<br>
+        mid = (4 + 2) / 2 = 3<br>
+        b. Compare A[mid] with k. If they are equal, return mid as the index of k in the list A<br>
+        A[mid] = 6<br>
+        6 != 10<br>
+        c. If A[mid] &lt; k, update start to mid + 1<br>
+        A[mid] = 6 &lt; k = 10<br>
+        start = mid + 1 = 4<br>
+        d. If A[mid] &gt; k, update end to mid - 1<br>
+        3.If start &gt; end, the key value k is not in the list A.<br>
+        In this example, the binary search function returns mid = 4 as the index of k = 10 in the list A.<br>
+        </p>
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>
+                        Code Editor***</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                    <style>
+                        .cnsl {
+
+                            text-decoration: none;
+                            display: inline-block;
+                            background-color: rgba(29, 96, 184, 0.902);
+                            padding: 8px;
+                            border-radius: 6px;
+                            border: 1px solid #d5d9d9;
+                            box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                            box-sizing: border-box;
+                            line-height: 20px;  
+                            color: #edf0f3;
+                        }
+
+                    </style>
+                        <a href="https://onecompiler.com/c" target="_blank" class="cnsl">Try on
+                                Code
+                                Editor</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        #include&lt;stdio.h&gt;<br>
+                        int binary_search(int arr[], int n, int key) {<br>
+                            int left = 0, right = n - 1;<br>
+                            while (left &lt;= right) {<br>
+                                int mid = left + (right - left) / 2;<br>
+                                if (arr[mid] == key) {<br>
+                                    return mid;<br>
+                                } else if (arr[mid] &lt; key) {<br>
+                                    left = mid + 1;<br>
+                                } else {<br>
+                                    right = mid - 1;<br>
+                                }<br>
+                            }<br>
+                            return -1;<br>
+                        }<br>
+                        
+                        int main() {<br>
+                            int arr[] = {1, 3, 4, 6, 7, 8, 10};<br>
+                            int n = sizeof(arr) / sizeof(arr[0]);<br>
+                            int key = 6;<br>
+                            int index = binary_search(arr, n, key);<br>
+                            if (index != -1) {<br>
+                                printf("Key found at index %d\n", index);<br>
+                            } else {<br>
+                                printf("Key not found\n");<br>
+                            }<br>
+                            return 0;<br>
+                        }<br>
+                        
+                        
+                            
+                                
+                        
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        #include&lt;stdio.h&gt;<br>
+                        int binary_search(int arr[], int n, int key) {<br>
+                            int left = 0, right = n - 1;<br>
+                            while (left &lt;= right) {<br>
+                                int mid = left + (right - left) / 2;<br>
+                                if (arr[mid] == key) {<br>
+                                    return mid;<br>
+                                } else if (arr[mid] &lt; key) {<br>
+                                    left = mid + 1;<br>
+                                } else {<br>
+                                    right = mid - 1;<br>
+                                }<br>
+                            }<br>
+                            return -1;<br>
+                        }<br>
+                        
+                        int main() {<br>
+                            int arr[] = {2, 4, 6, 8, 10, 12, 14, 16};<br>
+                            int n = sizeof(arr) / sizeof(arr[0]);<br>
+                            int key = 10;<br>
+                            int index = binary_search(arr, n, key);<br>
+                            if (index != -1) {<br>
+                                printf("Key found at index %d\n", index);<br>
+                            } else {<br>
+                                printf("Key not found\n");<br>
+                            }<br>
+                            return 0;<br>
+                        }<br>
+                        
+                        
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<a href="Q7(a)CProg.html" class="previous"> &lt; Previous</a>
+<a href="Q8(a)CProg.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

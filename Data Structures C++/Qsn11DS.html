@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>DATA STRUCTURES LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q11. Write a C++ program that implements Merge sort algorithm for sorting a list of
+                integers in
+                ascending order.
+            </b></p>
+
+        <p><b>Aim:</b> To arrange a list of integers in ascending order using merge sort algorithm.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with G++ compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b><br> Merge sort is a sorting algorithm that works by dividing an array into smaller
+            subarrays,
+            sorting each subarray, and then merging the sorted subarrays back together to form the final sorted
+            array. <br>
+        <b>Algorithm:</b><br>
+        
+        Step-1: start.<br>
+        Step-2: declare array and left, right, mid variable.<br>
+        Step-3: perform merge function:<br>
+        left > right <br>
+        return mid= (left+right)/2  <br>
+        mergesort(array, left, mid)  <br>
+        mergesort(array, mid+1, right)  <br>
+        merge(array, left, mid, right) <br>
+        Step-4: Stop.<br>
+
+        
+        <center><img src="/images/dsimg11.png" alt="Not Found"></center><br>
+
+        
+
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Code Editor***
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                            .cnsl {
+ 
+                                     text-decoration: none;
+                                     display: inline-block;
+                                     background-color: rgba(29, 96, 184, 0.902);
+                                     padding: 8px;
+                                     border-radius: 6px;
+                                     border: 1px solid #d5d9d9;
+                                     box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                     box-sizing: border-box;
+                                     line-height: 20px;  
+                                     color: #edf0f3;
+                                 }
+ 
+                         </style>
+                         <a href="https://onecompiler.com/cpp" target="_blank" 
+                         class="cnsl">Try on CodeEditor</a><br>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+
+                        &nbsp;&nbsp;// C++ program for Merge Sort <br>
+                        &nbsp;&nbsp;#include&ltiostream&gt<br>
+                        &nbsp;&nbsp;using namespace std; <br>
+                        &nbsp;&nbsp;void merge(int array[], int const left, int const mid, <br>
+                        &nbsp;&nbsp;int const right) <br>
+                        &nbsp;&nbsp;{ <br>
+                        &nbsp;&nbsp;auto const subArrayOne = mid - left + 1; <br>
+                        &nbsp;&nbsp;auto const subArrayTwo = right - mid; <br>
+                        &nbsp;&nbsp;// Create temp arrays <br>
+                        &nbsp;&nbsp;auto *leftArray = new int[subArrayOne], <br>
+                        &nbsp;&nbsp;*rightArray = new int[subArrayTwo]; <br>
+                        &nbsp;&nbsp;// Copy data to temp arrays leftArray[] and rightArray[] <br>
+                        &nbsp;&nbsp;for (auto i = 0; i < subArrayOne; i++) <br>
+                            &nbsp;&nbsp;leftArray[i] = array[left + i]; <br>
+                            &nbsp;&nbsp;for (auto j = 0; j < subArrayTwo; j++) <br>
+                                &nbsp;&nbsp;rightArray[j] = array[mid + 1 + j]; <br>
+                                &nbsp;&nbsp;auto indexOfSubArrayOne <br>
+                                &nbsp;&nbsp;= 0, // Initial index of first sub-array <br>
+                                &nbsp;&nbsp;indexOfSubArrayTwo = 0; // Initial index of second sub-array <br>
+                                &nbsp;&nbsp;int indexOfMergedArray = left; // Initial index of merged array <br>
+                                &nbsp;&nbsp;// Merge the temp arrays back into array[left..right] <br>
+                                &nbsp;&nbsp;while (indexOfSubArrayOne < subArrayOne <br>
+                                    &nbsp;&nbsp;&& indexOfSubArrayTwo < subArrayTwo) { <br>
+                                        &nbsp;&nbsp;if (leftArray[indexOfSubArrayOne] <br>
+                                        &nbsp;&nbsp;<= rightArray[indexOfSubArrayTwo]) { <br>
+                                            &nbsp;&nbsp;array[indexOfMergedArray] <br>
+                                            &nbsp;&nbsp;= leftArray[indexOfSubArrayOne]; <br>
+                                            &nbsp;&nbsp;indexOfSubArrayOne++; <br>
+                                            &nbsp;&nbsp;} <br>
+                                            &nbsp;&nbsp;else { <br>
+                                            &nbsp;&nbsp;array[indexOfMergedArray] <br>
+                                            &nbsp;&nbsp;= rightArray[indexOfSubArrayTwo]; <br>
+                                            &nbsp;&nbsp;indexOfSubArrayTwo++; <br>
+                                            &nbsp;&nbsp;} <br>
+                                            &nbsp;&nbsp;indexOfMergedArray++; <br>
+                                            &nbsp;&nbsp;} <br>
+                                            &nbsp;&nbsp;// Copy the remaining elements of <br>
+                                            &nbsp;&nbsp;// left[], if there are any <br>
+                                            &nbsp;&nbsp;while (indexOfSubArrayOne < subArrayOne) { <br>
+                                                &nbsp;&nbsp;array[indexOfMergedArray] <br>
+                                                &nbsp;&nbsp;= leftArray[indexOfSubArrayOne]; <br>
+                                                &nbsp;&nbsp;indexOfSubArrayOne++; <br>
+                                                &nbsp;&nbsp;indexOfMergedArray++; <br>
+                                                &nbsp;&nbsp;} <br>
+                                                &nbsp;&nbsp;// Copy the remaining elements of <br>
+                                                &nbsp;&nbsp;// right[], if there are any <br>
+                                                &nbsp;&nbsp;while (indexOfSubArrayTwo < subArrayTwo) { <br>
+                                                    &nbsp;&nbsp;array[indexOfMergedArray] <br>
+                                                    &nbsp;&nbsp;= rightArray[indexOfSubArrayTwo]; <br>
+                                                    &nbsp;&nbsp;indexOfSubArrayTwo++; <br>
+                                                    &nbsp;&nbsp;indexOfMergedArray++; <br>
+                                                    &nbsp;&nbsp;} <br>
+                                                    &nbsp;&nbsp;delete[] leftArray; <br>
+                                                    &nbsp;&nbsp;delete[] rightArray; <br>
+                                                    &nbsp;&nbsp;} <br>
+                                                    &nbsp;&nbsp;void mergeSort(int array[], int const begin, int const
+                                                    end) <br>
+                                                    &nbsp;&nbsp;{ <br>
+                                                    &nbsp;&nbsp;if (begin >= end) <br>
+                                                    &nbsp;&nbsp;return; // Returns recursively <br>
+                                                    &nbsp;&nbsp;auto mid = begin + (end - begin) / 2; <br>
+                                                    &nbsp;&nbsp;mergeSort(array, begin, mid); <br>
+                                                    &nbsp;&nbsp;mergeSort(array, mid + 1, end); <br>
+                                                    &nbsp;&nbsp;merge(array, begin, mid, end); <br>
+                                                    &nbsp;&nbsp;} <br>
+                                                    &nbsp;&nbsp;void printArray(int A[], int size) <br>
+                                                    &nbsp;&nbsp;{ <br>
+                                                    &nbsp;&nbsp;for (auto i = 0; i < size; i++) <br>
+                                                        &nbsp;&nbsp;cout << A[i] << " " ; <br>
+                                                            &nbsp;&nbsp;} <br>
+                                                            &nbsp;&nbsp;int main() <br>
+                                                            &nbsp;&nbsp;{ <br>
+                                                            &nbsp;&nbsp;int arr[] = { 12, 11, 13, 5, 6, 7 }; <br>
+                                                            &nbsp;&nbsp;auto arr_size = sizeof(arr) / sizeof(arr[0]);
+                                                            <br>
+                                                            &nbsp;&nbsp;cout << "Given array is \n" ; <br>
+                                                                &nbsp;&nbsp;printArray(arr, arr_size); <br>
+                                                                &nbsp;&nbsp;mergeSort(arr, 0, arr_size - 1); <br>
+                                                                &nbsp;&nbsp;cout << "\nSorted array is \n" ; <br>
+                                                                    &nbsp;&nbsp;printArray(arr, arr_size); <br>
+                                                                    &nbsp;&nbsp;return 0; <br>
+                                                                    &nbsp;&nbsp;} <br>
+                    </div>
+                </div>
+            </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Solution 2
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            #include&ltiostream&gt <br>
+                            using namespace std; <br>
+                            void mergeSort(int[],int,int); <br>
+                            void merge(int[],int,int,int); <br>
+                            void printArray(int arr[], int size){ <br>
+                            int i; <br>
+                            for(i = 0; i < size; i++){ <br>
+                                cout << arr[i] << " " ; <br>
+                                    } <br>
+                                    cout << endl; <br>
+                                        } <br>
+                                        int main() <br>
+                                        { <br>
+                                        int array[]= {8, 4, 5, 1, 3, 9, 0, 2, 7, 6}; <br>
+                                        int i; <br>
+                                        int size = sizeof(array)/sizeof(array[0]); <br>
+                                        printArray(array, size); <br>
+                                        mergeSort(array, 0, size-1); <br>
+                                        printArray(array, size); <br>
+                                        } <br>
+                                        void mergeSort(int a[], int left, int right) <br>
+                                        { <br>
+                                        int mid; <br>
+                                        if(left < right) <br>
+                                            { <br>
+                                            // can also use mid = left + (right - left) / 2 <br>
+                                            // this can avoid data type overflow <br>
+                                            mid = (left + right)/2; <br>
+                                            // recursive calls to sort first half and second half subarrays <br>
+                                            mergeSort(a, left, mid); <br>
+                                            mergeSort(a, mid + 1, right); <br>
+                                            merge(a, left, mid, right); <br>
+                                            } <br>
+                                            } <br>
+                                            void merge(int arr[], int left, int mid, int right) <br>
+                                            { <br>
+                                            int i, j, k; <br>
+                                            int n1 = mid - left + 1; <br>
+                                            int n2 = right - mid; <br>
+                                            // create temp arrays to store left and right subarrays <br>
+                                            int L[n1], R[n2]; <br>
+                                            // Copying data to temp arrays L[] and R[] <br>
+                                            for (i = 0; i < n1; i++) <br>
+                                                L[i] = arr[left + i]; <br>
+                                                for (j = 0; j < n2; j++) <br>
+                                                    R[j] = arr[mid + 1 + j]; <br>
+                                                    // here we merge the temp arrays back into arr[l..r] <br>
+                                                    i = 0; // Starting index of L[i] <br>
+                                                    j = 0; // Starting index of R[i] <br>
+                                                    k = left; // Starting index of merged subarray <br>
+                                                    while (i < n1 && j < n2) <br>
+                                                        { <br>
+                                                        // place the smaller item at arr[k] pos <br>
+                                                        if (L[i] <= R[j]) { <br>
+                                                            arr[k] = L[i]; <br>
+                                                            i++; <br>
+                                                            } <br>
+                                                            else { <br>
+                                                            arr[k] = R[j]; <br>
+                                                            j++; <br>
+                                                            } <br>
+                                                            k++; <br>
+                                                            } <br>
+                                                            // Copy the remaining elements of L[], if any <br>
+                                                            while (i < n1) { <br>
+                                                                arr[k] = L[i]; <br>
+                                                                i++; <br>
+                                                                k++; <br>
+                                                                } <br>
+                                                                // Copy the remaining elements of R[], if any <br>
+                                                                while (j < n2) { <br>
+                                                                    arr[k] = R[j]; <br>
+                                                                    j++; <br>
+                                                                    k++; <br>
+                                                                    } <br>
+                                                                    } <br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"></script>
+
+            <style>
+              
+                .previous {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    left: 50px;
+    
+                        }
+                    
+                .next {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    right: 50px;
+                        
+                    }
+        
+    </style>
+
+<a href="Qsn10DS.html" class="previous"> &lt; Previous</a>
+<a href="Qsn12DS.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

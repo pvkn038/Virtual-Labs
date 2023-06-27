@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>DATAWAREHOUSING AND DATA MINING LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q2. Design multi-dimensional data models namely Star, snowflake and Fact constellation
+                schemas for anyone enterprise (ex. Banking, Insurance, Finance, Healthcare, Manufacturing, Automobile,
+                etc.).</b></p>
+        <p><b>System and Software Requirements:</b> A Computer with any WEKA Tool with installed in
+            it.</p>
+
+        <p align="justify"><b>Description:</b><br>
+            In this scenario, we will focus on some key dimensions and facts relevant to a banking system. <br> <br>
+             <b>1. Star Schema: </b> <br> <br>
+        <ul>
+            <li>Customer Dimension: Contains customer-related information.</li>
+            <li>Account Dimension: Contains account-related information.</li>
+            <li>Date Dimension: Contains date-related information.</li>
+        </ul>
+        Facts table : <br><br>
+        <ul>
+            <li>Transaction Fact: Contains transaction-related information such as transaction amount, transaction type,
+                and reference to the customer, account, and date dimensions.</li>
+        </ul>
+        The Star Schema represents a simple and denormalized structure with a central fact table surrounded by
+        dimensional tables. It provides easy querying and good performance for aggregations. <br><br>
+        <b> 2.Snowflake Schema</b>  <br> <br>
+        <ul>
+            <li>Customer Dimension: Contains customer-related information.</li>
+            <li>Account Dimension: Contains account-related information.</li>
+            <li>Date Dimension: Contains date-related information.</li>
+            <li>Branch Dimension: Contains branch-related information.</li>
+        </ul>
+        Facts table : <br><br>
+        <ul>
+            <li>Transaction Fact: Contains transaction-related information such as transaction amount, transaction type,
+                and reference to the customer, account, and date dimensions.</li>
+        </ul>
+
+        The Snowflake Schema expands on the Star Schema by normalizing the dimensional tables. In this example, the
+        branch dimension is further normalized into a separate table. This schema can provide better data integrity but
+        may result in more complex queries. <br><br>
+        <b> 3.Fact Constellation Schema:</b>  <br> <br>
+        <ul>
+            <li>Customer Dimension: Contains customer-related information.</li>
+            <li>Account Dimension: Contains account-related information.</li>
+            <li>Date Dimension: Contains date-related information.</li>
+            <li>Branch Dimension: Contains branch-related information.</li>
+        </ul>
+        Facts table : <br><br>
+        <ul>
+            <li>Transaction Fact: Contains transaction-related information such as transaction amount, transaction type,
+                and reference to the customer, account, and date dimensions.</li>
+            <li> Facts table : <br><br>
+                <ul>
+                    <li>Transaction Fact: Contains transaction-related information such as transaction amount,
+                        transaction type,
+                        and reference to the customer, account, and date dimensions.</li>
+                </ul>
+            </li>
+        </ul>
+        The Fact Constellation Schema, also known as a Galaxy Schema, consists of multiple fact tables sharing common
+        dimension tables. It allows for more flexibility and accommodates different types of facts within the same data
+        model. <br><br>
+        These are just examples of data models for a banking enterprise. The actual design may vary based on the
+        specific requirements and complexities of the banking system. <br><br>
+        </p>
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>
+                            Code Editor***</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                            .cnsl {
+
+                                text-decoration: none;
+                                display: inline-block;
+                                background-color: rgba(29, 96, 184, 0.902);
+                                padding: 8px;
+                                border-radius: 6px;
+                                border: 1px solid #d5d9d9;
+                                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                box-sizing: border-box;
+                                line-height: 20px;
+                                color: #edf0f3;
+                            }
+                        </style>
+                        <a href="https://www.onworks.net/programs/weka-online" target="_blank" class="cnsl">Try on Weka Tool</a><br>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .previous {
+            text-decoration: none;
+            display: inline-block;
+            background-color: rgba(6, 235, 185, 0.907);
+            padding: 8px 16px;
+            border-radius: 6px;
+            border: 1px solid #d5d9d9;
+            color: #000000;
+            box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+            box-sizing: border-box;
+            line-height: 20px;
+            position: relative;
+            bottom: 20px;
+            cursor: pointer;
+            left: 50px;
+
+        }
+
+        .next {
+            text-decoration: none;
+            display: inline-block;
+            background-color: rgba(6, 235, 185, 0.907);
+            padding: 8px 16px;
+            border-radius: 6px;
+            border: 1px solid #d5d9d9;
+            color: #000000;
+            box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+            box-sizing: border-box;
+            line-height: 20px;
+            position: relative;
+            bottom: 20px;
+            cursor: pointer;
+            right: 50px;
+
+        }
+    </style>
+
+    <!--<a href="#" class="previous"> &lt; Previous</a>-->
+    <a href="dwdmqsn1.html" class="previous"> &lt; Previous</a>
+
+</body>
+
+</html>

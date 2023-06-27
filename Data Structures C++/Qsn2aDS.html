@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+
+               
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>DATA STRUCTURES LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q2. Write a template based C++ program that uses functions to perform the following:<br>
+                a) Create a doubly linked list of elements.
+            </b></p>
+
+        <p><b>Aim:</b> Create a doubly linked list of elements.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with G++ compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b>A Doubly Linked List (DLL) contains an extra pointer, typically called the
+            previous pointer, 
+            together with the next pointer and data which are there in the singly linked list.<br>
+            <b>Data:</b><br> Represents the data value stored in the node.<br>
+            <b>Previous:</b><br> Represents a pointer that points to the previous node.<br>
+            <b>Next:</b><br> Represents a pointer that points to next node in the list.<br><br>
+
+
+        <b>Algorithm:</b><br>
+Step-1: Define a class named Node with data members 'data', 'next' and 'prev'.<br>
+Step-2: Define a function 'push' that takes a double pointer to the head of the linked list and an integer 'new_data'.<br>
+Step-3: In the push function, allocate memory for a new Node using 'new' operator and store the address in 'new_node'.<br>
+Step-4: Set the 'data' member of the new Node as 'new_data'.<br>
+Step-5: Set the 'next' member of the new Node as the current head of the linked list.<br>
+Step-6: Set the 'prev' member of the new Node as NULL.<br>
+Step-7: If the current head of the linked list is not NULL, set its 'prev' member as the new Node.<br>
+Step-8: Update the head pointer to point to the new Node.<br>
+Step-9: Define a function 'insertAfter' that takes a pointer to a Node named 'prev_node' and an integer 'new_data'.<br>
+Step-10: In the insertAfter function, check if 'prev_node' is NULL. If it is, print an error message and return.<br>
+Step-11: Allocate memory for a new Node using 'new' operator and store the address in 'new_node'.<br>
+Step-12: Set the 'data' member of the new Node as 'new_data'.<br>
+Step-13: Set the 'next' member of the new Node as the next Node of 'prev_node'.<br>
+Step-14: Set the 'next' member of 'prev_node' as the new Node.<br>
+Step-15: Set the 'prev' member of the new Node as 'prev_node'.<br>
+Step-16: If the next Node of the new Node is not NULL, set its 'prev' member as the new Node.<br>
+      
+
+
+        
+        <center><img src="/images/dsaimages2a.png" alt="Not Found"></center><br>
+
+        
+
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Code Editor***
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                            .cnsl {
+ 
+                                     text-decoration: none;
+                                     display: inline-block;
+                                     background-color: rgba(29, 96, 184, 0.902);
+                                     padding: 8px;
+                                     border-radius: 6px;
+                                     border: 1px solid #d5d9d9;
+                                     box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                     box-sizing: border-box;
+                                     line-height: 20px;  
+                                     color: #edf0f3;
+                                 }
+ 
+                         </style>
+                         <a href="https://onecompiler.com/cpp" target="_blank" 
+                         class="cnsl">Try on CodeEditor</a><br>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        // A complete working C++ program to <br>
+                        // demonstrate all insertion methods <br>
+                        #include&ltbits /stdc++.h&gt<br>
+                        using namespace std; <br>
+                        // A linked list node <br>
+                        class Node { <br>
+                        public: <br>
+                        int data; <br>
+                        Node* next; <br>
+                        Node* prev; <br>
+                        }; <br>
+                        void push(Node** head_ref, int new_data) <br>
+                        { <br>
+                        /* 1. allocate node */ <br>
+                        Node* new_node = new Node(); <br>
+                        /* 2. put in the data */ <br>
+                        new_node->data = new_data; <br>
+                        /* 3. Make next of new node as head <br>
+                        and previous as NULL */ <br>
+                        new_node->next = (*head_ref); <br>
+                        new_node->prev = NULL; <br>
+                        /* 4. change prev of head node to new node */ <br>
+                        if ((*head_ref) != NULL) <br>
+                        (*head_ref)->prev = new_node; <br>
+                        /* 5. move the head to point to the new node */ <br>
+                        (*head_ref) = new_node; <br>
+                        } <br>
+                        /* Given a node as prev_node, insert <br>
+                        a new node after the given node */ <br>
+                        void insertAfter(Node* prev_node, int new_data) <br>
+                        { <br>
+                        /*1. check if the given prev_node is NULL */ <br>
+                        if (prev_node == NULL) { <br>
+                        cout << "the given previous node cannot be NULL" ; <br>
+                            return; <br>
+                            } <br>
+                            /* 2. allocate new node */ <br>
+                            Node* new_node = new Node(); <br>
+                            /* 3. put in the data */ <br>
+                            new_node->data = new_data; <br>
+                            /* 4. Make next of new node as next of prev_node */ <br>
+                            new_node->next = prev_node->next; <br>
+                            /* 5. Make the next of prev_node as new_node */ <br>
+                            prev_node->next = new_node; <br>
+                            /* 6. Make prev_node as previous of new_node */ <br>
+                            new_node->prev = prev_node; <br>
+                            /* 7. Change previous of new_node's next node */ <br>
+                            if (new_node->next != NULL) <br>
+                            new_node->next->prev = new_node; <br>
+                            } <br>
+                            /* Given a reference (pointer to pointer) to the head <br>
+                            of a DLL and an int, appends a new node at the end */ <br>
+                            void append(Node** head_ref, int new_data) <br>
+                            { <br>
+                            /* 1. allocate node */ <br>
+                            Node* new_node = new Node(); <br>
+                            Node* last = *head_ref; /* used in step 5*/ <br>
+                            /* 2. put in the data */ <br>
+                            new_node->data = new_data; <br>
+                            /* 3. This new node is going to be the last node, so <br>
+                            make next of it as NULL*/ <br>
+                            new_node->next = NULL; <br>
+                            /* 4. If the Linked List is empty, then make the new <br>
+                            node as head */ <br>
+                            if (*head_ref == NULL) { <br>
+                            new_node->prev = NULL; <br>
+                            *head_ref = new_node; <br>
+                            return; <br>
+                            } <br>
+                            /* 5. Else traverse till the last node */ <br>
+                            while (last->next != NULL) <br>
+                            last = last->next; <br>
+                            /* 6. Change the next of last node */ <br>
+                            last->next = new_node; <br>
+                            /* 7. Make last node as previous of new node */ <br>
+                            new_node->prev = last; <br>
+                            return; <br>
+                            } <br>
+                            // This function prints contents of <br>
+                            // linked list starting from the given node <br>
+                            void printList(Node* node) <br>
+                            { <br>
+                            Node* last; <br>
+                            cout << "\nTraversal in forward direction \n" ; <br>
+                                while (node != NULL) { <br>
+                                cout << node->data << " " ; <br>
+                                        last = node; <br>
+                                        node = node->next; <br>
+                                        } <br>
+                                        cout << "\nTraversal in reverse direction \n" ; <br>
+                                            while (last != NULL) { <br>
+                                            cout << last->data << " " ; <br>
+                                                    last = last->prev; <br>
+                                                    } <br>
+                                                    } <br>
+                                                    // Driver code <br>
+                                                    int main() <br>
+                                                    { <br>
+                                                    /* Start with the empty list */ <br>
+                                                    Node* head = NULL; <br>
+                                                    // Insert 6. So linked list becomes 6->NULL <br>
+                                                    append(&head, 6); <br>
+                                                    // Insert 7 at the beginning. So <br>
+                                                    // linked list becomes 7->6->NULL <br>
+                                                    push(&head, 7); <br>
+                                                    // Insert 1 at the beginning. So <br>
+                                                    // linked list becomes 1->7->6->NULL <br>
+                                                    push(&head, 1); <br>
+                                                    // Insert 4 at the end. So linked <br>
+                                                    // list becomes 1->7->6->4->NULL <br>
+                                                    append(&head, 4); <br>
+                                                    // Insert 8, after 7. So linked <br>
+                                                    // list becomes 1->7->8->6->4->NULL <br>
+                                                    insertAfter(head->next, 8); <br>
+                                                    cout << "Created DLL is: " ; <br>
+                                                        printList(head); <br>
+                                                        return 0; <br>
+                                                        } <br>
+                                                        // This is code is contributed by rathbhupendra <br>
+
+
+                    </div>
+                </div>
+            </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Solution 2
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            #include&ltbits/stdc++.h&gt <br>
+                            using namespace std; <br>
+                            /* A class to create node */ <br>
+                            class Node <br>
+                            { <br>
+                            public: <br>
+                            int data; <br>
+                            Node *next; <br>
+                            Node *prev; <br>
+                            }; <br>
+                            //A function to insert at the <br>
+                            //beginning of the list <br>
+                            void push(Node** head, int newdata) <br>
+                            { <br>
+                            //create new node <br>
+                            Node* newnode = new Node(); <br>
+                            /* put in the data */ <br>
+                            newnode->data = newdata; <br>
+                            /* As we are adding at the beginning, <br>
+                            prev is always NULL */ <br>
+                            newnode->prev = NULL; <br>
+                            /* link new node's next to head */ <br>
+                            newnode->next = (*head); <br>
+                            /* change prev of head node to newnode */ <br>
+                            if((*head) != NULL) <br>
+                            (*head)->prev = newnode ; <br>
+                            /* changing head node */ <br>
+                            (*head) = newnode; <br>
+                            } <br>
+                            /* A c++ program to print the list */ <br>
+                            void printlist(Node *head) <br>
+                            { <br>
+                            while(head != NULL) <br>
+                            { <br>
+                            cout << head->data << " " ; head=head->next; <br>
+                                    } <br>
+                                    } <br>
+                                    int main() <br>
+                                    { <br>
+                                    /* We will start with an empty list */ <br>
+                                    Node* head = NULL; <br>
+                                    /*lets create a linked list: 2->3->5->7 */ <br>
+                                    push(&head, 7); <br>
+                                    push(&head, 5); <br>
+                                    push(&head, 3); <br>
+                                    push(&head, 2); <br>
+                                    cout << "Created Doubly Linked list:" << endl; printlist(head); return 0; } <br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"></script>
+
+            <style>
+              
+                .previous {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    left: 50px;
+    
+                        }
+                    
+                .next {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    right: 50px;
+                        
+                    }
+        
+    </style>
+
+<a href="Qsn1cDS.html" class="previous"> &lt; Previous</a>
+<a href="Qsn2bDS.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

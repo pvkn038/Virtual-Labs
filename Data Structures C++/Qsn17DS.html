@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>DATA STRUCTURES LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q17. Write a C++ program to implement extendible hashing.
+            </b></p>
+
+        <p><b>Aim:</b> A C++ program to implement extendible hashing. </p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with G++ compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b><br> 
+            Extendible hashing is a hash-based indexing technique that is commonly used in database systems to efficiently store and retrieve large amounts of data. In this technique, the hash function maps a key to a bucket, which contains one or more records. However, if the number of records in a bucket exceeds a certain threshold, the bucket must be split into two, and the hash function must be updated to map keys to the appropriate new bucket.<br>
+            <b>Algorithm:</b><br> 
+To implement extendible hashing in a C++ program, we can follow the following steps:<br>
+Step-1: Define a class to represent a bucket. The bucket should have a data structure to store the records, and a function to check if it is full.<br>
+Step-2: Define a class to represent the hash table. The hash table should have a fixed number of buckets, and a function to compute the hash value of a key.<br>
+Step-3: When a record needs to be inserted, compute its hash value and find the corresponding bucket in the hash table. If the bucket is not full, insert the record into it. Otherwise, split the bucket into two and update the hash function to map keys to the appropriate new bucket.<br>
+Step-4: When a record needs to be retrieved, compute its hash value and find the corresponding bucket in the hash table. Search the bucket for the record. If it is found, return it. Otherwise, the record does not exist in the hash table.<br>
+Step-5: When a record needs to be deleted, compute its hash value and find the corresponding bucket in the hash table. Search the bucket for the record. If it is found, remove it. If the bucket is empty after the removal, merge it with a neighboring bucket if possible.<br>
+To implement extendible hashing efficiently, we can use techniques such as caching and lazy splitting. Caching involves keeping frequently accessed buckets in memory, while lazy splitting involves delaying the splitting of a bucket until it is absolutely necessary.<br>
+In conclusion, implementing extendible hashing in a C++ program requires defining classes for buckets and the hash table, and implementing functions to insert, retrieve, and delete records. To improve performance, caching and lazy splitting techniques can be used.<br>
+            
+            
+    
+<center><img src="/images/dsExtensiblehash.jpg" alt="Not Found"></center><br>
+                            
+        
+
+        
+        
+
+        
+
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Code Editor***
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                            .cnsl {
+ 
+                                     text-decoration: none;
+                                     display: inline-block;
+                                     background-color: rgba(29, 96, 184, 0.902);
+                                     padding: 8px;
+                                     border-radius: 6px;
+                                     border: 1px solid #d5d9d9;
+                                     box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                     box-sizing: border-box;
+                                     line-height: 20px;  
+                                     color: #edf0f3;
+                                 }
+ 
+                         </style>
+                         <a href="https://onecompiler.com/cpp" target="_blank" 
+                         class="cnsl">Try on CodeEditor</a><br>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+
+                        #include&lt;iostream&gt;<br>
+                            #include&lt;vector&gt;<br>
+                            #include&lt;string&gt;<br>
+                            using namespace std;<br>
+                            
+                            // Class for a bucket<br>
+                            class Bucket {<br>
+                            public:<br>
+                                vector<int> data;<br>
+                            };<br>
+                            
+                            // Class for a directory<br>
+                            class Directory {<br>
+                            public:<br>
+                                vector<int> bits;<br>
+                            };<br>
+                            
+                            // Class for a hash table<br>
+                            class HashTable {<br>
+                            public:<br>
+                                int globalDepth;<br>
+                                int bucketSize;<br>
+                                vector<Bucket> buckets;<br>
+                                Directory directory;<br>
+                            };<br>
+                            
+                            int main() {<br>
+                                // TODO: Implement extendible hashing<br>
+                                return 0;<br>
+                            }<br>
+
+                    </div>
+                </div>
+            </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Solution 2
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+
+                            #include&lt;iostream&gt;<br>
+                                #include&lt;vector&gt;<br>
+                                #include&lt;string&gt;<br>
+                                using namespace std;<br>
+                                
+                                // Class for a bucket<br>
+                                class Bucket {<br>
+                                public:<br>
+                                    vector<int> data;<br>
+                                    int localDepth;<br>
+                                };<br>
+                                
+                                // Class for a directory<br>
+                                class Directory {<br>
+                                public:<br>
+                                    vector<int> buckets;<br>
+                                    int globalDepth;<br>
+                                };<br>
+                                
+                                // Class for a hash table<br>
+                                class HashTable {<br>
+                                public:<br>
+                                    int bucketSize;<br>
+                                    vector<Bucket> buckets;<br>
+                                    Directory directory;<br>
+                                };<br>
+                                
+                                // Function to split a bucket<br>
+                                void splitBucket(int bucketIndex, HashTable& hashTable) {<br>
+                                    int localDepth = hashTable.buckets[bucketIndex].localDepth;<br>
+                                    int newBucketIndex = bucketIndex + (1 << (localDepth-1));<br>
+                                    Bucket newBucket;<br>
+                                    newBucket.localDepth = localDepth + 1;<br>
+                                    Bucket& oldBucket = hashTable.buckets[bucketIndex];<br>
+                                    for (int i = oldBucket.data.size()-1; i >= 0; i--) {<br>
+                                        int hash = (oldBucket.data[i] >> (localDepth-1)) & 1;<br>
+                                        if (hash == 1) {<br>
+                                            newBucket.data.push_back(oldBucket.data[i]);<br>
+                                            oldBucket.data.erase(oldBucket.data.begin() + i);<br>
+                                        }<br>
+                                    }<br>
+                                    hashTable.buckets[newBucketIndex] = newBucket;<br>
+                                    hashTable.buckets[bucketIndex].localDepth++;<br>
+                                }<br>
+                                
+                                // Function to update the directory<br>
+                                void updateDirectory(int bucketIndex, HashTable& hashTable) {<br>
+                                    int localDepth = hashTable.buckets[bucketIndex].localDepth;<br>
+                                    int globalDepth = hashTable.directory.globalDepth;<br>
+                                    if (localDepth == globalDepth) {<br>
+                                        hashTable.directory.buckets.resize(1 << globalDepth);<br>
+                                        for (int i = 0; i < (1 << globalDepth); i++) {<br>
+                                            hashTable.directory.buckets[i] = i & ((1 << localDepth) - 1);<br>
+                                        }<br>
+                                        hashTable.directory.globalDepth++;<br>
+                                    } else {<br>
+                                        int splitIndex = bucketIndex & ((1 << localDepth) - 1);<br>
+                                        int baseIndex = bucketIndex - splitIndex;<br>
+                                        int numBuckets = 1 << (globalDepth - localDepth);<br>
+                                        for (int i = splitIndex; i < numBuckets; i += (1 << localDepth)) {<br>
+                                            hashTable.directory.buckets[baseIndex + i] = bucketIndex;<br>
+                                        }<br>
+                                    }<br>
+                                }<br>
+                                
+                                // Function to insert data into the hash table<br>
+                                void insert(int data, HashTable& hashTable) {<br>
+                                    int hash = data & ((1 << hashTable.directory.globalDepth) - 1);<br>
+                                    int bucketIndex = hashTable.directory.buckets[hash];<br>
+                                    Bucket& bucket = hashTable.buckets[bucketIndex];<br>
+                                    if (bucket.data.size() == hashTable.bucketSize) {<br>
+                                        splitBucket(bucketIndex, hashTable);<br>
+                                        updateDirectory(bucketIndex, hashTable);<br>
+                                        insert(data, hashTable);<br>
+                                    } else {<br>
+                                        bucket.data.push_back(data);<br>
+                                    }<br>
+                                }<br>
+                                
+                                int main() {<br>
+                                    HashTable hashTable;<br>
+                                    hashTable.bucketSize = 2;<br>
+                                    hashTable.buckets.resize(2);<br>
+                                    hashTable.buckets[0].localDepth = 1;<br>
+                                    hashTable.buckets[1].localDepth = 1;<br>
+                                    hashTable.directory.globalDepth = 1;<br>
+                                    hashTable.directory.buckets.resize(2);<br>
+                                    hashTable.directory.buckets[0] = 0;<br>
+                                    hashTable.directory.buckets[1] = 1;<br>
+                                
+                                    insert(1, hashTable);<br>
+                                    insert(2, hashTable);<br>
+                                    insert(3, hashTable);<br>
+                                    insert(4, hashTable);<br>
+                                    return 0;<br>
+                                }<br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"></script>
+
+            <style>
+              
+                .previous {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    left: 50px;
+    
+                        }
+                    
+                .next {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    right: 50px;
+                        
+                    }
+        
+    </style>
+
+<a href="Qsn16DS.html" class="previous"> &lt; Previous</a>
+<!--<a href="#" style="float: right"  class="next">Next &gt;</a>-->
+
+
+</body>
+
+</html>

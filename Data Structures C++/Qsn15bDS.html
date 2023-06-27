@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>DATA STRUCTURES LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q15. Write a C++ program that uses functions to perform the following: <br>
+                b) Search for an integer key in the above binary search tree non-recursively.
+            </b></p>
+
+        <p><b>Aim:</b> Search for an integer key in the above binary search tree non-recursively.
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with G++ compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b><br>
+        <b>Algorithm:</b><br>
+        
+Step-1: Define a struct Node to store the binary tree node with data and pointers to left and right child nodes.<br>
+Step-2: Define a function iterativeSearch that takes in a binary tree root and an integer key to search for,
+ and returns true if the key is found in the tree and false otherwise.<br>
+Step-3: In the iterativeSearch function, traverse the binary tree using a while loop until the root pointer reaches NULL, 
+indicating the key is not in the tree.<br>
+Step-4: In each iteration, if the key is greater than the current node's data, 
+set the root pointer to its right child. If the key is less than the current node's data, set the root pointer to its left child. <br>
+ If the key is equal to the current node's data, return true as the key is found.<br>
+Step-5: If the function reaches the end of the loop without finding the key, return false.<br>
+
+
+        
+        <center><img src="/images/dsimg15b.png" alt="Not Found"></center><br>
+
+        
+
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Code Editor***
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                            .cnsl {
+ 
+                                     text-decoration: none;
+                                     display: inline-block;
+                                     background-color: rgba(29, 96, 184, 0.902);
+                                     padding: 8px;
+                                     border-radius: 6px;
+                                     border: 1px solid #d5d9d9;
+                                     box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                     box-sizing: border-box;
+                                     line-height: 20px;  
+                                     color: #edf0f3;
+                                 }
+ 
+                         </style>
+                         <a href="https://onecompiler.com/cpp" target="_blank" 
+                         class="cnsl">Try on CodeEditor</a><br>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        // Search for an integer key in the above binary search tree non-recursively. <br>
+                        #include&ltbits /stdc++.h&gt <br>
+                        using namespace std; <br>
+                        struct Node { <br>
+                        int data; <br>
+                        struct Node *left, *right; <br>
+                        }; <br>
+                        bool iterativeSearch(struct Node* root, int key) <br>
+                        { <br>
+                        // Traverse until root reaches to dead end <br>
+                        while (root != NULL) { <br>
+                        // pass right subtree as new tree <br>
+                        if (key > root->data) <br>
+                        root = root->right; <br>
+                        // pass left subtree as new tree <br>
+                        else if (key < root->data) <br>
+                            root = root->left; <br>
+                            else <br>
+                            return true; // if the key is found return 1 <br>
+                            } <br>
+                            return false; <br>
+                            } <br>
+                            struct Node* newNode(int item) <br>
+                            { <br>
+                            struct Node* temp = new Node; <br>
+                            temp->data = item; <br>
+                            temp->left = temp->right = NULL; <br>
+                            return temp; <br>
+                            } <br>
+                            struct Node* insert(struct Node* Node, int data) <br>
+                            { <br>
+                            /* If the tree is empty, return a new Node */ <br>
+                            if (Node == NULL) <br>
+                            return newNode(data); <br>
+                            /* Otherwise, recur down the tree */ <br>
+                            if (data < Node->data) <br>
+                                Node->left = insert(Node->left, data); <br>
+                                else if (data > Node->data) <br>
+                                Node->right = insert(Node->right, data); <br>
+                                /* return the (unchanged) Node pointer */ <br>
+                                return Node; <br>
+                                } <br>
+                                // Driver Program to test above functions <br>
+                                int main() <br>
+                                { <br>
+                                struct Node* root = NULL; <br>
+                                root = insert(root, 50); <br>
+                                insert(root, 30); <br>
+                                insert(root, 20); <br>
+                                insert(root, 40); <br>
+                                insert(root, 70); <br>
+                                insert(root, 60); <br>
+                                insert(root, 80); <br>
+                                if (iterativeSearch(root, 15)) <br>
+                                cout << "Yes" ; else cout << "No" ; return 0; } <br>
+                    </div>
+                </div>
+            </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Solution 2
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+
+                            #include&ltbits /stdc++.h&gt <br>
+                            using namespace std; <br>
+                            struct Node <br>
+                            { <br>
+                            int data; <br>
+                            Node* left = nullptr, *right = nullptr; <br>
+                            Node() {} <br>
+                            Node(int data): data(data) {} <br>
+                            }; <br>
+                            // Recursive function to insert a key into a BST <br>
+                            Node* insert(Node* root, int key) <br>
+                            { <br>
+                            // if the root is null, create a new node and return it <br>
+                            if (root == nullptr) { <br>
+                            return new Node(key); <br>
+                            } <br>
+                            // if the given key is less than the root node, recur for the left subtree <br>
+                            if (key < root->data) { <br>
+                                root->left = insert(root->left, key); <br>
+                                } <br>
+                                // if the given key is more than the root node, recur for the right subtree <br>
+                                else { <br>
+                                root->right = insert(root->right, key); <br>
+                                } <br>
+                                return root; <br>
+                                } <br>
+                                // Recursive function to search in a given BST <br>
+                                void search(Node* root, int key, Node* parent) <br>
+                                { <br>
+                                // if the key is not present in the key <br>
+                                if (root == nullptr) <br>
+                                { <br>
+                                cout << "Key not found" ; <br>
+                                    return; <br>
+                                    } <br>
+                                    // if the key is found <br>
+                                    if (root->data == key) <br>
+                                    { <br>
+                                    if (parent == nullptr) { <br>
+                                    cout << "The node with key " << key << " is root node" ; <br>
+                                        } <br>
+                                        else if (key < parent->data) <br>
+                                            { <br>
+                                            cout << "The given key is the left node of the node with key " <br>
+                                                << parent->data; <br>
+                                                    } <br>
+                                                    else { <br>
+                                                    cout << "The given key is the right node of the node with key " <br>
+                                                        << parent->data; <br>
+                                                            } <br>
+                                                            return; <br>
+                                                            } <br>
+                                                            // if the given key is less than the root node, recur for
+                                                            the left subtree; <br>
+                                                            // otherwise, recur for the right subtree <br>
+                                                            if (key < root->data) { <br>
+                                                                search(root->left, key, root); <br>
+                                                                } else { <br>
+                                                                search(root->right, key, root); <br>
+                                                                } <br>
+                                                                } <br>
+                                                                int main() <br>
+                                                                { <br>
+                                                                int keys[] = { 15, 10, 20, 8, 12, 16, 25 }; <br>
+                                                                Node* root = nullptr; <br>
+                                                                for (int key: keys) { <br>
+                                                                root = insert(root, key); <br>
+                                                                } <br>
+                                                                search(root, 25, nullptr); <br>
+                                                                return 0; <br>
+                                                                } <br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"></script>
+
+            <style>
+              
+                .previous {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    left: 50px;
+    
+                        }
+                    
+                .next {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    right: 50px;
+                        
+                    }
+        
+    </style>
+
+<a href="Qsn15aDS.html" class="previous"> &lt; Previous</a>
+<a href="Qsn15cDS.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

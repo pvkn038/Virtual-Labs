@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>DATA STRUCTURES LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q6. Write a C++ program that uses function templates to perform the following:<br>
+        b) Search for a key element in a list of sorted elements using binarysearch.
+            </b></p>
+        <p><b>Aim:</b> To find a key element in a list of elements using linear search.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with G++ compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b><br> Binary Search is a searching algorithm used in a sorted array by repeatedly
+            dividing the search interval in half.
+            The idea of binary search is to use the information that the array is
+            sorted and reduce the time complexity to O(Log n).
+            <br><br>
+        
+        <b>Algorithm:</b>
+            <li>Step-1: Sort the array in ascending order.</li>
+            <li>Step-2: Set the low index to the first element of the array and the high index to the last element.</li>
+            <li>Step-3: Set the middle index to the average of the low and high indices.</li>
+            <li>Step-4: If the element at the middle index is the target element, return the middle index..</li>
+            <li>Step-5: If the target element is less than the element at the middle index, set the high index to the middle
+                index –
+                1.</li>
+            <li>Step-6: If the target element is greater than the element at the middle index, set the low index to the middle
+                index
+                + 1.</li>
+            <li>Step-7: Repeat steps 3-6 until the element is found or it is clear that the element is not present in the array.
+            </li><br>
+        
+        
+
+        
+            <center><img src="/images/dsimg6b1.jpg" alt="Not Found"></center><br>
+
+        
+
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Code Editor***
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                            .cnsl {
+ 
+                                     text-decoration: none;
+                                     display: inline-block;
+                                     background-color: rgba(29, 96, 184, 0.902);
+                                     padding: 8px;
+                                     border-radius: 6px;
+                                     border: 1px solid #d5d9d9;
+                                     box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                     box-sizing: border-box;
+                                     line-height: 20px;  
+                                     color: #edf0f3;
+                                 }
+ 
+                         </style>
+                         <a href="https://onecompiler.com/cpp" target="_blank" 
+                         class="cnsl">Try on CodeEditor</a><br>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+
+                        #include&ltiostream&gt <br>
+                        using namespace std;<br>
+
+                        // C++ program to implement recursive Binary Search
+                        #include <bits /stdc++.h><br>
+                            using namespace std;<br>
+
+                            int binarySearch(int arr[], int l, int r, int x)<br>
+                            {<br>
+                            if (r >= l) {<br>
+                            int mid = l + (r - l) / 2;<br>
+
+
+                            if (arr[mid] == x)<br>
+                            return mid;<br>
+
+                            if (arr[mid] > x)<br>
+                            return binarySearch(arr, l, mid - 1, x);<br>
+                            return binarySearch(arr, mid + 1, r, x);<br>
+                            }<br>
+                            return -1;<br>
+                            }<br>
+
+                            int main(void)<br>
+                            {<br>
+                            int arr[] = { 2, 3, 4, 10, 40 };<br>
+                            int x = 10;<br>
+                            int n = sizeof(arr) / sizeof(arr[0]);<br>
+                            int result = binarySearch(arr, 0, n - 1, x);<br>
+                            (result == -1)<br>
+                            ? cout << "Element is not present in array" : cout << "Element is present at index " <<<br>
+                                result; return 0; } <br>
+
+
+
+                    </div>
+                </div>
+            </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Solution 2
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+
+                            #include &lt;bits /stdc++.h&gt;<br>
+                                using namespace std; <br>
+                                int binarySearch(int arr[], int l, int r, int x)<br>
+                                {<br>
+                                while (l <= r) {<br>
+                                    int m = l + (r - l) / 2;<br>
+                                    if (arr[m] == x)<br>
+                                    return m;<br>
+                                    if (arr[m] < x)<br>
+                                        l = m + 1;<br>
+                                        else<br>
+                                        r = m - 1;<br>
+                                        }<br>
+                                        return -1;<br>
+                                        }<br>
+                                        int main(void)<br>
+                                        {<br>
+                                        int arr[] = { 2, 3, 4, 10, 40 };<br>
+                                        int x = 10;<br>
+                                        int n = sizeof(arr) / sizeof(arr[0]);<br>
+                                        int result = binarySearch(arr, 0, n - 1, x);<br>
+                                        (result == -1)? cout << "Element is not present in array" <br>
+                                            : cout << "Element is present at index " << result;<br>
+                                                return 0;<br>
+                                                }<br>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"></script>
+
+            <style>
+              
+                .previous {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    left: 50px;
+    
+                        }
+                    
+                .next {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    right: 50px;
+                        
+                    }
+        
+    </style>
+
+<a href="Qsn6aDS.html" class="previous"> &lt; Previous</a>
+<a href="Qsn7.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

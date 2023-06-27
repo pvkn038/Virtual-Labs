@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>DATA STRUCTURES LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>15. Write a C++ program that uses functions to perform the following: <br>
+                c) Search for an integer key in the above binary search tree recursively.
+            </b></p>
+
+        <p><b>Aim:</b> To arrange a list of integers in descending order using insertion sort algorithm</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with G++ compiler installed in
+            it.</p>
+       
+        <p align="justify"><b>Description:</b><br>
+            We begin by examining the root node. If the tree is null, the key we are searching for does not exist in the
+            
+            tree. Otherwise, if the key equals that of the root, the search is successful, we return the node. 
+            If the key is less than that of the root, we search the left subtree. Similarly, if the key is greater than
+            
+            that of the root, we search the right subtree. 
+            This process is repeated until the key is found or the remaining subtree is null. 
+            If the searched key is not found after a null subtree is reached, then the key is not present in the tree.<br>
+            
+        <b>Algorithm:</b><br>
+       
+        Step-1: Start from the root. <br>
+        Step-2: Compare the searching element with root, if less than root,
+            then recursively call left subtree, else recursively call right subtree.<br> 
+        Step-3: If the element to search is found anywhere, return true, else return false. <br>
+
+        
+
+        
+        <center><img src="/images/dsimg15b.png" alt="Not Found"></center><br>
+
+        
+
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Code Editor***
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                            .cnsl {
+ 
+                                     text-decoration: none;
+                                     display: inline-block;
+                                     background-color: rgba(29, 96, 184, 0.902);
+                                     padding: 8px;
+                                     border-radius: 6px;
+                                     border: 1px solid #d5d9d9;
+                                     box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                     box-sizing: border-box;
+                                     line-height: 20px;  
+                                     color: #edf0f3;
+                                 }
+ 
+                         </style>
+                         <a href="https://onecompiler.com/cpp" target="_blank" 
+                         class="cnsl">Try on CodeEditor</a><br>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        // C++ program to check if a node exists <br>
+                        // in a binary tree <br>
+                        #include&lt;iostream&gt; <br>
+                        using namespace std; <br>
+                        struct Node { <br>
+                        int data; <br>
+                        struct Node *left, *right; <br>
+                        Node(int data) <br>
+                        { <br>
+                        this->data = data; <br>
+                        left = right = NULL; <br>
+                        } <br>
+                        }; <br>
+                        bool ifNodeExists(struct Node* node, int key) <br>
+                        { <br>
+                        if (node == NULL) <br>
+                        return false; <br>
+                        <br>
+                        if (node->data == key) <br>
+                        return true; <br>
+                        bool res1 = ifNodeExists(node->left, key); <br>
+                        if(res1) return true; <br>
+                        bool res2 = ifNodeExists(node->right, key); <br>
+                        return res2; <br>
+                        } <br>
+                        int main() <br>
+                        { <br>
+                        struct Node* root = new Node(0); <br>
+                        root->left = new Node(1); <br>
+                        root->left->left = new Node(3); <br>
+                        root->left->left->left = new Node(7); <br>
+                        root->left->right = new Node(4); <br>
+                        root->left->right->left = new Node(8); <br>
+                        root->left->right->right = new Node(9); <br>
+                        root->right = new Node(2); <br>
+                        root->right->left = new Node(5); <br>
+                        root->right->right = new Node(6); <br>
+                        int key = 4; <br>
+                        if (ifNodeExists(root, key)) <br>
+                        cout << "YES" ; <br>
+                            else <br>
+                            cout << "NO" ; <br>
+                                return 0; <br>
+                                } <br>
+
+
+
+                    </div>
+                </div>
+            </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Solution 2
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            #include&ltiostream&gt <br>
+                            using namespace std; <br>
+                            // Data structure to store a BST node <br>
+                            struct Node <br>
+                            { <br>
+                            int data; <br>
+                            Node* left = nullptr, *right = nullptr; <br>
+                            Node() {} <br>
+                            Node(int data): data(data) {} <br>
+                            }; <br>
+                            // Recursive function to insert a key into a BST <br>
+                            Node* insert(Node* root, int key) <br>
+                            { <br>
+                            // if the root is null, create a new node and return it <br>
+                            if (root == nullptr) { <br>
+                            return new Node(key); <br>
+                            } <br>
+                            // if the given key is less than the root node, recur for the left subtree <br>
+                            if (key < root->data) { <br>
+                                root->left = insert(root->left, key); <br>
+                                } <br>
+                                // if the given key is more than the root node, recur for the right subtree <br>
+                                else { <br>
+                                root->right = insert(root->right, key); <br>
+                                } <br>
+                                return root; <br>
+                                } <br>
+                                // Recursive function to search in a given BST <br>
+                                void search(Node* root, int key, Node* parent) <br>
+                                { <br>
+                                // if the key is not present in the key <br>
+                                if (root == nullptr) <br>
+                                { <br>
+                                cout << "Key not found" ; return; } // if the key is found if (root->data == key) <br>
+                                    { <br>
+                                    if (parent == nullptr) { <br>
+                                    cout << "The node with key " << key << " is root node" ; } else if (key < parent->
+                                        <br>
+                                        data) <br>
+                                        { <br>
+                                        cout << "The given key is the left node of the node with key " << parent->data;
+                                            <br>
+                                            } <br>
+                                            else { <br>
+                                            cout << "The given key is the right node of the node with key " << parent->
+                                                <br>
+                                                data; <br>
+                                                } <br>
+                                                return; <br>
+                                                } <br>
+                                                // if the given key is less than the root node, recur for the left <br>
+                                                subtree; <br>
+                                                // otherwise, recur for the right subtree <br>
+                                                if (key < root->data) { <br>
+                                                    search(root->left, key, root); <br>
+                                                    } else { <br>
+                                                    search(root->right, key, root); <br>
+                                                    } <br>
+                                                    } <br>
+                                                    int main() <br>
+                                                    { <br>
+                                                    int keys[] = { 15, 10, 20, 8, 12, 16, 25 }; <br>
+                                                    Node* root = nullptr; <br>
+                                                    for (int key: keys) { <br>
+                                                    root = insert(root, key); <br>
+                                                    } <br>
+                                                    search(root, 25, nullptr); <br>
+                                                    return 0; <br>
+                                                    } <br>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"></script>
+
+            <style>
+              
+                .previous {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    left: 50px;
+    
+                        }
+                    
+                .next {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    right: 50px;
+                        
+                    }
+        
+    </style>
+
+<a href="Qsn15bDS.html" class="previous"> &lt; Previous</a>
+<a href="Qsn16DS.html" style="float: right"  class="next">Next &gt;</a>
+
+
+</body>
+
+</html>

@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+    
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>OBJECT ORIENTED PROGRAMMING THROUGH JAVA LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q8. Suppose that a table named Table.txt is stored in a text file. The first line in the file is the header, and the remaining lines correspond to 
+            rows in the table. The elements are separated by commas. Write a java program to display the table using Labels in GridLayout.</b></p>
+        <p><b>Aim:</b> To develop a Java program that can read a text file containing a table, where the first line represents the header and the remaining lines correspond to rows 
+            in the table, and display the table using Labels in GridLayout.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with javac compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b><br> Suppose that a table named Table.txt is stored in a text file. The first line in the file is the header, and the remaining lines correspond 
+            to rows in the table. The elements are separated by commas.<br>
+            To display this table using Labels in GridLayout using Java, we can follow these steps:<br>
+            1. Read the data from the text file into an ArrayList of String arrays. We can use the BufferedReader and FileReader classes to achieve this. We can read the first line separately 
+            to obtain the headers and use a loop to read the remaining lines into an ArrayList of String arrays. In each iteration of the loop, we can split the line by the comma separator 
+            and store the resulting array in the ArrayList.<br>
+            2. Create a JFrame and set its layout to GridLayout. We can use the JFrame class to create a window for our table display. We can set its layout to GridLayout so that the labels are 
+            arranged in a grid.<br>
+            3. Create JLabels for the headers and add them to the JFrame. We can use a loop to create JLabels for each header and add them to the JFrame. We can set the text of each JLabel to the 
+            corresponding header.<br>
+            4. Create JLabels for the data and add them to the JFrame. We can use nested loops to create JLabels for each data element and add them to the JFrame. We can set the text of each JLabel 
+            to the corresponding data element.<br>
+            5. Display the JFrame. We can use the setVisible() method of the JFrame class to display the window containing our table.<br>
+            Without the program, this is a general outline of the steps needed to display a table stored in a text file using Labels in a GridLayout in Java. The specific implementation of the 
+            steps will depend on the details of the table and the desired display.<br><br>
+            <style>
+                .imagecenter {
+                    width: 750px;
+                    height: 650px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }                
+            </style>
+            <img src="/images/gridlayout.jpg" alt="Not Found" class="imagecenter"><br><br>
+            <b>Examples:</b><br>
+Suppose we have a Table.txt file that contains the following data:<br>
+Name, Age, Gender<br>
+John, 25, Male<br>
+Jane, 30, Female<br>
+To display this data using Labels in a GridLayout in Java, we can follow the steps outlined above:<br>
+1. Read the data from the text file into an ArrayList of String arrays. We can use the BufferedReader and FileReader classes to achieve this. We can read the first line separately to obtain the headers 
+and use a loop to read the remaining lines into an ArrayList of String arrays. In each iteration of the loop, we can split the line by the comma separator and store the resulting array in the ArrayList.<br>
+For this example, our ArrayList of String arrays will look like this:<br>
+[["Name", "Age", "Gender"], ["John", "25", "Male"], ["Jane", "30", "Female"]]<br>
+2. Create a JFrame and set its layout to GridLayout. We can use the JFrame class to create a window for our table display. We can set its layout to GridLayout so that the labels are arranged in a grid.<br>
+JFrame frame = new JFrame();<br>
+frame.setLayout(new GridLayout(0, 3)); // 0 rows, 3 columns for our 3 headers<br>
+3. Create JLabels for the headers and add them to the JFrame. We can use a loop to create JLabels for each header and add them to the JFrame. We can set the text of each JLabel to the corresponding header.<br>
+for (String header : table.get(0)) {<br>
+    JLabel label = new JLabel(header);<br>
+    frame.add(label);<br>
+}
+This will add three JLabels to the JFrame with the text "Name", "Age", and "Gender".<br>
+
+4. Create JLabels for the data and add them to the JFrame. We can use nested loops to create JLabels for each data element and add them to the JFrame. We can set the text of each JLabel to the corresponding data element.<br>
+for (int i = 1; i &lt; table.size(); i++) {<br>
+    for (String data : table.get(i)) {<br>
+        JLabel label = new JLabel(data);<br>
+        frame.add(label);<br>
+    }
+}
+This will add six JLabels to the JFrame with the text "John", "25", "Male", "Jane", "30", and "Female".<br>
+
+5. Display the JFrame. We can use the setVisible() method of the JFrame class to display the window containing our table.<br>
+frame.setVisible(true);<br>
+This will display a window containing a table with the headers "Name", "Age", and "Gender" and the data "John", "25", "Male", "Jane", "30", and "Female".<br>
+        </p>
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>
+                        Code Editor***</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                           .cnsl {
+
+                                    text-decoration: none;
+                                    display: inline-block;
+                                    background-color: rgba(29, 96, 184, 0.902);
+                                    padding: 8px;
+                                    border-radius: 6px;
+                                    border: 1px solid #d5d9d9;
+                                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                    box-sizing: border-box;
+                                    line-height: 20px;  
+                                    color: #edf0f3;
+                                }
+
+                        </style>
+                        <a href="https://onecompiler.com/" target="_blank" 
+                        class="cnsl">Try on CodeEditor</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        
+                        
+                        import java.io.*;<br>
+                        import java.util.*;<br>
+                        import java.awt.*;<br>
+                        import java.awt.event.*;<br>
+                        import javax.swing.*;<br>
+                        import javax.swing.event.*;<br>
+                        class Text_To_Table extends JFrame<br>
+                        {<br>
+                            public void convertTexttotable()<br>
+                            {<br>
+                                setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);<br>
+                                setSize(400,300);<br>
+                                GridLayout g = new GridLayout(0, 4);<br>
+                                setLayout(g);<br>
+                                try<br>
+                                {<br>
+                                    FileInputStream fis = new FileInputStream("./Table.txt");<br>
+                                    Scanner sc = new Scanner(fis);<br>
+                                    String[] arrayList;<br>
+                                    String str;<br>
+                                    while (sc.hasNextLine())<br>
+                                    {<br>
+                                        str = sc.nextLine();<br>
+                                        arrayList = str.split(",");<br>
+                                        for (String i : arrayList)<br>
+                                        {<br>
+                                            add(new Label(i));<br>
+                                        }<br>
+                                    }<br>
+                                } <br>
+                                catch (Exception ex) {<br>
+                                    ex.printStackTrace();<br>
+                                }<br>
+                                setVisible(true);<br>
+                                setTitle("Display Data in Table");<br>
+                            }<br>
+                        }<br>
+                        public class TableText<br>
+                        {<br>
+                            public static void main(String[] args)<br>
+                            {<br>
+                                Text_To_Table tt = new Text_To_Table();<br>
+                                tt.convertTexttotable();<br>
+                            }<br>
+                        }<br>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        import java.awt.GridLayout;<br>
+import java.io.BufferedReader;<br>
+import java.io.FileReader;<br>
+import java.io.IOException;<br>
+
+import javax.swing.JFrame;<br>
+import javax.swing.JLabel;<br>
+
+public class TableDisplay {<br>
+
+    public static void main(String[] args) {<br>
+        JFrame frame = new JFrame("Table Display");<br>
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);<br>
+
+        try {<br>
+            BufferedReader reader = new BufferedReader(new FileReader("Table.txt"));<br>
+
+            // Get the headers<br>
+            String headerLine = reader.readLine();<br>
+            String[] headers = headerLine.split(",");<br>
+
+            // Get the number of rows and columns<br>
+            int numRows = 0;<br>
+            while (reader.readLine() != null) {<br>
+                numRows++;<br>
+            }<br>
+            int numCols = headers.length;<br>
+
+            // Create the labels for the table<br>
+            JLabel[][] labels = new JLabel[numRows + 1][numCols];<br>
+            for (int col = 0; col &lt; numCols; col++) {<br>
+                labels[0][col] = new JLabel(headers[col]);<br>
+            }<br>
+
+            // Read the data and create the labels for the rows<br>
+            reader = new BufferedReader(new FileReader("Table.txt"));<br>
+            reader.readLine(); // Skip the header line<br>
+            String line;<br>
+            int row = 1;<br>
+            while ((line = reader.readLine()) != null) {<br>
+                String[] values = line.split(",");<br>
+                for (int col = 0; col &lt; numCols; col++) {<br>
+                    labels[row][col] = new JLabel(values[col]);<br>
+                }<br>
+                row++;<br>
+            }<br>
+            reader.close();<br>
+
+            // Add the labels to the frame using a GridLayout<br>
+            frame.setLayout(new GridLayout(numRows + 1, numCols));<br>
+            for (int rowIdx = 0; rowIdx &lt;= numRows; rowIdx++) {<br>
+                for (int colIdx = 0; colIdx &lt; numCols; colIdx++) {<br>
+                    frame.add(labels[rowIdx][colIdx]);<br>
+                }<br>
+            }<br>
+
+            frame.pack();<br>
+            frame.setVisible(true);<br>
+
+        } catch (IOException e) {<br>
+            System.err.println("Error: " + e.getMessage());<br>
+        }<br>
+    }<br>
+}<br>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<!--<a href="#" class="previous"> &lt; Previous</a>-->
+<a href="Q7oops.html" class="previous"> &lt; Previous</a>
+<a href="Q9oops.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

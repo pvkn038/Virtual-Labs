@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>DATA STRUCTURES LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q10. Write a C++ program that implements Heap sort algorithm for sorting a
+                list of integers in ascending order.
+
+            </b></p>
+
+        <p><b>Aim:</b> To arrange a list of integers in ascending order using Heap sort algorithm.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with G++ compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b><br> Heap sort is a comparison-based sorting technique based on Binary Heap data
+            structure. 
+            It is similar to the selection sort where we first find the maximum element and place the maximum element at
+            the end. 
+            We repeat the same process for the remaining element. <br>
+        <b>Algorithm:</b><br>
+Step-1: Define a function heapify to heapify a subtree rooted with node i, 
+where n is the size of the heap and arr is the array representing the heap.<br>
+Step-2: In heapify function, initialize the largest element as the root, 
+find the left and right child of the root and compare them with the root to find the largest element. 
+Swap the root with the largest element if it's not the root itself and call heapify again on the affected subtree.<br>
+Step-3: Define a function heapSort to perform heap sort on the array by building a heap and extracting the largest element one by one from it.<br>
+Step-4: In the heapSort function, build the heap by calling heapify on all non-leaf nodes in reverse order, starting from the last non-leaf node, 
+ and extract the largest element by swapping the root with the last element and heapify the reduced heap.<br>
+Step-5: Define a utility function printArray to print the elements of the array and call heapify, heapSort, 
+and printArray functions in the main function with the given array.</p>
+        
+
+        
+        <center><img src="/images/dsimg10.jpg" alt="Not Found" width="600" height="600"></center><br>
+
+        </p>
+
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Code Editor***
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                            .cnsl {
+ 
+                                     text-decoration: none;
+                                     display: inline-block;
+                                     background-color: rgba(29, 96, 184, 0.902);
+                                     padding: 8px;
+                                     border-radius: 6px;
+                                     border: 1px solid #d5d9d9;
+                                     box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                     box-sizing: border-box;
+                                     line-height: 20px;  
+                                     color: #edf0f3;
+                                 }
+ 
+                         </style>
+                         <a href="https://onecompiler.com/cpp" target="_blank" 
+                         class="cnsl">Try on CodeEditor</a><br>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+
+                        // C++ program for implementation of Heap sort <br>
+                        #include&ltbits /stdc++.h&gt<br>
+                        using namespace std;<br>
+                        void heapify(int arr[], int n, int i) <br>
+                        { <br>
+                        int largest = i; // Initialize largest as root Since we are using 0 based indexing <br>
+                        int l = 2 * i + 1; // left = 2*i + 1 <br>
+                        int r = 2 * i + 2; // right = 2*i + 2 <br>
+                        // If left child is larger than root <br>
+                        if (l < n && arr[l]> arr[largest]) <br>
+                            largest = l; <br>
+                            // If right child is larger than largest so far <br>
+                            if (r < n && arr[r]> arr[largest]) <br>
+                                largest = r; <br>
+                                // If largest is not root <br>
+                                if (largest != i) { <br>
+                                swap(arr[i], arr[largest]); <br>
+                                // Recursively heapify the affected sub-tree <br>
+                                heapify(arr, n, largest); <br>
+                                } <br>
+                                } <br>
+                                // main function to do heap sort <br>
+                                void heapSort(int arr[], int n) <br>
+                                { <br>
+                                // Build heap (rearrange array) <br>
+                                for (int i = n / 2 - 1; i >= 0; i--) <br>
+                                heapify(arr, n, i); <br>
+                                // One by one extract an element from heap <br>
+                                for (int i = n - 1; i >= 0; i--) { <br>
+                                // Move current root to end <br>
+                                swap(arr[0], arr[i]); <br>
+                                // call max heapify on the reduced heap <br>
+                                heapify(arr, i, 0); <br>
+                                } <br>
+                                } <br>
+                                /* A utility function to print array of size n */ <br>
+                                void printArray(int arr[], int n) <br>
+                                { <br>
+                                for (int i = 0; i < n; ++i) <br>
+                                    cout << arr[i] << " " ; <br>
+                                        cout << "\n" ; <br>
+                                            } <br>
+                                            // Driver program <br>
+                                            int main() <br>
+                                            { <br>
+                                            int arr[] = { 60 ,20 ,40 ,70, 30, 10}; <br>
+                                            int n = sizeof(arr) / sizeof(arr[0]); <br>
+                                            //heapify algorithm <br>
+                                            // the loop must go reverse you will get after analyzing manually <br>
+                                            // (i=n/2 -1) because other nodes/ ele's are leaf nodes <br>
+                                            // (i=n/2 -1) for 0 based indexing <br>
+                                            // (i=n/2) for 1 based indexing <br>
+                                            for(int i=n/2 -1;i>=0;i--){ <br>
+                                            heapify(arr,n,i); <br>
+                                            } <br>
+                                            cout << "After heapifying array is \n" ; <br>
+                                                printArray(arr, n); <br>
+                                                heapSort(arr, n); <br>
+                                                cout << "Sorted array is \n" ; <br>
+                                                    printArray(arr, n); <br>
+                                                    return 0; <br>
+                                                    } <br>
+                                                    //code by Prajwal Chougale <br>
+                    </div>
+                </div>
+            </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Solution 2
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+
+                            #include&ltiostream&gt <br>
+                            using namespace std; <br>
+                            // A function to heapify the array. <br>
+                            void MaxHeapify(int a[], int i, int n) <br>
+                            { <br>
+                            int j, temp; <br>
+                            temp = a[i]; <br>
+                            j = 2*i; <br>
+                            while (j <= n) { if (j < n && a[j+1]> a[j]) <br>
+                                j = j+1; <br>
+                                // Break if parent value is already greater than child value. <br>
+                                if (temp > a[j]) <br>
+                                break; <br>
+                                // Switching value with the parent node if temp < a[j]. else if (temp <=a[j]) { <br>
+                                    a[j/2]=a[j]; j=2*j; } } a[j/2]=temp; return; } void HeapSort(int a[], int n) { int
+                                    <br>
+                                    i, temp; for (i=n; i>= 2; i--) <br>
+                                    { <br>
+                                    // Storing maximum value at the end. <br>
+                                    temp = a[i]; <br>
+                                    a[i] = a[1]; <br>
+                                    a[1] = temp; <br>
+                                    // Building max heap of remaining element. <br>
+                                    MaxHeapify(a, 1, i - 1); <br>
+                                    } <br>
+                                    } <br>
+                                    void Build_MaxHeap(int a[], int n) <br>
+                                    { <br>
+                                    int i; <br>
+                                    for(i = n/2; i >= 1; i--) <br>
+                                    MaxHeapify(a, i, n); <br>
+                                    } <br>
+                                    int main() <br>
+                                    { <br>
+                                    int n, i; <br>
+                                    cout<<"\nEnter the number of data element to be sorted: "; <br>
+                                    cin>>n; <br>
+                                    n++; <br>
+                                    int arr[n]; <br>
+                                    for(i = 1; i < n; i++) <br>
+                                    { <br>
+                                        cout<<" Enter element "<<i<<" : "; <br>
+                                        cin>>arr[i]; <br>
+                                    } <br>
+                                    // Building max heap. <br>
+                                    Build_MaxHeap(arr, n-1); <br>
+                                    HeapSort(arr, n-1); <br>
+                                    // Printing the sorted data. <br>
+                                    cout<<" \nSorted Data "; <br>
+                                    for (i = 1; i < n; i++) <br>
+                                        cout<<" ->"<<arr[i]; return 0; } <br>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"></script>
+
+            <style>
+              
+                .previous {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    left: 50px;
+    
+                        }
+                    
+                .next {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    right: 50px;
+                        
+                    }
+        
+    </style>
+
+<a href="Qsn9DS.html" class="previous"> &lt; Previous</a>
+<a href="Qsn11DS.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

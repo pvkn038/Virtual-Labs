@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+    
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>OBJECT ORIENTED PROGRAMMING THROUGH JAVA LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q5. Write a Java program for the following:<br>
+            a) Create a doubly linked list of elements.<br>
+            b) Delete a given element from the above list.<br>
+            c) Display the contents of the list after deletion.</b></p>
+        <p><b>Aim:</b> The aim of this experiment is to create a Java program that implements a doubly linked list and performs deletion of a given element. After deletion, the program 
+            will display the updated contents of the list.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with javac compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b><br> Doubly linked list is a type of data structure that consists of a set of elements or nodes, where each node has a pointer to the previous and 
+            next node in the list. In Java, we can create a doubly linked list by defining a Node class that contains the data and pointers to the next and previous nodes.<br>
+            To create a doubly linked list in Java, we can start by defining a Node class:<br>
+            class Node {<br>
+                int data;<br>
+                Node prev;<br>
+                Node next;<br>
+             
+                public Node(int data) {<br>
+                    this.data = data;<br>
+                    this.prev = null;<br>
+                    this.next = null;<br>
+                }<br>
+            }<br>
+            In the above code, we have defined a Node class with three attributes: data, prev, and next. The data attribute represents the value of the node, and the prev and next attributes 
+            represent the pointers to the previous and next nodes in the list, respectively.<br>
+            Next, we can define a LinkedList class that contains the logic to add, delete, and display elements in the doubly linked list:<br>
+            We have defined a LinkedList class with three methods: add, delete, and display.<br>
+            The add method adds a new node to the end of the doubly linked list. If the list is empty, the new node becomes the head. Otherwise, we traverse the list to find the last node, 
+            and set the next and prev pointers accordingly.<br>
+            The delete method deletes a node with the given data from the doubly linked list. We traverse the list to find the node with the given data, and then adjust the prev and next 
+            pointers of the adjacent nodes to remove the node from the list.<br>
+            The display method prints the contents of the doubly linked list to the console.<br>
+            To use the doubly linked list, we can create an instance of the LinkedList class, add some elements to the list, delete a node with a given value, and display the contents of the list:<br>
+            LinkedList list = new LinkedList();<br>
+            list.add(1);<br>
+            list.add(2);<br>
+            list.add(3);<br>
+            list.delete(2);<br>
+            list.display(); // output: 1 3<br>
+            In the above code, we create a new LinkedList instance, add three elements to the list, delete the node with value 2, and display the remaining elements in the list, which are 1 and 3.<br><br>
+            <style>
+                .imagecenter {
+                    width: 800px;
+                    height: 350px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }                
+            </style>
+            <img src="/images/DLL.jpg" alt="Not Found" class="imagecenter">
+            <b>Examples:</b><br>
+            For example, let's say we want to create a doubly linked list of integers with the values 1, 2, and 3. We can start by creating the first node, which will be the head of the list:<br>
+Node head = new Node(1);<br>
+Here, we create a new node with the value of 1 and set it as the head of the list. We can define the Node class as follows:<br>
+class Node {<br>
+    int value;<br>
+    Node prev;<br>
+    Node next;<br>
+    public Node(int value) {<br>
+        this.value = value;<br>
+        this.prev = null;<br>
+        this.next = null;<br>
+    }<br>
+}<br>
+This Node class has three attributes: the value of the node and the previous and next nodes. The prev and next nodes are initially set to null because this is the first node in the list.<br>
+Next, we can add the second node to the list:<br>
+Node second = new Node(2);<br>
+head.next = second;<br>
+second.prev = head;<br>
+Here, we create a new node with the value of 2 and set it as the next node after the head node. We also set the prev pointer of the second node to point to the head node.<br>
+Finally, we can add the third node to the list:<br>
+Node third = new Node(3);<br>
+second.next = third;<br>
+third.prev = second;<br>
+Here, we create a new node with the value of 3 and set it as the next node after the second node. We also set the prev pointer of the third node to point to the second node.<br>
+Now we have a doubly linked list of three nodes with the values 1, 2, and 3, where each node has a reference to the previous and next nodes in the list.<br>
+        </p>
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>
+                        Code Editor***</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                           .cnsl {
+
+                                    text-decoration: none;
+                                    display: inline-block;
+                                    background-color: rgba(29, 96, 184, 0.902);
+                                    padding: 8px;
+                                    border-radius: 6px;
+                                    border: 1px solid #d5d9d9;
+                                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                    box-sizing: border-box;
+                                    line-height: 20px;  
+                                    color: #edf0f3;
+                                }
+
+                        </style>
+                        <a href="https://onecompiler.com/" target="_blank" 
+                        class="cnsl">Try on CodeEditor</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        
+                        public class DoublyLinkedList {<br>
+                            Node head, tail;<br>
+                        
+                            public class Node {<br>
+                                int data;<br>
+                                Node prev, next;<br>
+                        
+                                public Node(int data) {<br>
+                                    this.data = data;<br>
+                                    prev = null;<br>
+                                    next = null;<br>
+                                }<br>
+                            }<br>
+                        
+                            // Method to add a node to the end of the doubly linked list<br>
+                            public void addNode(int data) {<br>
+                                Node newNode = new Node(data);<br>
+                        
+                                if (head == null) {<br>
+                                    head = tail = newNode;<br>
+                                    head.prev = null;<br>
+                                    tail.next = null;<br>
+                                } else {<br>
+                                    tail.next = newNode;<br>
+                                    newNode.prev = tail;<br>
+                                    tail = newNode;<br>
+                                    tail.next = null;<br>
+                                }<br>
+                            }<br>
+                        
+                            // Method to delete a given element from the doubly linked list<br>
+                            public void deleteNode(int data) {<br>
+                                Node current = head;<br>
+                        
+                                while (current != null) {<br>
+                                    if (current.data == data) {<br>
+                                        if (current == head) {<br>
+                                            head = head.next;<br>
+                                            head.prev = null;<br>
+                                        } else if (current == tail) {<br>
+                                            tail = tail.prev;<br>
+                                            tail.next = null;<br>
+                                        } else {<br>
+                                            current.prev.next = current.next;<br>
+                                            current.next.prev = current.prev;<br>
+                                        }<br>
+                                    }<br>
+                                    current = current.next;<br>
+                                }<br>
+                            }<br>
+                        
+                            // Method to display the contents of the doubly linked list<br>
+                            public void displayList() {<br>
+                                Node current = head;<br>
+                        
+                                if (head == null) {<br>
+                                    System.out.println("List is empty");<br>
+                                    return;<br>
+                                }<br>
+                                System.out.println("Nodes of doubly linked list: ");<br>
+                        
+                                while (current != null) {<br>
+                                    System.out.print(current.data + " ");<br>
+                                    current = current.next;<br>
+                                }<br>
+                            }<br>
+                        
+                            public static void main(String[] args) {<br>
+                                DoublyLinkedList dll = new DoublyLinkedList();<br>
+                        
+                                dll.addNode(1);<br>
+                                dll.addNode(2);<br>
+                                dll.addNode(3);<br>
+                                dll.addNode(4);<br>
+                                dll.addNode(5);<br>
+                        
+                                System.out.println("Original List:");<br>
+                                dll.displayList();<br>
+                        
+                                int dataToDelete = 3;<br>
+                                dll.deleteNode(dataToDelete);<br>
+                        
+                                System.out.println("\nList after deleting node with data " + dataToDelete + ":");<br>
+                                dll.displayList();<br>
+                            }<br>
+                        }<br>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        public class DoublyLinkedList {<br>
+                            Node head;<br>
+                        
+                            public class Node {<br>
+                                int data;<br>
+                                Node prev;<br>
+                                Node next;<br>
+                        
+                                public Node(int data) {<br>
+                                    this.data = data;<br>
+                                    prev = null;<br>
+                                    next = null;<br>
+                                }<br>
+                            }<br>
+                        
+                            // Method to add a node to the end of the doubly linked list<br>
+                            public void addNode(int data) {<br>
+                                Node newNode = new Node(data);<br>
+                        
+                                if (head == null) {<br>
+                                    head = newNode;<br>
+                                } else {<br>
+                                    Node current = head;<br>
+                                    while (current.next != null) {<br>
+                                        current = current.next;<br>
+                                    }<br>
+                                    current.next = newNode;<br>
+                                    newNode.prev = current;<br>
+                                }<br>
+                            }<br>
+                        
+                            // Method to delete a given element from the doubly linked list<br>
+                            public void deleteNode(int data) {<br>
+                                if (head == null) {<br>
+                                    return;<br>
+                                }<br>
+                        
+                                Node current = head;<br>
+                                while (current != null) {<br>
+                                    if (current.data == data) {<br>
+                                        if (current == head) {<br>
+                                            head = current.next;<br>
+                                            if (head != null) {<br>
+                                                head.prev = null;<br>
+                                            }<br>
+                                        } else {<br>
+                                            current.prev.next = current.next;<br>
+                                            if (current.next != null) {<br>
+                                                current.next.prev = current.prev;<br>
+                                            }<br>
+                                        }<br>
+                                        return;<br>
+                                    }<br>
+                                    current = current.next;<br>
+                                }<br>
+                            }<br>
+                        
+                            // Method to display the contents of the doubly linked list<br>
+                            public void displayList() {<br>
+                                Node current = head;<br>
+                        
+                                if (current == null) {<br>
+                                    System.out.println("List is empty");<br>
+                                    return;<br>
+                                }<br>
+                        
+                                System.out.print("Nodes of doubly linked list: ");<br>
+                                while (current != null) {<br>
+                                    System.out.print(current.data + " ");<br>
+                                    current = current.next;<br>
+                                }<br>
+                            }<br>
+                        
+                            public static void main(String[] args) {<br>
+                                DoublyLinkedList dll = new DoublyLinkedList();<br>
+                        
+                                dll.addNode(1);<br>
+                                dll.addNode(2);<br>
+                                dll.addNode(3);<br>
+                                dll.addNode(4);<br>
+                                dll.addNode(5);<br>
+                        
+                                System.out.println("Original List:");<br>
+                                dll.displayList();<br>
+                        
+                                int dataToDelete = 3;<br>
+                                dll.deleteNode(dataToDelete);<br>
+                        
+                                System.out.println("\nList after deleting node with data " + dataToDelete + ":");<br>
+                                dll.displayList();<br>
+                            }<br>
+                        }<br>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<!--<a href="#" class="previous"> &lt; Previous</a>-->
+<a href="Q4oops.html" class="previous"> &lt; Previous</a>
+<a href="Q6oops.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

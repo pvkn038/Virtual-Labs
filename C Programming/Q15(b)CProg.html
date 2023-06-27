@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>    
+                </ul>
+                
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>C PROGRAMMING FOR PROBLEM SOLVING LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q15(b). Define a macro that finds the maximum of two numbers. Write a C program that uses the macro and prints the maximum of two numbers.</b></p>
+        <p><b>Aim:</b> To define a macro that finds the maximum of two numbers, and write a C program that uses the macro and prints the maximum of two numbers.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with GCC compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b><br> A macro is a simple text substitution mechanism provided by the preprocessor in C programming language. Macros are expanded in the source code before the actual compilation takes place. Macros 
+            can be useful for defining frequently used operations, or for abstracting complex expressions, to make the code more readable and maintainable.<br>
+            In this case, the macro MAX(a, b) is defined to find the maximum of two numbers, a and b. The macro uses the ternary operator ? : to check which of a and b is larger and return that value. The expression (a) > (b) is evaluated 
+            first. If it is true, then a is returned, otherwise b is returned.<br>
+            Here's how the macro can be used in a program:<br>
+            #include&lt;stdio.h&gt;<br>
+            #define MAX(a, b) ((a) > (b) ? (a) : (b))<br>
+            int main() {<br>
+            int x = 5, y = 10;<br>
+            int max = MAX(x, y);<br>
+            printf("The maximum of %d and %d is %d\n", x, y, max);<br>
+            return 0;<br>
+            }<br>
+            This program defines the macro MAX(a, b), and then uses it to find the maximum of two variables x and y, which are set to 5 and 10, respectively. The result is stored in the variable max, which is then printed to the console.<br>
+            The output of the program will be:<br>
+            The maximum of 5 and 10 is 10<br>
+            Note: Macros can lead to unexpected results and hard-to-debug code if used improperly, so it's important to use them with caution.<br><br>
+        
+        
+        <style>
+            .imagecenter {
+                width: 450px;
+                height: 300px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+            }                
+        </style>        
+        <img src="/images/Macros.jpg" alt="Not Found" class="imagecenter"><br><br>
+        <b>Examples:</b><br>
+
+        For Example: Let's use the macro MAX to find and print the maximum of two numbers:<br>
+        #define MAX(a, b) ((a) > (b) ? (a) : (b))<br>
+        int main() {<br>
+        int x = 5, y = 10;<br>
+        int max = MAX(x, y);<br>
+        printf("The maximum of %d and %d is %d\n", x, y, max);<br>
+        return 0;<br>
+        }<br>
+        In this example, the macro MAX is defined to find the maximum of two numbers a and b. The macro uses the ternary operator ? : to compare the values of a and b, and return the larger of the two.<br>
+        In the main function, two variables x and y are defined and assigned the values 5 and 10, respectively. The macro MAX is then used to find the maximum of x and y, and the result is stored in the variable max.<br>
+        Finally, the maximum value is printed to the console using the printf function. The output of the program will be:
+        The maximum of 5 and 10 is 10<br>
+        This example demonstrates how macros can be used to abstract and simplify frequently used operations in C programming, making the code more readable and maintainable.<br>
+        </p>
+
+
+        <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+            solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <b>Code Editor***</b>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <style>
+                            .cnsl {
+
+                                text-decoration: none;
+                                display: inline-block;
+                                background-color: rgba(29, 96, 184, 0.902);
+                                padding: 8px;
+                                border-radius: 6px;
+                                border: 1px solid #d5d9d9;
+                                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                box-sizing: border-box;
+                                line-height: 20px;  
+                                color: #edf0f3;
+                            }
+
+                        </style>
+                        <a href="https://onecompiler.com/c" target="_blank" class="cnsl">Try on
+                                Code
+                                Editor</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        #include&lt;stdio.h&gt;<br>
+                        #define MAX(a, b) ((a) > (b) ? (a) : (b))<br>
+                       
+                        int main() {<br>
+                                int x = 5, y = 10;<br>
+                                int max = MAX(x, y);<br>
+                                printf("The maximum of %d and %d is %d\n", x, y, max);<br>
+                                return 0;<br>
+                            }<br>
+
+
+                            
+
+                        
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Solution 2
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        #include&lt;stdio.h&gt;<br>
+
+                            #define MAX(a, b) ((a) > (b) ? (a) : (b))<br>
+                            
+                            int main() {<br>
+                                int x, y;<br>
+                                printf("Enter the first number: ");<br>
+                                scanf("%d", &x);<br>
+                                printf("Enter the second number: ");<br>
+                                scanf("%d", &y);<br>
+                                int max = MAX(x, y);<br>
+                                printf("The maximum of %d and %d is %d\n", x, y, max);<br>
+                                return 0;<br>
+                            }<br>
+                            
+    
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<a href="Q15(a)CProg.html"class="previous"> &lt; Previous</a>
+<a href="Q16(a)CProg.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

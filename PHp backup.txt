@@ -1,0 +1,46 @@
+<?php
+    $language = strtolower($_POST['language']);
+    $code = $_POST['code'];
+
+    $random = substr(md5(mt_rand()), 0, 7);
+    $filePath = "temp/" . $random . "." . $language;
+    $programFile = fopen($filePath, "w");
+    fwrite($programFile, $code);
+    fclose($programFile);
+
+    
+
+    if($language == "java") {
+        $output = shell_exec("C:\Java\jdk-19\bin\java.exe $filePath 2>&1");
+        echo $output;
+    }
+    if($language == "python") {
+        $output = shell_exec("C:\Python\Python311\python.exe $filePath 2>&1");
+        echo $output;
+    }
+    if($language == "c") {
+        
+        
+        shell_exec("gcc $filePath");
+        $output = shell_exec("a");
+        echo $output;
+    }
+    if($language == "cpp") {
+        shell_exec("g++ $filePath");
+        $output = shell_exec("a");
+        echo $output;
+        
+    }
+    $status = unlink($filePath);
+    // if($status)
+    // {
+    //     echo "file deleted";
+    // }
+    // else{
+    //     echo "not deleted";
+    // }
+
+
+
+
+C:\Users\KOUSIK\AppData\Local\Programs\Python\Python39

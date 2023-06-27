@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/TemplateCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+
+                
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Body of Description-->
+    <div class="Description">
+        <h4>DATA STRUCTURES LAB
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q9. Write a template based C++ program that implements Quick sort algorithm to arrange a
+                list of
+                elements in ascending order.
+
+            </b></p>
+
+        <p><b>Aim:</b> To arrange a list of integers in ascending order using quick sort algorithm.</p>
+        <p><b>System and Software Requirements:</b> A Computer with any Operating system with G++ compiler installed in
+            it.</p>
+        
+        <p align="justify"><b>Description:</b><br> The Quick Sort algorithm is a Divide and Conquer algorithm. 
+            It initially selects an element as a pivot element and partitions the given array around the picked pivot.
+            
+            There are many different versions of quickSort that pick pivot in different ways. <br>
+        <b>Algorithm:</b><br>
+        
+        Step 1:Always pick the first element as a pivot (implemented below).<br>
+        Step 2: Always pick the last element as the pivot.<br>
+        Step 3: Pick a random element as a pivot.<br>
+        Step 4: Pick median as a pivot.<br>
+
+        The key process in quickSort is the partition() process. 
+            The aim of the partition() function is to receive an array and an element x of the array as a pivot, 
+            put x at its correct position in a sorted array and then put all smaller elements (smaller than x) before x,
+            and put all greater elements (greater than x) after x.
+            All this should be done in linear time i.e. Big O(n). <br>
+        
+
+        
+        <center><img src="/images/dsimg9.jpg" alt="Not Found"></center><br>
+
+        
+            <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+                solution.</b><br><br>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Code Editor***
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <style>
+                            .cnsl {
+ 
+                                     text-decoration: none;
+                                     display: inline-block;
+                                     background-color: rgba(29, 96, 184, 0.902);
+                                     padding: 8px;
+                                     border-radius: 6px;
+                                     border: 1px solid #d5d9d9;
+                                     box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                     box-sizing: border-box;
+                                     line-height: 20px;  
+                                     color: #edf0f3;
+                                 }
+ 
+                         </style>
+                         <a href="https://onecompiler.com/cpp" target="_blank" 
+                         class="cnsl">Try on CodeEditor</a><br>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Solution 1
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+
+                        // C++ program for implementation of Quick sort <br>
+                        #include&ltbits /stdc++.h&gt<br>
+                        using namespace std;<br>
+
+
+                        int partition(int arr[], int start, int end) <br>
+                        { <br>
+                        int pivot = arr[start]; <br>
+                        int count = 0; <br>
+                        for (int i = start + 1; i <= end; i++) <br>
+                            { <br>
+                            if (arr[i] <=pivot) <br>
+                                count++; <br>
+                                } <br>
+                                int pivotIndex=start +count; <br>
+                                swap(arr[pivotIndex],arr[start]); <br>
+                                while (i < pivotIndex && j> pivotIndex) { <br>
+                                    while (arr[i] <= pivot) <br>
+                                        { <br>
+                                        i++; <br>
+                                        } <br>
+                                        while (arr[j]> pivot) { <br>
+                                        j--; <br>
+                                        } <br>
+                                        if (i < pivotIndex && j> pivotIndex) { <br>
+                                            swap(arr[i++], arr[j--]); <br>
+                                            } <br>
+                                            } <br>
+                                            return pivotIndex; <br>
+                                            } <br>
+                                            void quickSort(int arr[], int start, int end) <br>
+                                            { <br>
+                                            // base case <br>
+                                            if (start >= end) <br>
+                                            return; <br>
+                                            // partitioning the array <br>
+                                            int p = partition(arr, start, end); <br>
+                                            // Sorting the left part <br>
+                                            quickSort(arr, start, p - 1); <br>
+                                            // Sorting the right part <br>
+                                            quickSort(arr, p + 1, end); <br>
+                                            } <br>
+                                            int main() <br>
+                                            { <br>
+                                            int arr[] = { 9, 3, 4, 2, 1, 8 }; <br>
+                                            int n = 6; <br>
+                                            quickSort(arr, 0, n - 1); <br>
+                                            for (int i = 0; i < n; i++) { <br>
+                                                cout << arr[i] << " " ; <br>
+                                                    } return 0; <br>
+                                                    } <br>
+                    </div>
+                </div>
+            </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Solution 2
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            #include&ltbits /stdc++.h&gt<br>
+                            using namespace std;<br>
+                            int partition(int* arr, int start, int end) <br>
+                            { <br>
+                            // assuming last element as pivotElement <br>
+                            int index = 0, pivotElement = arr[end], pivotIndex; <br>
+                            int* temp = new int[end - start + 1]; <br>
+                            // making an array whose size is equal to current partition range... <br>
+                            for (int i = start; i <= end; i++) // pushing all the elements in temp which are smaller
+                                than pivotElement <br>
+                                { <br>
+                                if(arr[i] < pivotElement) <br>
+                                    { <br>
+                                    temp[index] = arr[i]; <br>
+                                    index++; <br>
+                                    } <br>
+                                    } <br>
+                                    temp[index] = pivotElement; <br>
+                                    index++; <br>
+                                    for (int i = start; i < end; i++) <br>
+                                        { <br>
+                                        if(arr[i] > pivotElement) <br>
+                                        { <br>
+                                        temp[index] = arr[i]; <br>
+                                        index++; <br>
+                                        } <br>
+                                        } <br>
+                                        index = 0; <br>
+                                        for (int i = start; i <= end; i++) // copying all the elements to original array
+                                            i.e arr <br>
+                                            { <br>
+                                            if(arr[i] == pivotElement) <br>
+                                            { <br>
+                                            // for getting pivot index in the original array. <br>
+                                            // we need the pivotIndex value in the original and not in the temp array
+                                            <br>
+                                            pivotIndex = i; <br>
+                                            } <br>
+                                            arr[i] = temp[index]; <br>
+                                            index++; <br>
+                                            } <br>
+                                            return pivotIndex; // returning pivotIndex <br>
+                                            } <br>
+                                            void quickSort(int* arr, int start, int end) <br>
+                                            { <br>
+                                            if(start < end) <br>
+                                                { <br>
+                                                int partitionIndex = partition(arr, start, end); // for getting
+                                                partition <br>
+                                                quickSort(arr, start, partitionIndex - 1); // sorting left side array
+                                                <br>
+                                                quickSort(arr, partitionIndex + 1, end); // sorting right side array
+                                                <br>
+                                                } <br>
+                                                return; <br>
+                                                } <br>
+                                                int main() <br>
+                                                { <br>
+                                                int size = 9; <br>
+                                                int arr[size] = {5, 12, 7, 1, 13, 2 ,23, 11, 18}; <br>
+                                                cout << "Unsorted array : " ; <br>
+                                                    for (int i = 0; i < size; i++) <br>
+                                                        { <br>
+                                                        cout << arr[i] << " " ; <br>
+                                                            } <br>
+                                                            printf("\n"); <br>
+                                                            quickSort(arr, 0, size - 1); <br>
+                                                            cout << "Sorted array : " ; <br>
+                                                                for (int i = 0; i < size; i++) <br>
+                                                                    { <br>
+                                                                    cout << arr[i] << " " ; <br>
+                                                                        } <br>
+                                                                        return 0; <br>
+                                                                        } <br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"></script>
+
+            <style>
+              
+                .previous {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    left: 50px;
+    
+                        }
+                    
+                .next {
+                    text-decoration: none;
+                    display: inline-block;
+                    background-color: rgba(6, 235, 185, 0.907);
+                    padding: 8px 16px;
+                    border-radius: 6px;
+                    border: 1px solid #d5d9d9;
+                    color: #000000;
+                    box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                    box-sizing: border-box;
+                    line-height: 20px;
+                    position: relative;
+                    bottom: 20px;
+                    cursor: pointer;
+                    right: 50px;
+                        
+                    }
+        
+    </style>
+
+<a href="Qsn8DS.html" class="previous"> &lt; Previous</a>
+<a href="Qsn10DS.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>

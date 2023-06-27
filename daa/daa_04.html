@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Laboratory</title>
+    <link rel="stylesheet" href="/vlab.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color:rgba(6, 235, 185, 0.907)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Vlabs Frontend/index.html">
+                <style>
+                    .image {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                </style>
+                <img src="/images/Virtual labs.png" alt="Bootstrap" class="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Vlabs Frontend/index.html"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/aboutUs.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/Syllabus.html"><b>Syllabus</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/VLabs.html"><b>VLabs</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Vlabs Frontend/htmlfiles/ContactUs.html"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+
+    
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+    <!---Body of Description-------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="Description">
+        <h4>DESIGN AND ANALYSIS OF ALGORITHMS LAB 
+            <hr>
+        </h4>
+        <p style="color:red;"><b>Q4. From a given vertex in a weighted connected graph, find shortest paths to other vertices using Dijkstra's algorithm.</b></p>
+        <p><b>Aim:</b> From a given vertex in a weighted connected graph, find shortest paths to other vertices using Dijkstra's algorithm.</p>
+        <p><b>System and Software Requirements:</b>
+            A Computer with any Operating system with GCC compiler installed in it.</p>
+        <b>DESCRIPTION:</b>
+        <p>Given a graph and a source vertex in the graph, find the <strong>shortest paths</strong> from the source to all vertices in the given graph.</p>
+        <p><strong>Examples:</strong></p>
+        <p><strong>Input:</strong> src = 0, the graph is shown below.</p>
+        <style>
+            .imagecenter {
+                width: 600px;
+                height: 300px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+            }                
+        </style><br>
+        <img src="https://www.geeksforgeeks.org/wp-content/uploads/Fig-11.jpg" alt="" class="imagecenter">
+        <p><strong>Output:</strong> 0 4 12 19 21 11 9 8 14<br><strong>Explanation:</strong> The distance from 0 to 1 = 4.<br>The minimum distance from 0 to 2 = 12. 0-&gt;1-&gt;2<br>The minimum distance from 0 to 3 = 19. 0-&gt;1-&gt;2-&gt;3<br>The minimum distance from 0 to 4 = 21. 0-&gt;7-&gt;6-&gt;5-&gt;4<br>The minimum distance from 0 to 5 = 11. 0-&gt;7-&gt;6-&gt;5<br>The minimum distance from 0 to 6 = 9. 0-&gt;7-&gt;6<br>The minimum distance from 0 to 7 = 8. 0-&gt;7<br>The minimum distance from 0 to 8 = 14. 0-&gt;1-&gt;2-&gt;8</p>
+        <b>ALGORITHM:</b>
+        <ul><li>Create a set <strong>sptSet</strong> (shortest path tree set) that keeps track of vertices included in the shortest-path tree, i.e., whose minimum distance from the source is calculated and finalized. Initially, this set is empty.&nbsp;</li><li>Assign a distance value to all vertices in the input graph. Initialize all distance values as <strong>INFINITE</strong>. Assign the distance value as 0 for the source vertex so that it is picked first.&nbsp;</li><li>While <strong>sptSet</strong> doesn’t include all vertices&nbsp;<ul><li>Pick a vertex <strong>u</strong> which is not there in <strong>sptSet </strong>and has a minimum distance value.&nbsp;</li><li>Include u to <strong>sptSet</strong>.&nbsp;</li><li>Then update distance value of all adjacent vertices of u.&nbsp;<ul><li>To update the distance values, iterate through all adjacent vertices.&nbsp;</li><li>For every adjacent vertex v, if the sum of the distance value of u (from source) and weight of edge u-v, is less than the distance value of v, then update the distance value of v.&nbsp;</li></ul></li></ul></li></ul>
+    <p><strong>Illustration:</strong></p>
+        <blockquote><p>To understand the Dijkstra’s Algorithm lets take a graph and find the shortest path from source to all nodes.<br>Consider below graph and <strong>src = 0</strong></p><p style="text-align:center"><img src="https://www.geeksforgeeks.org/wp-content/uploads/Fig-11.jpg" alt=""></p><div style="text-align:center;margin:20px 0" id="GFG_AD_gfg_outstream_incontent"></div><p><strong>Step 1:</strong></p><ul><li>The set <i><strong>sptSet</strong></i> is initially empty and distances assigned to vertices are {0, INF, INF, INF, INF, INF, INF, INF} where <strong>INF</strong> indicates infinite.&nbsp;</li><li>Now pick the vertex with a minimum distance value. The vertex 0 is picked, include it in <i>sptSet</i>. So <i>sptSet </i>becomes {0}. After including 0 to <i>sptSet</i>, update distance values of its adjacent vertices.&nbsp;</li><li>Adjacent vertices of 0 are 1 and 7. The distance values of 1 and 7 are updated as 4 and 8.&nbsp;</li></ul><p>The following subgraph shows vertices and their distance values, only the vertices with finite distance values are shown. The vertices included in SPT are shown in <strong>green</strong> colour.</p><p style="text-align:center"><img src="https://www.geeksforgeeks.org/wp-content/uploads/MST1.jpg" alt=""></p><p><strong>Step 2:</strong></p><ul><li>Pick the vertex with minimum distance value and not already included in SPT (not in sptSET). The vertex 1 is picked and added to sptSet.&nbsp;</li><li>So sptSet now becomes {0, 1}. Update the distance values of adjacent vertices of 1.&nbsp;</li><li>The distance value of vertex 2 becomes <strong>12</strong>.</li></ul><p style="text-align:center"><img src="https://www.geeksforgeeks.org/wp-content/uploads/DIJ2.jpg" alt=""></p><p><strong>Step 3:&nbsp;</strong></p><ul><li>Pick the vertex with minimum distance value and not already included in SPT (not in sptSET). Vertex 7 is picked. So sptSet now becomes <strong>{0, 1, 7}.</strong>&nbsp;</li><li>Update the distance values of adjacent vertices of 7. The distance value of vertex 6 and 8 becomes finite (<strong>15 and 9</strong> respectively).&nbsp;</li></ul><p style="text-align:center"><img src="https://www.geeksforgeeks.org/wp-content/uploads/DIJ3.jpg" alt=""></p><p><strong>Step 4:</strong></p><ul><li>Pick the vertex with minimum distance value and not already included in SPT (not in sptSET). Vertex 6 is picked. So sptSet now becomes <strong>{0, 1, 7, 6}</strong>.&nbsp;</li><li>Update the distance values of adjacent vertices of 6. The distance value of vertex 5 and 8 are updated.<br>&nbsp;</li></ul><p style="text-align:center"><img src="https://www.geeksforgeeks.org/wp-content/uploads/DIJ4.jpg" alt=""></p><p>We repeat the above steps until <i>sptSet </i><strong>includes </strong>all vertices of the given graph. Finally, we get the following Shortest Path Tree (SPT).<br>&nbsp;</p><div style="text-align:center;margin:20px 0" id="GFG_AD_gfg_outstream_incontent"></div><p style="text-align:center"><img src="https://www.geeksforgeeks.org/wp-content/uploads/DIJ5.jpg" alt=""></p></blockquote>
+
+        
+
+
+
+
+
+
+
+
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <b style="color:red;">Disclaimer : We recommend you to try the code by yourself before checking the
+                solution</b><br><br>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Code Editor***
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <style>
+                                .cnsl {
+     
+                                         text-decoration: none;
+                                         display: inline-block;
+                                         background-color: rgba(29, 96, 184, 0.902);
+                                         padding: 8px;
+                                         border-radius: 6px;
+                                         border: 1px solid #d5d9d9;
+                                         box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                                         box-sizing: border-box;
+                                         line-height: 20px;  
+                                         color: #edf0f3;
+                                     }
+     
+                             </style>
+                        <a href="https://onecompiler.com/c" target="_blank"
+                                class="cnsl">Try on Code Editor</a><br>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Solution 1
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="comments">// C program for Dijkstra's single source shortest path</code></div><div class="line number2 index1 alt1"><code class="comments">// algorithm. The program is for adjacency matrix</code></div><div class="line number3 index2 alt2"><code class="comments">// representation of the graph</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2"><code class="preprocessor">#include &lt;limits.h&gt;</code></div><div class="line number6 index5 alt1"><code class="preprocessor">#include &lt;stdbool.h&gt;</code></div><div class="line number7 index6 alt2"><code class="preprocessor">#include &lt;stdio.h&gt;</code></div><div class="line number8 index7 alt1">&nbsp;</div><div class="line number9 index8 alt2"><code class="comments">// Number of vertices in the graph</code></div><div class="line number10 index9 alt1"><code class="preprocessor">#define V 9</code></div><div class="line number11 index10 alt2">&nbsp;</div><div class="line number12 index11 alt1"><code class="comments">// A utility function to find the vertex with minimum</code></div><div class="line number13 index12 alt2"><code class="comments">// distance value, from the set of vertices not yet included</code></div><div class="line number14 index13 alt1"><code class="comments">// in shortest path tree</code></div><div class="line number15 index14 alt2"><code class="color1 bold">int</code> <code class="plain">minDistance(</code><code class="color1 bold">int</code> <code class="plain">dist[], </code><code class="color1 bold">bool</code> <code class="plain">sptSet[])</code></div><div class="line number16 index15 alt1"><code class="plain">{</code></div><div class="line number17 index16 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Initialize min value</code></div><div class="line number18 index17 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1 bold">int</code> <code class="plain">min = INT_MAX, min_index;</code></div><div class="line number19 index18 alt2">&nbsp;</div><div class="line number20 index19 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">for</code> <code class="plain">(</code><code class="color1 bold">int</code> <code class="plain">v = 0; v &lt; V; v++)</code></div><div class="line number21 index20 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">if</code> <code class="plain">(sptSet[v] == </code><code class="keyword bold">false</code> <code class="plain">&amp;&amp; dist[v] &lt;= min)</code></div><div class="line number22 index21 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">min = dist[v], min_index = v;</code></div><div class="line number23 index22 alt2">&nbsp;</div><div class="line number24 index23 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">min_index;</code></div><div class="line number25 index24 alt2"><code class="plain">}</code></div><div class="line number26 index25 alt1">&nbsp;</div><div class="line number27 index26 alt2"><code class="comments">// A utility function to print the constructed distance</code></div><div class="line number28 index27 alt1"><code class="comments">// array</code></div><div class="line number29 index28 alt2"><code class="keyword bold">void</code> <code class="plain">printSolution(</code><code class="color1 bold">int</code> <code class="plain">dist[])</code></div><div class="line number30 index29 alt1"><code class="plain">{</code></div><div class="line number31 index30 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions bold">printf</code><code class="plain">(</code><code class="string">"Vertex \t\t Distance from Source\n"</code><code class="plain">);</code></div><div class="line number32 index31 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">for</code> <code class="plain">(</code><code class="color1 bold">int</code> <code class="plain">i = 0; i &lt; V; i++)</code></div><div class="line number33 index32 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="functions bold">printf</code><code class="plain">(</code><code class="string">"%d \t\t\t\t %d\n"</code><code class="plain">, i, dist[i]);</code></div><div class="line number34 index33 alt1"><code class="plain">}</code></div><div class="line number35 index34 alt2">&nbsp;</div><div class="line number36 index35 alt1"><code class="comments">// Function that implements Dijkstra's single source</code></div><div class="line number37 index36 alt2"><code class="comments">// shortest path algorithm for a graph represented using</code></div><div class="line number38 index37 alt1"><code class="comments">// adjacency matrix representation</code></div><div class="line number39 index38 alt2"><code class="keyword bold">void</code> <code class="plain">dijkstra(</code><code class="color1 bold">int</code> <code class="plain">graph[V][V], </code><code class="color1 bold">int</code> <code class="plain">src)</code></div><div class="line number40 index39 alt1"><code class="plain">{</code></div><div class="line number41 index40 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1 bold">int</code> <code class="plain">dist[V]; </code><code class="comments">// The output array.&nbsp; dist[i] will hold the</code></div><div class="line number42 index41 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// shortest</code></div><div class="line number43 index42 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// distance from src to i</code></div><div class="line number44 index43 alt1">&nbsp;</div><div class="line number45 index44 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1 bold">bool</code> <code class="plain">sptSet[V]; </code><code class="comments">// sptSet[i] will be true if vertex i is</code></div><div class="line number46 index45 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// included in shortest</code></div><div class="line number47 index46 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// path tree or shortest distance from src to i is</code></div><div class="line number48 index47 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// finalized</code></div><div class="line number49 index48 alt2">&nbsp;</div><div class="line number50 index49 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Initialize all distances as INFINITE and stpSet[] as</code></div><div class="line number51 index50 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// false</code></div><div class="line number52 index51 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">for</code> <code class="plain">(</code><code class="color1 bold">int</code> <code class="plain">i = 0; i &lt; V; i++)</code></div><div class="line number53 index52 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">dist[i] = INT_MAX, sptSet[i] = </code><code class="keyword bold">false</code><code class="plain">;</code></div><div class="line number54 index53 alt1">&nbsp;</div><div class="line number55 index54 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Distance of source vertex from itself is always 0</code></div><div class="line number56 index55 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">dist[src] = 0;</code></div><div class="line number57 index56 alt2">&nbsp;</div><div class="line number58 index57 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Find shortest path for all vertices</code></div><div class="line number59 index58 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">for</code> <code class="plain">(</code><code class="color1 bold">int</code> <code class="plain">count = 0; count &lt; V - 1; count++) {</code></div><div class="line number60 index59 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Pick the minimum distance vertex from the set of</code></div><div class="line number61 index60 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// vertices not yet processed. u is always equal to</code></div><div class="line number62 index61 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// src in the first iteration.</code></div><div class="line number63 index62 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1 bold">int</code> <code class="plain">u = minDistance(dist, sptSet);</code></div><div class="line number64 index63 alt1">&nbsp;</div><div class="line number65 index64 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Mark the picked vertex as processed</code></div><div class="line number66 index65 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">sptSet[u] = </code><code class="keyword bold">true</code><code class="plain">;</code></div><div class="line number67 index66 alt2">&nbsp;</div><div class="line number68 index67 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Update dist value of the adjacent vertices of the</code></div><div class="line number69 index68 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// picked vertex.</code></div><div class="line number70 index69 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">for</code> <code class="plain">(</code><code class="color1 bold">int</code> <code class="plain">v = 0; v &lt; V; v++)</code></div><div class="line number71 index70 alt2">&nbsp;</div><div class="line number72 index71 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Update dist[v] only if is not in sptSet,</code></div><div class="line number73 index72 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// there is an edge from u to v, and total</code></div><div class="line number74 index73 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// weight of path from src to&nbsp; v through u is</code></div><div class="line number75 index74 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// smaller than current value of dist[v]</code></div><div class="line number76 index75 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">if</code> <code class="plain">(!sptSet[v] &amp;&amp; graph[u][v]</code></div><div class="line number77 index76 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&amp;&amp; dist[u] != INT_MAX</code></div><div class="line number78 index77 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">&amp;&amp; dist[u] + graph[u][v] &lt; dist[v])</code></div><div class="line number79 index78 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">dist[v] = dist[u] + graph[u][v];</code></div><div class="line number80 index79 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">}</code></div><div class="line number81 index80 alt2">&nbsp;</div><div class="line number82 index81 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// print the constructed distance array</code></div><div class="line number83 index82 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">printSolution(dist);</code></div><div class="line number84 index83 alt1"><code class="plain">}</code></div><div class="line number85 index84 alt2">&nbsp;</div><div class="line number86 index85 alt1"><code class="comments">// driver's code</code></div><div class="line number87 index86 alt2"><code class="color1 bold">int</code> <code class="plain">main()</code></div><div class="line number88 index87 alt1"><code class="plain">{</code></div><div class="line number89 index88 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">/* Let us create the example graph discussed above */</code></div><div class="line number90 index89 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="color1 bold">int</code> <code class="plain">graph[V][V] = { { 0, 4, 0, 0, 0, 0, 0, 8, 0 },</code></div><div class="line number91 index90 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{ 4, 0, 8, 0, 0, 0, 0, 11, 0 },</code></div><div class="line number92 index91 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{ 0, 8, 0, 7, 0, 4, 0, 0, 2 },</code></div><div class="line number93 index92 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{ 0, 0, 7, 0, 9, 14, 0, 0, 0 },</code></div><div class="line number94 index93 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{ 0, 0, 0, 9, 0, 10, 0, 0, 0 },</code></div><div class="line number95 index94 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{ 0, 0, 4, 14, 10, 0, 2, 0, 0 },</code></div><div class="line number96 index95 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{ 0, 0, 0, 0, 0, 2, 0, 1, 6 },</code></div><div class="line number97 index96 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{ 8, 11, 0, 0, 0, 0, 1, 0, 7 },</code></div><div class="line number98 index97 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">{ 0, 0, 2, 0, 0, 0, 6, 7, 0 } };</code></div><div class="line number99 index98 alt2">&nbsp;</div><div class="line number100 index99 alt1"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="comments">// Function call</code></div><div class="line number101 index100 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="plain">dijkstra(graph, 0);</code></div><div class="line number102 index101 alt1">&nbsp;</div><div class="line number103 index102 alt2"><code class="undefined spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="keyword bold">return</code> <code class="plain">0;</code></div><div class="line number104 index103 alt1"><code class="plain">}</code></div></div></td></tr></tbody></table>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Solution 2
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+        <style>
+              
+            .previous {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                left: 50px;
+
+                    }
+                
+            .next {
+                text-decoration: none;
+                display: inline-block;
+                background-color: rgba(6, 235, 185, 0.907);
+                padding: 8px 16px;
+                border-radius: 6px;
+                border: 1px solid #d5d9d9;
+                color: #000000;
+                box-shadow: rgba(76, 82, 82, 0.5) 0 2px 5px 0;
+                box-sizing: border-box;
+                line-height: 20px;
+                position: relative;
+                bottom: 20px;
+                cursor: pointer;
+                right: 50px;
+                    
+                }
+    
+</style>
+
+<a href="daa_03.html" class="previous"> &lt; Previous</a>
+<a href="daa_05.html" style="float: right"  class="next">Next &gt;</a>
+
+</body>
+
+</html>
